@@ -1,0 +1,96 @@
+\documentclass[final,10pt,a4paper, DIV12,  twoside, onecolumn, openright, titlepage, headsepline, footsepline, bibliography=totoc,  toc=graduated, numbers=enddot, version=first]{scrbook} 
+\usepackage[T1]{fontenc}
+\usepackage[english,ngerman]{babel}
+\usepackage[utf8]{inputenc}
+\setkomafont{sectioning}{\rmfamily\bfseries\boldmath}
+\setlength\parskip{1mm}
+\setcounter{secnumdepth}{3}
+% ngerman %use ngerman instead of english when compiling the pages with german abstract
+\selectlanguage {english} 
+
+\usepackage{subfigure}
+\usepackage[dvips]{graphicx} \pdfcompresslevel=9
+\widowpenalty=10000
+\clubpenalty=10000
+
+\usepackage{verbatim}
+\usepackage{color}
+\usepackage{longtable}
+\usepackage{url}
+\usepackage{rotating}
+\usepackage{amsmath}
+\usepackage{amsthm} %Ergänzung zu "amsmath"
+\usepackage{amsfonts}
+\usepackage{currvita}
+\usepackage{datetime}
+\usepackage{cite}
+\usepackage{enumitem}
+
+%when using algorithms use the following commands
+\usepackage{algorithmic}
+\usepackage{algorithm}
+\usepackage{fancybox}
+\numberwithin{algorithm}{subsection}  
+\newcommand{\theHalgorithm}{\arabic{algorithm}}
+\renewcommand{\algorithmicrequire}{\textbf{Input:}\text{ }}
+\renewcommand{\algorithmicensure}{\textbf{Output:}\text{ }} 
+
+%this is for PDF output formatting, please change the data accordingly
+\definecolor{darkblue}{rgb}{0,0,.5}
+\usepackage{t1enc,dfadobe}
+\usepackage[pdftex, pagebackref=true,						colorlinks,linkcolor=darkblue,citecolor=darkblue,urlcolor=darkblue,
+    bookmarks=false,
+    pdfpagemode=UseNone,plainpages=false,
+    pdftitle={Application of electric field sensing systems in smart environments},pdfpagelabels,
+    pdfauthor={Andreas Braun},
+    pdfsubject={Ph.D.\ Thesis, Technische Universit\"at Darmstadt},
+    pdfkeywords={thesis keywords}]{hyperref}
+
+%other stuff AB
+\usepackage{booktabs}
+\usepackage{tabularx}
+
+
+\makeindex
+
+
+% begin document
+\begin{document}
+\input{deckblatt.tex}
+%Inhaltsverzeichnis soll römisch numeriert sein:
+
+
+\cleardoublepage
+
+\pagenumbering{roman}\setcounter{page}{1}
+\input{selbstaendigkeits.tex}
+\cleardoublepage
+
+
+\input{abstracten.tex}
+\selectlanguage{ngerman}
+\input{abstractde.tex}
+\selectlanguage{english}
+
+\cleardoublepage
+
+\tableofcontents
+
+\cleardoublepage
+
+
+\pagenumbering{arabic}\setcounter{page}{1}
+
+\input{chapters/introduction/introduction.tex}
+\input{chapters/related/related.tex}
+\input{chapters/concept/domains.tex}
+\input{chapters/prototypes/prototypes.tex}
+\input{chapters/classification/classification.tex}
+\input{chapters/indoor.tex}
+\input{chapters/conclusions.tex}
+
+\input{appendix.tex}
+
+\bibliography{../../Sources/Dissertation}
+\bibliographystyle{eg-alpha}
+\end{document}

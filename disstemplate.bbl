@@ -1,0 +1,255 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{\uppercase{GPBKK13}}
+
+\bibitem[Bax96]{Baxter1996}
+\textsc{Baxter L.~K.}:
+\newblock {Capacitive Sensors}.
+\newblock \emph{Sensors Peterborough NH}, 1 (1996), 1--17.
+
+\bibitem[BDK13]{braun2013capacitive}
+\textsc{Braun A., Dutz T., Kamieth F.}:
+\newblock {Capacitive sensor-based hand gesture recognition in ambient
+  intelligence scenarios}.
+\newblock In \emph{Proceedings of the 6th International Conference on PErvasive
+  Technologies Related to Assistive Environments} (2013), ACM, p.~5.
+
+\bibitem[BF13]{Braun2013ChairAid}
+\textsc{Braun A., Frank S.}:
+\newblock {The Capacitive Chair}.
+\newblock 2013.
+
+\bibitem[BH11]{Braun2011MultiInputDevice}
+\textsc{Braun A., Hamisu P.}:
+\newblock {Designing a multi-purpose capacitive proximity sensing input
+  device}.
+\newblock In \emph{Proceedings of the 4th International Conference on PErvasive
+  Technologies Related to Assistive Environments PETRA 11} (2011), ACM Press.
+
+\bibitem[BH12]{braun2012context}
+\textsc{Braun A., Heggen H.}:
+\newblock {Context recognition using capacitive sensor arrays in beds}.
+\newblock In \emph{Technik f\"{u}r ein selbstbestimmtes Leben - 5. Deutscher
+  AAL-Kongress} (Berlin, 2012), VDE VERLAG GmbH.
+
+\bibitem[BHK97]{belhumeur1997eigenfaces}
+\textsc{Belhumeur P.~N., Hespanha J.~a.~P., Kriegman D.~J.}:
+\newblock {Eigenfaces vs. fisherfaces: Recognition using class specific linear
+  projection}.
+\newblock \emph{Pattern Analysis and Machine Intelligence, IEEE Transactions on
+  19}, 7 (1997), 711--720.
+
+\bibitem[BHW12]{Braun2012CapFloor}
+\textsc{Braun A., Heggen H., Wichert R.}:
+\newblock {CapFloor – A Flexible Capacitive Indoor Localization System}.
+\newblock In \emph{Evaluating AAL Systems Through Competitive Benchmarking.
+  Indoor Localization and Tracking} (2012), Chessa S., Knauth S., (Eds.),
+  Communications in Computer and Information Science, pp.~26--35.
+
+\bibitem[BO10a]{BarrettScreen}
+\textsc{Barrett G., Omote R.}:
+\newblock {Projected capacitive touch screens}.
+\newblock \emph{Inf. Disp. Mag} (2010).
+
+\bibitem[BO10b]{Barrett2010}
+\textsc{Barrett G., Omote R.}:
+\newblock {Projected-capacitive touch technology}.
+\newblock \emph{Information Display} (2010).
+
+\bibitem[CK12]{chessa_eval}
+\textsc{Chessa S., Knauth S.}:
+\newblock \emph{{Evaluating AAL Systems Through Competitive Benchmarking.
+  Indoor Localization and Tracking}}, vol.~309 of \emph{Communications in
+  Computer and Information Science}.
+\newblock Springer Berlin Heidelberg, Berlin, Heidelberg, 2012.
+
+\bibitem[Cla62]{clarke1962hazards}
+\textsc{Clarke A.~C.}:
+\newblock {Hazards of prophecy: The failure of imagination}.
+\newblock \emph{Profiles of the Future, Gollancz, London} (1962).
+
+\bibitem[Cor13]{cypressfirst}
+\textsc{Corporation C.~S.}:
+\newblock {CY3271 PSoC® FirstTouchTM Starter Kit with CYFiTM Low-Power RF},
+  2013.
+
+\bibitem[Cyp12]{Cypress2012}
+\textsc{Cypress}:
+\newblock \emph{{Cypress TrueTouch® Touchscreen Solution Drives "Floating
+  Touch" Navigation Feature in New Xperia™ sola Smartphone from Sony Mobile
+  Communications}}.
+\newblock Tech. rep., 2012.
+
+\bibitem[DBM13]{Djakow2013movibed}
+\textsc{Djakow M., Braun A., Marinc A.}:
+\newblock {MoviBed - sleep analysis using capacitive sensors}.
+\newblock 2013.
+
+\bibitem[DL01]{Dietz2001a}
+\textsc{Dietz P., Leigh D.}:
+\newblock {DiamondTouch}.
+\newblock In \emph{Proceedings of the 14th annual ACM symposium on User
+  interface software and technology - UIST '01} (New York, New York, USA, Nov.
+  2001), ACM Press, p.~219.
+
+\bibitem[GePMB11]{Couch2011}
+\textsc{Gro\ss~e Puppendahl T., Marinc A., Braun A.}:
+\newblock {Classification of User Postures with Capacitive Proximity Sensors in
+  AAL-Environments}.
+\newblock \emph{Ambient Intelligence 7040} (2011), 314--323.
+
+\bibitem[Gli00]{Glinsky2000}
+\textsc{Glinsky A.}:
+\newblock \emph{{Theremin: Ether music and espionage}}.
+\newblock University of Illinois Press, 2000.
+
+\bibitem[GPBB{\etalchar{*}}13]{grosse2013opencapsense}
+\textsc{Grosse-Puppendahl T., Berghoefer Y., Braun A., Wimmer R., Kuijper A.}:
+\newblock {OpenCapSense: A Rapid Prototyping Toolkit for Pervasive Interaction
+  Using Capacitive Sensing}.
+\newblock \emph{IEEE International Conference on Pervasive Computing and
+  Communications (PerCom) 18} (2013), 22.
+
+\bibitem[GPBKK13]{grosse2013swiss}
+\textsc{Grosse-Puppendahl T., Braun A., Kamieth F., Kuijper A.}:
+\newblock {Swiss-cheese extended: an object recognition method for ubiquitous
+  interfaces based on capacitive proximity sensing}.
+\newblock In \emph{Proceedings of the 2013 ACM annual conference on Human
+  factors in computing systems} (2013), ACM, pp.~1401--1410.
+
+\bibitem[GZBB09]{george2009seat}
+\textsc{George B., Zangl H., Bretterklieber T., Brasseur G.}:
+\newblock {Seat occupancy detection based on capacitive sensing}.
+\newblock \emph{Instrumentation and Measurement, IEEE Transactions on 58}, 5
+  (2009), 1487--1494.
+
+\bibitem[HB10]{Hamisu2010}
+\textsc{Hamisu P., Braun A.}:
+\newblock {Analyse des Schlafverhaltens durch kapazitive Sensorarrays zur
+  Ermittlung der Wirbels\"{a}ulenbelastung}.
+\newblock In \emph{3. Deutscher AAL Kongress} (2010), VDE VERLAG GmbH,
+  pp.~3--6.
+
+\bibitem[HPR00]{han2000manufacturing}
+\textsc{Han J., Pratt M., Regli W.~C.}:
+\newblock {Manufacturing feature recognition from solid models: a status
+  report}.
+\newblock \emph{Robotics and Automation, IEEE Transactions on 16}, 6 (2000),
+  782--796.
+
+\bibitem[HW08]{haklay2008openstreetmap}
+\textsc{Haklay M., Weber P.}:
+\newblock {Openstreetmap: User-generated street maps}.
+\newblock \emph{Pervasive Computing, IEEE 7}, 4 (2008), 12--18.
+
+\bibitem[Inc13]{globalPosture}
+\textsc{Inc. S.}:
+\newblock {Global Posture Study}, 2013.
+
+\bibitem[KBBC05]{kaltenbrunner2005tuio}
+\textsc{Kaltenbrunner M., Bovermann T., Bencina R., Costanza E.}:
+\newblock {TUIO: A protocol for table-top tangible user interfaces}.
+\newblock In \emph{Proc. of the The 6th Int'l Workshop on Gesture in
+  Human-Computer Interaction and Simulation} (2005).
+
+\bibitem[KJJ11]{krejcar2011}
+\textsc{Krejcar O., Jirka J., Janckulik D.}:
+\newblock {Use of mobile phones as intelligent sensors for sound input analysis
+  and sleep state detection}.
+\newblock \emph{Sensors} (2011).
+
+\bibitem[Mit07]{mitchell2007introduction}
+\textsc{Mitchell H.~B.}:
+\newblock \emph{{Multi-sensor data fusion}}.
+\newblock Springer, 2007.
+
+\bibitem[MPLK05]{Moon2005}
+\textsc{Moon J., Park J., Lee T., Kim Y.}:
+\newblock {Transparent conductive film based on carbon nanotubes and PEDOT
+  composites}.
+\newblock \emph{Diamond and related materials 14}, 11 (2005), 1882--1887.
+
+\bibitem[Nok12]{Nokia2012}
+\textsc{Nokia}:
+\newblock \emph{{Puremotion Technology White Paper}}.
+\newblock Tech. rep., 2012.
+
+\bibitem[Pos11]{poslad2011ubiquitous}
+\textsc{Poslad S.}:
+\newblock \emph{{Ubiquitous computing: smart devices, environments and
+  interactions}}.
+\newblock Wiley. com, 2011.
+
+\bibitem[SAW94]{schilit1994context}
+\textsc{Schilit B., Adams N., Want R.}:
+\newblock {Context-aware computing applications}.
+\newblock In \emph{Mobile Computing Systems and Applications, 1994. WMCSA 1994.
+  First Workshop on} (1994), IEEE, pp.~85--90.
+
+\bibitem[SDKS10]{schmidt2010automotive}
+\textsc{Schmidt A., Dey A.~K., Kun A.~L., Spiessl W.}:
+\newblock {Automotive user interfaces: human computer interaction in the car}.
+\newblock In \emph{CHI'10 Extended Abstracts on Human Factors in Computing
+  Systems} (2010), ACM, pp.~3177--3180.
+
+\bibitem[SL86]{salmi86}
+\textsc{Salmi T., Leinonen L.}:
+\newblock {Automatic analysis of sleep records with static charge sensitive
+  bed}.
+\newblock \emph{Electroencephalography and Clinical Neurophysiology 64}, 1
+  (1986), 84--87.
+
+\bibitem[Smi96]{Smith1996a}
+\textsc{Smith J.~R.}:
+\newblock {Field mice: Extracting hand geometry from electric field
+  measurements}.
+\newblock \emph{IBM Systems Journal 35}, 3.4 (1996), 587--608.
+
+\bibitem[Smi99]{Smith1999a}
+\textsc{Smith J.~R.}:
+\newblock \emph{{Electric field imaging}}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 1999.
+
+\bibitem[TSPM01]{tan2001sensing}
+\textsc{Tan H.~Z., Slivovsky L.~A., Pentland A., Member S.}:
+\newblock {A sensing chair using pressure distribution sensors}.
+\newblock \emph{Mechatronics, IEEE/ASME Transactions on 6}, 3 (2001), 261--268.
+
+\bibitem[VMV09]{Valtonen2009a}
+\textsc{Valtonen M., Maentausta J., Vanhala J.}:
+\newblock {TileTrack: Capacitive human tracking using floor tiles}.
+\newblock In \emph{IEEE International Conference on Pervasive Computing and
+  Communications} (Mar. 2009), IEEE, pp.~1--10.
+
+\bibitem[WB95]{welch1995introduction}
+\textsc{Welch G., Bishop G.}:
+\newblock {An introduction to the Kalman filter}, 1995.
+
+\bibitem[Wei91]{Weiser1991}
+\textsc{Weiser M.}:
+\newblock {The Computer for the 21st Century}.
+\newblock \emph{Scientific American 265}, 3 (1991), 94--104.
+
+\bibitem[WF07]{wilson2007}
+\textsc{Wilson T.~V., Fenlon W.}:
+\newblock {How the iPhone Works - Multi-touch systems}, 2007.
+
+\bibitem[WHKS06]{Wimmer2006}
+\textsc{Wimmer R., Holleis P., Kranz M., Schmidt A.}:
+\newblock {Thracker - Using Capacitive Sensing for Gesture Recognition}.
+\newblock In \emph{26th IEEE International Conference on Distributed Computing
+  Systems Workshops (ICDCSW'06)} (2006), IEEE, pp.~64--64.
+
+\bibitem[YJS06]{yilmaz2006object}
+\textsc{Yilmaz A., Javed O., Shah M.}:
+\newblock {Object tracking: A survey}.
+\newblock \emph{Acm Computing Surveys (CSUR) 38}, 4 (2006), 13.
+
+\bibitem[ZSP{\etalchar{*}}95]{Zimmerman1995}
+\textsc{Zimmerman T.~G., Smith J.~R., Paradiso J.~A., Allport D., Gershenfeld
+  N.}:
+\newblock {Applying electric field sensing to human-computer interfaces}.
+\newblock In \emph{Proceedings of the SIGCHI conference on Human factors in
+  computing systems - CHI '95} (New York, New York, USA, 1995), no.~May, ACM
+  Press, pp.~280--287.
+
+\end{thebibliography}

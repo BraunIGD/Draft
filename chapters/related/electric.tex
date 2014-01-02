@@ -1,15 +1,5 @@
 \section{Electric field sensing}
-Any electric charge is applying an attracting or repelling force to other charged particles in space. This force has a distinct magnitude and direction for any point in space and thus creates an electric field. The presence of conductive objects is modifying the properties this field. Thus, in its most basic definition electric field sensing allows us to gather information about the field properties at a certain point in space. If we continuously monitor the field we are able to measure the disturbance and associate it to objects that are passing through, allowing to gather information about their specific properties. In this section we will give a brief overview of the development of electric field sensing technology, the physical background, different measuring modes and how to process data acquired by digital sensor devices.
-\subsection{A brief history of capacitive proximity sensing}
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.4\textwidth]{images/leon_theremin.jpg}
-\caption{Leon Theremin playing his epnoymous electronic musical instrument \cite{Glinsky2000}}
-\label{fig:leon_theremin}
-\end{figure}
-In the last decades of the 19th and the beginning of the 20th century a considerable number of inventors and scientists performed research on the application of electric systems, sparking innovations such as electric lighting, electric motors, telegraphy and radio communication. Lev Sergeyevich Termen or Léon Theremin in the American naming was a Russian inventor most famous for designing the theremin. This early electronic musical instrument could be played without touch. One hand is controlling the pitch and the other the volume by changing the distance to an antenna. Initially designed as a motion detector, this device is transferring the influence of the human body on an oscillating electric field to an audible sound \cite{Glinsky2000}. 
-
-Electric field imaging was a research focus at the MIT in the 1990s. A research group in the Media Lab division including Joseph A. Paradiso, Thomas G. Zimmerman, Joshua R. Smith designed various sensing devices and evaluated various applications in HCI \cite{Zimmerman1995}\cite{Smith1999a}.
+Different electric charges apply either a repelling or attracting force to each other. For any point in space these forces have a distinct direction and magnitude. The resulting collection of force vectors is called the electric field. Conductive objects that are present in this area modify the properties of the field. Electric field sensing enables measuring field properties at a certain point in space. Using continuous monitoring it is possible to gather information about conductive objects passing through the field by associating measured disturbances to properties of the object. It is possible to gather a multitude of different information about a project. In this section I will give an overview of the physical background, different measurement modes and how to process data acquired by digital sensors.
 \subsection{Physical properties}
 A complete overview about the electrostatic principles of capacitive proximity sensing can be found in the book by Baxter \cite{Baxter1996}, chapters 2 and 6. We will give a very brief introduction to this topic in the following section.
 \begin{figure}[h]
@@ -133,11 +123,11 @@ In order to deal with noise, some sort of filtering is typically applied. Filter
     \toprule
     \textbf{Name} & \textbf{Description} & \textbf{Application} \\
     \midrule
-    \textbf{Initial calibration} & First set-up of baseline at system start, e.g. by taking the average over various samples & Required for any application \\
-    \textbf{Static baseline} & Baseline that does not change at run-time & For static environments \\
-    \textbf{Dynamic baseline} & Baseline that changes over time & For non-static environments \\
-    \textbf{Drift } & Change of system response to environmental factors at run-time & - \\
-    \textbf{Drift compensation} & Methods to account for occurring drift, by changing the baseline value & Non-static applications \\
+    \textbf{Initial calibration} & First set-up of baseline at system start, e.g. by taking the average over various samples & Required for any application \\ \addlinespace
+    \textbf{Static baseline} & Baseline that does not change at run-time & For static environments \\ \addlinespace
+    \textbf{Dynamic baseline} & Baseline that changes over time & For non-static environments \\ \addlinespace
+    \textbf{Drift } & Change of system response to environmental factors at run-time & - \\ \addlinespace
+    \textbf{Drift compensation} & Methods to account for occurring drift, by changing the baseline value & Non-static applications \\ \addlinespace
     \textbf{Recalibration} & Change of the baseline value at a specific point in time given a set of rules & Non-static applications \\
     \bottomrule
     \end{tabular}%
@@ -173,12 +163,12 @@ High-level processing assumes that we already have calibrated (and possibly norm
     \toprule
     \textbf{Name} & \textbf{Description} \\
     \midrule
-    \textbf{Sensor data fusion} & Combining sensor data into a shared representational format \\
-    \textbf{Uniform fusion} & Sensor data fusion that combines all data into a single common format \\
-    \textbf{Heterogeneous fusion} & Sensor data fusion that combines groups of data to serve multiple purposes \\
-    \textbf{Object tracking } & Continuous identification of an object within the systems range \\
-    \textbf{Single object tracking} & Methods to realize object tracking for a single detectable object \\
-    \textbf{Multiple object tracking} & Methods to realize object tracking for multiple objects \\
+    \textbf{Sensor data fusion} & Combining sensor data into a shared representational format \\ \addlinespace
+    \textbf{Uniform fusion} & Sensor data fusion that combines all data into a single common format \\ \addlinespace
+    \textbf{Heterogeneous fusion} & Sensor data fusion that combines groups of data to serve multiple purposes \\ \addlinespace
+    \textbf{Object tracking } & Continuous identification of an object within the systems range \\ \addlinespace
+    \textbf{Single object tracking} & Methods to realize object tracking for a single detectable object \\ \addlinespace
+    \textbf{Multiple object tracking} & Methods to realize object tracking for multiple objects \\ \addlinespace
     \textbf{Feature recognition} & Identifying certain parameters of an object within the system range \\
     \bottomrule
     \end{tabular}%
@@ -200,8 +190,9 @@ Sensor data fusion in its most general terms describes “the theory, techniques
 Sensor data fusion often requires taking into account some additional information we possess about the system. A classic example is the precision or bias of the sensor. Various methods, e.g. the class of Kalman filters, use weighted information from several sensor sources \cite{welch1995introduction}. If we know how that a certain sensor is only half as precise as another one working in collaborating, the weighting factors can be adapted accordingly. 
 
 One of the most important additional information we use when fusing data of capacitive proximity sensors, is the geometric layout of the system. This describes position and size of all electrodes that are integrated. Using this information is crucial when trying to localize an object. A simple example would be applying a weighted average algorithm on a set of sensors. In order to determine object location relative to the plane a weighted average algorithm is used. The linear object location $\overline{x}$ is calculated using the sums over sensor positions $x_i$ and sensor values $v_i$ as weight:
-\[\overline{x}=\frac{\sum^n_{i=1}{v_i x_i}}{\sum^n_{i=1}{v_i}}\]
-
+\begin{equation}
+\overline{x}=\frac{\sum^n_{i=1}{v_i x_i}}{\sum^n_{i=1}{v_i}}
+\end{equation}
 Using similar methods we are able to determine the location of multiple objects or additional dimensions of the position.
 However, it is possible to use other information in the fusion process as well. The electrode material may result in a different response and thus should be treated differently in a fused data representation and can be weighted. Another example is the shape of the electrode that may result in different responses. How to apply sensor data fusion is strongly depending on the application and the desired common representation that is most suitable for subsequent calculations.
 
@@ -226,10 +217,10 @@ Throughout the years various methods have been suggested for supporting multi-ob
     \toprule
     \textbf{Name} & \textbf{Description} \\
     \midrule
-    \textbf{Data-driven  methods} & Directly associate input data to output features using various methods, e.g. machine learning and training data \\
-    \textbf{Model-driven methods} & Input data is manipulating a pre-defined model of the system that is latter mapped to the output \\
-    \textbf{Neural networks} & Computational models using a network of neuron-like objects that are often used in machine learning \\
-    \textbf{Pattern recognition} & Methods that look for certain patterns in a set of input data \\
+    \textbf{Data-driven  methods} & Directly associate input data to output features using various methods, e.g. machine learning and training data \\ \addlinespace
+    \textbf{Model-driven methods} & Input data is manipulating a pre-defined model of the system that is latter mapped to the output \\ \addlinespace
+    \textbf{Neural networks} & Computational models using a network of neuron-like objects that are often used in machine learning \\ \addlinespace
+    \textbf{Pattern recognition} & Methods that look for certain patterns in a set of input data \\ \addlinespace
     \textbf{Semantic mapping} & Methods to realize object tracking for a single detectable object \\
     \bottomrule
     \end{tabular}%
@@ -245,7 +236,7 @@ Throughout the years various methods have been suggested for supporting multi-ob
 %Semantic mapping	Methods to realize object tracking for a single detectable object
 
 \paragraph{Feature recognition}
-Feature recognition is primarily used as a term in image processing, traditionally in computer-aided design applications to recognize specific geometric properties of an object but also picture analysis, e.g. in facial recognition \cite{han2000manufacturing}\cite{belhumeur1997eigenfaces}. 
+Feature recognition is primarily used as a term in image processing, traditionally in computer-aided design applications to recognize specific geometric properties of an object but also picture analysis, e.g. in facial recognition \cite{han2000manufacturing,belhumeur1997eigenfaces}. 
 In the domain of capacitive proximity sensing, feature recognition can be defined as the acquisition of non-location information from any detectable object. An important feature in industrial applications is the material of an object \cite{Baxter1996}. With regards to recognizing additional features a system was presented by Wimmer et al. - Thracker \cite{Wimmer2006}, a prototype augmenting a regular monitor with capacitive proximity sensors. In addition to recognizing hand position the system is able to detect grasp gestures, which can be used to select items on the screen and perform pick and drop operations. Capacitive sensors can also be used to distinguish between persons and a children’s seat on the passenger side of a car \cite{george2009seat}. 
 The methods to recognize the features can be divers, ranging from typical machine learning algorithms, to model-based approaches. An incomplete list is given in Table \ref{tab:rel_feature}. In order to keep this work contained we refrain from a deeper discussion at this point.
 

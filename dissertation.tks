@@ -1,16 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="3">
-    <document hasfocus="true" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/disstemplate.tex" bookmark3="0" master="true" line="50"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/capfloor.tex" bookmark3="0" master="false" line="21"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/classification/tech.tex" bookmark3="0" master="false" line="20"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/classification/discussion.tex" bookmark3="0" master="false" line="44"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/introduction/introduction.tex" bookmark3="0" master="false" line="18"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/smartbed.tex" bookmark3="0" master="false" line="15"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/armrest.tex" bookmark3="0" master="false" line="10"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/capchair.tex" bookmark3="0" master="false" line="15"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/prototypes.tex" bookmark3="0" master="false" line="1"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/captap.tex" bookmark3="0" master="false" line="12"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/magicbox.tex" bookmark3="0" master="false" line="15"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/classification/classification.tex" bookmark3="0" master="false" line="4"/>
-    <document hasfocus="false" bookmark1="0" bookmark2="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/classification/class.tex" bookmark3="0" master="false" line="1"/>
+    <document line="31" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/classification/tech.tex" master="false" hasfocus="false"/>
+    <document line="27" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/capfloor.tex" master="false" hasfocus="false"/>
+    <document line="36" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/magicbox.tex" master="false" hasfocus="false"/>
+    <document line="1" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/smartbed.tex" master="false" hasfocus="false"/>
+    <document line="1" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/capchair.tex" master="false" hasfocus="false"/>
+    <document line="65" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/classification/discussion.tex" master="false" hasfocus="false"/>
+    <document line="0" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/disstemplate.tex" master="true" hasfocus="false"/>
+    <document line="1" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/related/related.tex" master="false" hasfocus="false"/>
+    <document line="327" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/../../Sources/Dissertation.bib" master="false" hasfocus="false"/>
+    <document line="32" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/introduction/introduction.tex" master="false" hasfocus="false"/>
+    <document line="35" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/captap.tex" master="false" hasfocus="false"/>
+    <document line="1" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/prototypes.tex" master="false" hasfocus="false"/>
+    <document line="1" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/armrest.tex" master="false" hasfocus="false"/>
+    <document line="1" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/classification/class.tex" master="false" hasfocus="false"/>
+    <document line="3" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/related/applications.tex" master="false" hasfocus="false"/>
+    <document line="238" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/related/electric.tex" master="false" hasfocus="false"/>
+    <document line="4" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/classification/classification.tex" master="false" hasfocus="false"/>
+    <document line="26" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/related/sensor_tech.tex" master="false" hasfocus="true"/>
+    <document line="0" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/concept/domains.tex" master="false" hasfocus="false"/>
+    <document line="10" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/related/capapps.tex" master="false" hasfocus="false"/>
+    <document line="0" bookmark1="0" bookmark2="0" bookmark3="0" file="C:/Users/andbraun.IGD/Dropbox/WorkPrivShare/Dissertation/Draft/appendix.tex" master="false" hasfocus="false"/>
 </TexmakerSession>

@@ -17,12 +17,16 @@ Using long wire electrodes may result in considerable noise and influence from o
 \label{fig:capfloor_shapes}
 \end{figure}
 The fall detection is using a time-series analysis of the aggregated values of the sensors that are currently detecting an object. This method is using the assumption that the overall sensor response is roughly equivalent to the shape of the object that is closest to the surface, resulting in a higher capacitance of the overall system, similar to the plate capacitor model. This effect is shown in Figure \ref{fig:capfloor_shapes}. The sum $s$ of all n sensor values $r$ is the closest equivalent to the system capacitance and therefore a viable measure. If the overall value is beyond a certain threshold $v_l$ we can consider a lying person $p_l$.
-\[s=\sum^n_{i=0}{r_i}\ \ \ ,\ \ \ p_l=\left\{ \begin{array}{c}
+\begin{equation}
+s=\sum^n_{i=0}{r_i}\ \ \ ,\ \ \ p_l=\left\{ \begin{array}{c}
 1,\ \ \ s\ge v_l \\ 
 0,\ \ \ s<v_l \end{array}
-\right.\] 
+\right.
+\end{equation}
 In order to increase the robustness this threshold has to be exceeded for a certain amount of time $t_m$. In consequence a fall $f$ is detected if the following equation is 1.
-\[f=\prod^{t_m}_{j=0}{p_{l,t_j}}\]
+\begin{equation}
+f=\prod^{t_m}_{j=0}{p_{l,t_j}}
+\end{equation}
 \subsection{Evaluation}
 \begin{figure}[h]
 \centering

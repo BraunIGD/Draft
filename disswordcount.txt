@@ -1,0 +1,1457 @@
+﻿Application of electric field sensing systems in
+smart environments
+dem Fachbereich Informatik
+der Technischen Universität Darmstadt
+vorzulegende
+DISSERTATION
+zur Erlangung des akademischen Grades eines
+Doktor-Ingenieurs (Dr.-Ing.)
+von
+M.Sc. Andreas Braun
+geboren in Aschaffenburg, Deutschland
+Referenten der Arbeit: Prof. Dr. techn. Dieter W. Fellner
+Technische Universität Darmstadt
+Prof. XXX
+affiliation of Prof. XXX
+Tag der Einreichung: 27/12/2013
+Tag der mündlichen Prüfung:
+Darmstädter Dissertation
+D 17
+Erklärung zur Dissertation
+Hiermit versichere ich die vorliegende Dissertation selbständig nur mit den angegebenen Quellen und Hilfsmit-
+teln angefertigt zu haben. Alle Stellen, die aus Quellen entnommen wurden, sind als solche kenntlich gemacht.
+Diese Arbeit hat in gleicher oder ähnlicher Form noch keiner Prüfungsbehörde vorgelegen.
+Darmstadt, den 27/12/2013 Andreas Braun
+ii
+Abstract
+Summarize the thesis in 1/2–1 page.
+iii
+iv
+Zusammenfassung
+Describe in German in 6–10 pages your thesis. This is compulsory for EN written thesis. Zusammenfassung auf
+Deutsch.
+v
+vi
+Contents
+1. Introduction 1
+1.1. Motivation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 1
+1.2. Research Challenges . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 2
+1.3. Contributions . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+1.4. Acknowledgments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 3
+2. Related Work 5
+2.1. Electric field sensing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+2.1.1. Physical properties . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 5
+2.1.2. Proximity sensing versus touch sensing . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+2.1.3. Measuring modes . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 7
+2.1.4. Materials and geometry . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 8
+2.1.5. Data processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 11
+2.2. Capacitive proximity sensing applications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 15
+2.2.1. A brief history of capacitive proximity sensing . . . . . . . . . . . . . . . . . . . . . . 15
+2.3. Sensor systems in smart environments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 16
+2.3.1. RGB cameras . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+2.3.2. Infrared cameras . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+2.3.3. Ultrasound sensors . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+2.3.4. Microphone arrays . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+2.3.5. Radiofrequency sensing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+2.4. Applications in smart environments . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+2.4.1. Location-aware services . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+2.4.2. Natural interfaces . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+2.4.3. Health monitoring . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 17
+3. Application domains for capacitive proximity sensors 19
+3.1. Overview of application domains in smart environments . . . . . . . . . . . . . . . . . . . . . 19
+3.2. Evaluation model . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+3.3. Discussion and selection . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 19
+4. Prototypes 21
+4.1. CapFloor . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 21
+4.1.1. Data processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.1.2. Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 22
+4.2. Smart Bed . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 23
+4.2.1. Data processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 24
+4.2.2. Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 25
+4.3. The Capacitive Chair . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+vii
+Contents
+4.3.1. Data processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 26
+4.3.2. Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+4.4. Active Armrest . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+4.4.1. Data processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 28
+4.4.2. Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 29
+4.5. Magic Box . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+4.5.1. Data processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 30
+4.5.2. Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 31
+4.6. CapTap . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 32
+4.6.1. Data processing . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 33
+4.6.2. Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 34
+5. Classification of capacitive proximity sensors in smart environments 37
+5.1. Classification of capacitive proximity sensors . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+5.2. Comparison to other sensing technologies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 37
+5.3. Discussion . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+5.3.1. Limitations . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 39
+5.3.2. Benefits . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 41
+5.3.3. Guidelines . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 43
+6. Indoor localization in smart environments 45
+6.1. Background . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+6.1.1. Technologies . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+6.1.2. Smart Environment applications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+6.2. AmbiTrack . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+6.2.1. EvAAL . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+6.2.2. System Design . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+6.2.3. Prototype . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+6.2.4. Evaluation . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 45
+7. Conclusions and Future Work 47
+A. Publications and Talks 49
+A.1. Publications . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 49
+A.2. Talks . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 50
+B. Supervising Activities 51
+B.1. Diploma and Master Thesis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+B.2. Bachelor Thesis . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . 51
+C. Curriculum Vitae 53
+Bibliography 55
+viii
+1. Introduction
+Smart environments are comprised of numerous sensing and computing devices that are supporting a number
+of users in this environment on performing their tasks. Capacitive sensors are a technology that uses electric
+fields to sense the presence and certain properties of the human body. In this work I present an overview of
+this technology, how it can be applied in different relevant application scenarios and based on various prototypes
+evaluate the particular benefits and limitations of this sensing technology.
+1.1. Motivation
+In the last decade the way we interact with computing machines has changed in a profound fashion. Today more
+than one billion people operate a smartphone, enabling ubiquitous access to communication tools, processing
+power and information. The vision of ubiquitous computing as proposed by Mark Weiser in the early 90s is
+inching closer to reality [Wei91]. The required technologies of
+"cheap, low-power computers that include equally convenient displays, a network that ties them all
+together, and software systems implementing ubiquitous applications"
+are now existing in the form of smartphones and tablets that are connected to the internet, using high-speed
+connections such as LTE and web-based services such as Google Now, that combine numerous data sources to
+provide personalized services.
+While the vision and underlying ideas remain similar other names have been used in research, including
+Pervasive Computing and Ambient Intelligence. The concept has been expanded to not only consider devices
+that can be directly manipulated, but include determining the situation and reacting based on it. This context-
+aware computing proposes
+"systems that examine and react to an individual’s changing context. Such systems can promote and
+mediate people’s interactions with devices, computers, and other people" [SAW94]
+Different forms of context can be distinguished, ranging from location and the actual system state, to different
+activitiesoreventhecurrentmoodoftheuser. Inordertoacquirethiscontext, theinput-and-outputbasedsystems
+originally proposed by Weiser, are augmented by an ensemble of devices that are very small (dust), coordinate in
+massive numbers (clay) or are flexible, unobtrusive extensions to everyday objects (fabric) [Pos11]. This devices
+can be invisibly integrated into our everyday environment and provide sensing capabilities that can be used by
+sufficiently smart systems. Examples of these devices are microelectromechanical systems (MEMS) or bendable
+technology, such as OLED screens. The number of computation and sensing devices that we carry with us is
+growing continuously, yet we want the technology to further disappear, allowing us to focus on the application
+instead of the underlying technology.
+The famous science fiction author Arthur C. Clarke proposed three laws of prediction, the third of which is
+"Any sufficiently advanced technology is indistinguishable from magic." [Cla62]
+Capacitive proximity sensing allows us to measure the influence of the human body (or conductive objects in
+general) on an electric field. While we would not call this technology magic, a peculiarity of electricity is that
+1
+1. Introduction
+humans have no specific sensing organs, thus we generally remain unaware of their presence, unless the field
+strength is very high. Consequently, when interacting with capacitive sensors there is no awareness of what
+they are sensing unless it is specifically exposed to the user. The technology is well-understood and varieties
+have become ubiquitous in some areas, such as touch screens. However, there are numerous other applications
+for this technology, ranging from industrial fluid level and material detection, to presence detection for cars. A
+particularly interesting domain for this sensing technology are smart environments that provide services based
+on unobtrusively acquired information about persons currently acting in this environment. There are numerous
+sensing technologies that provide similar detection capabilities. Looking at the recognition of simple activities,
+such as standing, walking and lying, cameras and accelerometers can lead to the same result. Accordingly, in
+order to discuss the use a sensing technology within a specific domain, it is necessary to provide a benchmark that
+takes into account abstracted sensor properties and different application domains. In this work we will provide
+a generic benchmark model for different sensor technologies in smart environments and based on this discuss
+the use of capacitive proximity sensor technologies in this area. We will establish the most suited application
+domains and provide prototypes to evaluate different aspects.
+1.2. Research Challenges
+In the past there have been numerous great works that gave an overview of technologies and applications in smart
+environments. Cook et al. identified common technologies, frameworks and applications in this domain and
+give an overview of ongoing research. Poslad specified a more detailed taxonomoy of device classes, provides
+concepts for interaction between humans and environments and gives an overview of intelligent systems. A
+different category of previous work details the different sensing technologies that are supporting various different
+applications and give an overview of limitations and benefits. However, so far there has been no work that
+provides a benchmark that maps different sensor characteristics to applications in smart environments. As it was
+stated by Cook et al.:
+"Finally, a useful goal for the smart environment research community is to define evaluation mech-
+anisms. While performance measures can be defined for each technology within the architecture
+hierarchy [...], performance measures for entire smart environments still need to be established. This
+can form the basis of comparative assessments and identify areas that need further investigation."
+In this work, we will contribute to this challenge and provide a benchmark based on methods previously pre-
+sented by x. Using this benchmark we can identify application domains that are particularly suited for capacitive
+proximity sensors and provide a tool that allows researchers to select a suitable sensing technology for the given
+application.
+The past few years have seen several emerging trends in computing, ranging from an increased connectivity
+of devices, driven by the Internet of Things, ubiquitous usage of mobile computing and sensing devices in the
+form of smartphones and tablets, and novel, natural interaction paradigms, that aim to provide human-machine
+interaction similar to interpersonal communication means.
+Driven by improved embedded technology, materials and an increase in computing power, it is possible to
+provide integrated systems based on capacitive proximity sensing that contribute novel aspects to several of these
+trends. Inthelastyearswehavecreatedvariousprototypesintheidentifiedapplicationdomainsandappliedstate-
+of-the art sensor technology and novel algorithms. In this process we are able to provide numerous improvements
+to previously presented systems and enable new applications. Based on this it is possible to provide a thorough
+review of capacitive proximity sensing technology in the domain of smart environments.
+2
+1.3. Contributions
+1.3. Contributions
+• Identification of application domains in smart environments
+• Develop benchmark model for mapping sensor features to smart environments
+1.4. Acknowledgments
+While many consider writing a PhD to be a mostly personal endeavor there are always various sources of dis-
+course, collaboration, support and inspiration. So in no particular order there are various persons or groups of
+persons that deserve credit:
+3
+1. Introduction
+4
+2. Related Work
+In this section I will describe the most relevant works that inspired this work or are linked to a specific topic.
+The aim of this section is to provide a basis for both, the benchmarking model that is developed in section 3, and
+the capacitive proximity sensing prototypes described in section 4. The related works are distinguished into four
+distinct parts. At first I will give a general introduction to electric field sensing, including a discussion on different
+properties, physical background, the influence of materials and geometry and different data processing methods.
+Afterwards I will present relevant applications using capacitive proximity sensing, ranging from historical works
+to very recent systems. In the next section various sensing technologies are introduced that are used in smart
+environment systems. Finally I will identify and group different applications in smart environments, providing a
+basis for the benchmarking model.
+2.1. Electric field sensing
+Different electric charges apply either a repelling or attracting force to each other. For any point in space these
+forces have a distinct direction and magnitude. The resulting collection of force vectors is called the electric
+field. Conductive objects that are present in this area modify the properties of the field. Electric field sensing
+enables measuring field properties at a certain point in space. Using continuous monitoring it is possible to
+gather information about conductive objects passing through the field by associating measured disturbances to
+properties of the object. It is possible to gather a multitude of different information about a project. In this
+section I will give an overview of the physical background, different measurement modes and how to process
+data acquired by digital sensors.
+2.1.1. Physical properties
+A complete overview about the electrostatic principles of capacitive proximity sensing can be found in the book
+by Baxter [Bax96], chapters 2 and 6. We will give a very brief introduction to this topic in the following section.
+ThebasicsetupofatypicallyusedsensorisshowninFigure2.1. TheproximitycapacitanceC x canbedetermined
+Figure 2.1.: Black box setup of a capacitive proximity sensor
+5
+2. Related Work
+using a combination of serial and parallel circuits of capacitors, resulting in the following equation:
+C x =
+?
+C hb +
+C h C b
+C h +C b
+? − 1
+1
+C fe
+! − 1
+(2.1)
+Additionally there are parasitic capacitance components, i.e. disturbing capacitance values within the system.
+Sources are:
+• Sensing electrode capacitance
+• Capacitance between sensing electrode and ground plane
+• Intercapacitance between neighboring traces on the board
+The present parasitic capacitancesC par amount to values approximately between 10pF and 300pF and are there-
+fore considerably larger than the value of the proximity capacitance Cx, being between 0.1pF and 10pF. The
+total capacitance sensed is the sum of parasitic and proximity components.
+C S =C X +C par (2.2)
+It is obvious that this parasitic capacitance is considerably higher than the capacitance induced by an ap-
+proaching object. However, this parasitic capacitance is typically static and can therefore be calibrated in a way
+not affecting the measurement. Now we will shortly discuss how we can estimate the capacitance of common ob-
+Figure 2.2.: Capacitive sensing procedure
+jects that approach the sensor. Any object exhibits capacitance in respect to infinity. Surveying simple geometric
+shapes this capacitance is analytically determinable, e.g.:
+C = 8ε 0 rDisk (2.3)
+C = 4πε 0 rSphere (2.4)
+ε 0 is the vacuum permittivity and r the respective radius. This free space capacitance is increasing as soon as
+another object is approaching, caused by the capacitance of this second object, resulting in mutual capacitance.
+Looking at generic formulas, determining capacitance between parallel plates this behavior can be described
+analytically.
+C =
+Q
+V
+C = ε 0 ε r
+A
+d
+(2.5)
+6
+2.1. Electric field sensing
+The capacitance is directly proportional to the plate area A and inversely proportional to the distance d between
+the plates, with ε r being the relative static permittivity of the dielectric between the plates. Sensor electronics
+are grounded with the body acting as ground itself. The sensor plate is continuously charged using a constant
+voltage V. A higher capacitance allows the system to hold a larger charge. If the system is connected to the
+ground, the sensor capacitor is discharged through a resistor. The resulting voltage is depending on the available
+charge, shown in the equation above. Furthermore the required time to discharge the capacitor is increased. This
+process is symbolized in Figure 2.2.
+2.1.2. Proximity sensing versus touch sensing
+Figure 2.3.: Different projected capacitive sensing methods based on distance
+The most ubiquitous usage of capacitive sensing technology can be found in touch screens. As the trend
+went from pen-controlled mobile systems to finger controlled devices with the first iPhone in 2007, projected
+capacitance touch is the most prevalent technology for touch screens. It uses various layers of transparent elec-
+trodes or nanowires to detect the mutual capacitance as objects enter the detection area [BO10b]. The com-
+mercially available devices have gained additional abilities over the last few years, leading to the development
+of “floating touch” systems that are able to track fingers in gloves or fingers that are hovering above the sur-
+face [Cyp12,Nok12]. Applications are the usage of mobile devices in cold outdoor temperatures or additional
+navigation fea-tures based on the hovering fingers. In consequence we can distinguish the three different pro-
+jected capacitive sensing methods as shown in Figure 2.3:
+• Touch sensing - densely distributed sensors are tuned to project a weak electric field in order to detect one
+or more objects touching the interactive surface. The sensors have to be close to the surface.
+• Floating touch - densely distributed high-sensitivity sensors are able to detect both touches and very near
+objects (< 2cm) to enable usage using protective gear or additional navigation feature. The sensors have
+to be close to the surface.
+• Proximity sensing - sparsely distributed sensors create a stronger electric field that propagates into space
+in order to detect larger objects, such as hands, that are in proximity of the interactive surface. Achievable
+distances are up to 30 centimeters and the sensors may be applied below thick non-conductive material.
+2.1.3. Measuring modes
+A classic work in the field of capacitive proximity sensing that will be referenced occasionally in this work is
+“Electric Field Imaging” by Joshua Smith [Smi99]. One contribution was the introduction of different measure-
+ment modes in capacitive sensing, as shown in Figure 2.4. Transmit mode is using a transmitting electrode that
+7
+2. Related Work
+Figure 2.4.: Three measurement modes for capacitive proximity sensing [Smi96]
+is coupled to a conductive object; in case of interaction applications typically the human body. The properties
+of an electric field generated with respect to a receiving electrode will therefore be dependent on the distance
+of this body, thus extending the achievable range. Shunt mode similarly uses both a receiving and transmitting
+electrode generating a static field. However, there is no body coupled and any conductive object will ground the
+field, thus reducing the energy stored, which is measured. This setup is able to work with various transmitters
+on a single receiver, enabling a higher amount of virtual sensors using limited hardware. The third measurement
+mode is called loading mode. An oscillating field is induced on a single electrode measuring the capacitance rel-
+ative to the environment. Any approaching grounded object results in an increased capacitance that is measured
+periodically.
+2.1.4. Materials and geometry
+Two major factors that have to be considered when designing an application based on capacitive sensors are the
+materials and geometry of the electrodes performing the measurements. The material of the electrode should be
+picked according to the desired application, i.e. if the interaction device has a flexible surface, conductive thread
+could be used, if it is solid and opaque, the application of solid metal electrodes is viable. Additionally there are
+other options for transparent materials. While we traditionally associate solid metals to antennas and electrodes
+this view can no longer be upheld. Transparent conductive layers have been in use for decades now, e.g. in car
+windows or solar technology. They typically rely on metal oxide layers, polymer layers or in recent years carbon
+nanotubes [MPLK05]. The most common technology for usage in displays is projected capacitive touch that uses
+a multi-layer design of insulated ITO electrodes that are able to detect the movement of several objects close to
+the surface [BO10b]. However, they are typically tuned to allow operation within a small distance of 1cm or less.
+However, they are typically tuned to allow operation within a small distance of 1cm or less. One recent work was
+evaluating different types of electrode materials in terms of their spatial resolution at different distances between
+object and electrode [GPBB ∗ 13], focusing on larger distance proximity measurements. They benchmarked both
+ITO and PEDOT:PSS. The first is a thin layer of indium-titanium-oxide, a highly conductive metal layer that
+possesses good optical properties. PEDOT:PSS is a conductive polymer that has a lower conductivity and slightly
+less appealing optical properties. In conclusion they evaluated that while copper has still the best properties,
+at least ITO can be considered a suitable alternative in applications that require optical clarity, as shown in the
+achievable spatial resolution given in Figure 2.5. The most common technology for usage in displays is projected
+capacitive touch that uses a multi-layer design of insulated ITO electrodes that are able to detect the movement of
+several objects close to the surface [BO10b]. However, they are typically tuned to allow operation within a small
+distance of 1cm or less. Another area that is strongly influenced by the intended application is the geometry,
+whereas the electrode is considered the part of the electronics directly attached to the measurement circuit. This
+may range from simple straight wires or plate electrodes to complex optimized multidimensional structures
+specifically designed for a single task. Even though it is aimed at touch or near-proximity sensing we will give a
+8
+2.1. Electric field sensing
+Figure 2.5.: Spatial resolution of different materials at various distances [GPBB ∗ 13]
+short overview of multi-layer designs for touch screens that have been reviewed by Barrett and Omote [BO10a].
+They are designed to measure mutual capacitance, i.e. the resulting capacitive properties between a sending and
+a receiving electrode that are intersecting. If a sensible excitation and measuring process is used, multiple nearby
+objects may be reliably detected. A simple example is two layers of perpendicular straight line electrodes - used
+Figure 2.6.: Examples of multilayer layouts for touch screens - grid (a), interlocking diamonds (b) and trade-
+marked complex patterns (c) [BO10a]
+by the first iPhone (Figure 2.6 - a). Another example uses an interlocking diamond shape [DL01] to create a good
+spatial coverage (Figure 2.6 - b). Finally, there are numerous other complex patterns that are often trademarked
+by the companies that have developed the respective controller. One example is given in (Figure 2.6 - c).
+Capacitive proximity sensing applications are typically less concerned about intricate designs, but instead use
+varying electrode sizes and placement over a larger area. As previously mentioned the purpose of capacitive
+9
+2. Related Work
+proximity sensing is the detection of objects and their properties. There are numerous factors that can influence
+the geometrical layout, but they can be abstracted into the following categories:
+• Number of objects
+• Object size
+• Desired spatial resolution
+Going back to our example of touch screens, we have small objects, a higher number of those (usually up to 10)
+and require a high spatial resolution to select small items on the screen. The result is a fine multilayer grid, using
+mutualcapacitancetosimplifymulti-objectrecognition, fineelectrodespacingtoachieveahighspatialresolution
+and thin or transparent electrodes to guarantee good optical properties. A similar rationale can be applied to other
+applications. If we take the smart couch by Große-Puppendahl et al. the aim is to detect the presence and posture
+of one or more persons on a couch [GePMB11]. This necessitates detecting large body parts such as head, torso
+or limbs. There is no fine-grained spatial resolution required, allowing a reduction the number of sensors and
+it was assumed that a maximum of two persons are on the couch. Furthermore the electrodes are placed below
+the upholstery, thus requiring a reasonable detection distance. The resulting electrode placement can be seen in
+Figure 2.7.: Electrode placement below upholstery [GePMB11]
+Figure 2.7. The layout was designed under the additional constriction of using a single sensor kit, supporting
+up to eight electrodes. Regarding placement it is most important to distinguish two persons and different sitting
+positions, thus four electrodes are placed below the sitting area. In the back there are two electrodes spread over
+the entire width to determine the presence of the upper body close to the backrest. The electrodes in the armrests
+determine a head and are primarily suitable for detecting lying positions. In consequence this setup is suitable
+for detecting multiple sitting persons, infer information about their sitting position and recognize lying persons.
+Regarding those postures it showed good results in the prototype’s evaluation [GePMB11].
+A third and final example for the rationale of electrode placement is the TileTrack system by Valtonen et
+al, a capacitive person tracking system using floor tiles [VMV09]. It is a transmit mode system that has the
+transmitting electrodes placed below the floor tiles and the receiving electrodes are placed in the walls of the
+10
+2.1. Electric field sensing
+area. The main goal of the system is the tracking of persons on the surface. Thus the floor area should be mostly
+covered by electrodes to establish a good transmission link to the bodies. The receiving electrodes should be
+able to pick up all signals generated by the body. Valtonen et al. picked wire or plate electrodes that went from
+floor level to a height of 190cm that covers most typical body sizes. While the system has some shortcomings
+with regard to applicability in larger rooms, the design rationale is appropriate for narrow rooms or when only
+movement close to walls has to be detected and had a reasonable precision in their evaluation. Looking at the
+above examples it becomes apparent that the proper selection of materials and geometry is highly depending of
+the desired application. In consequence it is difficult to give generic guidelines independent of the application.
+After reviewing the different application domains in the next section we will revisit this topic in section 5.4.
+2.1.5. Data processing
+Figure 2.8.: Abstracted sensor data processing pipeline
+In order to acquire usable data from any digital sensor an analog signal has to be acquired and processed. A
+simplified typical processing pipeline for this is shown in Figure 2.8. This basic structure is also applicable to the
+processing of capacitive proximity sensor data. The analog signal is the capacitance of an electric circuit that can
+be digitized using different methods, e.g. by using the quantized discharge time of the circuit. In the following
+section some typical steps of raw data processing and high-level processing for capacitive proximity sensors are
+presented and discussed.
+2.1.5.1. Raw data processing
+Raw data processing of capacitive proximity sensor data is primarily intended to compensate for sensor noise
+and environmental influences. Noise is an inherent property of any measurement system and describes random
+unwanted data that is added to a signal. Environmental parameters can have strong influence on the signal of
+a capacitive sensor system. These effecting factors include temperature, humidity, composition of the air, or
+grounded objects in close proximity. There are numerous additional preprocessing steps that can be taken, such
+as different multiplexing methods that may be required in some hardware settings, or signal quantization that
+reduces the outgoing data to a distinct set of values in order to simplify post processing of different applications.
+These will not be further discussed in the scope of this work.
+Noise Reduction In order to deal with noise, some sort of filtering is typically applied. Filtering describes a
+set of methods that attenuate the parts of a signal that are relevant in a given application. In capacitive proximity
+sensing we are dealing mostly with high-frequency noise that is added to the signal. Therefore, low-pass filtering
+can be used to deal with this influence. The most typical examples are average filters that take various samples
+and calculate an average value, and median filters that are sorting a set of samples and select the median element.
+Each of those filters has a plethora of potential adaptations that are not too specific to discuss in this limited
+space. Some adaptations are discussed in the specific prototype sections.
+11
+2. Related Work
+Table 2.1.: Baseline calibrations terms and methods
+Name Description Application
+Initial calibration First set-up of baseline at system start, e.g.
+by taking the average over various samples
+Required for any application
+Static baseline Baseline that does not change at run-time For static environments
+Dynamic baseline Baseline that changes over time For non-static environments
+Drift Change of system response to environmen-
+tal factors at run-time
+-
+Drift compensation Methods to account for occurring drift, by
+changing the baseline value
+Non-static applications
+Recalibration Change of the baseline value at a specific
+point in time given a set of rules
+Non-static applications
+Baseline Calibration A very important aspect of capacitive raw data processing is signal calibration. The
+generated electric field is subject to changes over time, if either intrinsic parameters change or the environment is
+modified. Some specific examples include the electronic components heating up, the environmental temperature
+changing, or objects being moved in and out of detection range. Therefore it is essential to have a well-calibrated
+and adaptive baseline; that is the sensor signal generated in the environment without the presence of any object
+that we want to detect. Again, there are numerous methods to adapt and configure the baseline. We have collected
+a few common terms and methods and give some pointers regarding their application. The results are shown in
+Table 2.1. If a dynamic baseline is used, a set of rules will have to be defined that determines at which points
+Figure 2.9.: Example of baseline reset using a threshold rule
+in time the baseline has to be recalibrated, what specific methods should be used and the set of parameters
+that control the methods. One simple example is to define a threshold level that triggers a baseline calibration,
+as shown in Figure 2.9. The raw signal is above the threshold, indicating the presence of a detectable object.
+Afterwards, it falls back down below the threshold, yet stays for a certain time above the baseline. This triggers
+a reset of the baseline after a certain amount of time.
+2.1.5.2. High-level processing
+High-level processing assumes that we already have calibrated (and possibly normalized) sensor values that are
+used in further steps. The goal of any capacitive sensing application is the acquisition of information about a
+detectable object, e.g. its current position, the material used or the shape. In order to get this information we need
+12
+2.1. Electric field sensing
+to use knowledge about the object and intrinsic properties of the sensor system. In this section we will discuss
+methods to combine data from various sensors using the system properties, how to track the position of an object
+using different methods and how to recognize specific features. An overview of the methods in abridged form is
+given in Table 2.2.
+Table 2.2.: Overview of high-level processing methods for capacitive proximity sensors
+Name Description
+Sensor data fusion Combining sensor data into a
+shared representational format
+Uniform fusion Sensor data fusion that combines all
+data into a single common format
+Heterogeneous fusion Sensor data fusion that combines
+groupsofdatatoservemultiplepur-
+poses
+Object tracking Continuous identification of an ob-
+ject within the systems range
+Single object tracking Methods to realize object tracking
+for a single detectable object
+Multiple object tracking Methods to realize object tracking
+for multiple objects
+Feature recognition Identifying certain parameters of an
+object within the system range
+Sensor data fusion Sensor data fusion in its most general terms describes “the theory, techniques and tools
+which are used for combining sensor data, or data derived from sensory data, into a common representational
+format” [Mit07]. Using the combined information from various capacitive proximity sensors we are able to
+generate high-level information that exceeds the capabilities of a single sensor. We can distinguish uniform
+fusion that uses the information from all involved sensors in one common way or heterogeneous fusion that
+combines groups of involved sensors that serve multiple purposes, yet are attached to a single system. A simple
+example for the latter would be a single large electrode sensor that detects the presence of a hand from a farther
+distance and then a combination of various small electrodes that track single fingers. Sensor data fusion often
+requires taking into account some additional information we possess about the system. A classic example is
+the precision or bias of the sensor. Various methods, e.g. the class of Kalman filters, use weighted information
+from several sensor sources [WB95]. If we know how that a certain sensor is only half as precise as another one
+working in collaborating, the weighting factors can be adapted accordingly.
+One of the most important additional information we use when fusing data of capacitive proximity sensors, is
+the geometric layout of the system. This describes position and size of all electrodes that are integrated. Using
+this information is crucial when trying to localize an object. A simple example would be applying a weighted
+average algorithm on a set of sensors. In order to determine object location relative to the plane a weighted
+average algorithm is used. The linear object location x is calculated using the sums over sensor positions x i and
+13
+2. Related Work
+sensor values v i as weight:
+x =
+∑ n i=1 v i x i
+∑ n i=1 v i
+(2.6)
+Using similar methods we are able to determine the location of multiple objects or additional dimensions of the
+position. However, it is possible to use other information in the fusion process as well. The electrode material
+may result in a different response and thus should be treated differently in a fused data representation and can
+be weighted. Another example is the shape of the electrode that may result in different responses. How to apply
+sensor data fusion is strongly depending on the application and the desired common representation that is most
+suitable for subsequent calculations.
+Object tracking In the previous section about sensor data fusion we have shortly discussed a method to de-
+termine the linear position of a single object using a linear array of capacitive proximity sensor. This is a basic
+example of a group of methods associated to object tracking. In computer vision applications they can be defined
+as “the problem of estimating a trajectory of an object in an image plane as it moves around a scene” [YJS06].
+The analogy to capacitive applications is viable if we consider a 3D scene and a distinct interaction space instead
+of a scene. Capacitive proximity sensors allow the detection of conductive objects within their range. However,
+as this presence is determined indirectly using the influence on an electric field it is not possible to get a direct
+association between the actual distance between sensor and object and the resulting sensor value. The created
+electric field is only analytically descriptive for very specific, theoretic classes of objects [Bax96]. Nonetheless,
+we are able to get a relative distance measurement. If we combine this proximity value using geometric informa-
+tion about the electrode location we can infer the relative position of an object in the sensing area. The weighted
+average method presented in the previous section is one option for relative positioning. Another method is tri-
+lateration, similar to many radio-based localization applications, that uses the known location of three or more
+points and the known distance to the position to be determined. In case of capacitive proximity sensing this
+position is determined relative to the electrodes as there is no absolute distance measurement. A more complex
+example for direct calculation was presented by Smith, who formulated the issue of detecting multiple objects as
+a forward problem and used numerical methods to estimate the position and orientation of two hands [Smi99]. A
+Figure 2.10.: Generic pipeline of probability based methods of capacitive proximity sensing
+second class of methods to track objects is not relying on direct geometrical calculations but instead formulates
+a numerical solution to a probability distribution. The initial assumption is that the probability of an object to
+be at a certain point in the detection area is uniform. The methods then follow a few basic steps, as shown in
+Figure 2.10. At first the probability is updated based on the current sensor readings and a priori knowledge that
+we have about the system. Afterwards we try to fit the objects into the resulting probabilities. This step may
+or may not work, meaning that it may result in no object found. In the latter case the process will have to start
+at the beginning. If an object is found the probability update may use the current object location in the update
+algorithm, thus starting with a non-uniform probability distribution. One example for probability-based object
+recognition using capacitive proximity sensors was presented by Grosse-Puppendahl et al. [GPBKK13]. Using a
+model suggested by Smith the basic idea is using the assumption that an object may be present anywhere, remove
+14
+2.2. Capacitive proximity sensing applications
+regions where no objects can be present and then fit an object into the remaining space. This method additionally
+uses particle filters to track object locations over time. This also allows tracking multiple objects. Throughout the
+years various methods have been suggested for supporting multi-object tracking using capacitive sensors. Touch
+screens often use inversion of the sender signal to reliably detect the positions of multiple points; however, this
+method can’t be used in proximity applications [WF07]. Some of the previously presented methods support the
+tracking of two or more objects. There are still various limitations, particularly if not only the object location but
+also various other features such as rotation should be tracked. This is still an area of ongoing research, leading
+to the next area of high-level processing - feature recognition.
+Table 2.3.: Feature recognition methods
+Name Description
+Data-driven methods Directly associate input data to output features us-
+ing various methods, e.g. machine learning and
+training data
+Model-driven methods Input data is manipulating a pre-defined model of
+the system that is latter mapped to the output
+Neural networks Computational models using a network of neuron-
+likeobjectsthatareoftenusedinmachinelearning
+Pattern recognition Methods that look for certain patterns in a set of
+input data
+Semantic mapping Methods to realize object tracking for a single de-
+tectable object
+Feature recognition Feature recognition is primarily used as a term in image processing, traditionally in
+computer-aided design applications to recognize specific geometric properties of an object but also picture anal-
+ysis, e.g. in facial recognition [HPR00,BHK97]. In the domain of capacitive proximity sensing, feature recog-
+nition can be defined as the acquisition of non-location information from any detectable object. An important
+feature in industrial applications is the material of an object [Bax96]. With regards to recognizing additional
+features a system was presented by Wimmer et al. - Thracker [WHKS06], a prototype augmenting a regular
+monitor with capacitive proximity sensors. In addition to recognizing hand position the system is able to detect
+grasp gestures, which can be used to select items on the screen and perform pick and drop operations. Capac-
+itive sensors can also be used to distinguish between persons and a children’s seat on the passenger side of a
+car [GZBB09]. The methods to recognize the features can be divers, ranging from typical machine learning
+algorithms, to model-based approaches. An incomplete list is given in Table 2.3. In order to keep this work
+contained we refrain from a deeper discussion at this point.
+15
+2. Related Work
+Figure 2.11.: Leon Theremin playing his epnoymous electronic musical instrument [Gli00]
+2.2. Capacitive proximity sensing applications
+2.2.1. A brief history of capacitive proximity sensing
+In the last decades of the 19th and the beginning of the 20th century a considerable number of inventors and
+scientists performed research on the application of electric systems, sparking innovations such as electric light-
+ing, electric motors, telegraphy and radio communication. Lev Sergeyevich Termen or Léon Theremin in the
+American naming was a Russian inventor most famous for designing the theremin. This early electronic musical
+instrument could be played without touch. One hand is controlling the pitch and the other the volume by chang-
+ing the distance to an antenna. Initially designed as a motion detector, this device is transferring the influence of
+the human body on an oscillating electric field to an audible sound [Gli00].
+ElectricfieldimagingwasaresearchfocusattheMITinthe1990s. AresearchgroupintheMediaLabdivision
+including Joseph A. Paradiso, Thomas G. Zimmerman, Joshua R. Smith designed various sensing devices and
+evaluated various applications in HCI [ZSP ∗ 95] [Smi99]. - NEC passenger seat - Paradiso/Smith - Wimmer -
+Touché - Swallowing - Hamburg Gruppe - Finnland Anwendungen
+2.3. Sensor systems in smart environments
+In the most general definition a sensor is a device that transforms a physical property into an observable signal.
+This definition includes traditional systems such as mercury-based thermometers or hair-based hygrometers. Yet
+nowadays we are usually considering digital sensors that transfer the measured property to a binary signal that
+16
+2.4. Applications in smart environments
+can be further processed by computing devices. The number of available sensors is very high, but it is possible
+to restrict them based on application domain. Lewis and Cook et al. [Lew04,CD07] have proposed a collection
+for smart environments focused on wireless sensor networks. The overview is shown in table 2.4.
+Table 2.4.: Sensors for smart environments [CD07]
+Properties Measurand
+Physical properties Pressure, temperature, humidity, flow
+Motion properties Position, velocity, angular velocity, acceleration
+Contact properties Strain, force, torque, slip, vibration
+Presence Tactile/contact, proximity, distance/range, motion
+Biochemical Biochemical agents
+Identification Personal features, RFID or personal ID
+2.3.1. RGB cameras
+2.3.2. Infrared cameras
+2.3.3. Ultrasound sensors
+2.3.4. Microphone arrays
+2.3.5. Radiofrequency sensing
+2.4. Applications in smart environments
+2.4.1. Location-aware services
+2.4.2. Natural interfaces
+2.4.3. Health monitoring
+17
+2. Related Work
+18
+3. Application domains for capacitive proximity
+sensors
+3.1. Overview of application domains in smart environments
+3.2. Evaluation model
+3.3. Discussion and selection
+This chapter describes what do you want to do better :)
+19
+3. Application domains for capacitive proximity sensors
+20
+4. Prototypes
+4.1. CapFloor
+Figure 4.1.: CapFloor sketch - grid layout of electrodes is placed below a floor layer with sensors attached on the
+sides
+CapFloor is a capacitive system for indoor localization and fall detection that is based on a grid array of sensing
+electrodes placed below a floor covering [BHW12]. A sketch of the system is shown in Figure 4.1. The grid is
+comprised of insulated wires that are placed orthogonal to each other. Sensors are placed on two sides of the
+room. Each sensor is performing loading mode measurements. The system is intended to act as both indoor
+localization system and fall detector. CapFloor can be placed below any non-conductive material, like wood,
+tiles and PVC, if the distance between the wires and the floor surface is not too high. It can discriminate between
+a foot being above an electrode or a whole body. Combining this information from various sensors we are able to
+get a reliable detection of lying, sitting and standing persons. Using only two sides of the room for sensors it is
+possible to cut the wires without considerably affecting the signal; allowing easy installation in non-rectangular
+rooms. Accordingly CapFloor is able to be used in various application scenarios. Indoor Localization in the
+home domain can be useful in energy saving and fall prevention by appropriately activating and deactivating
+the environment lighting. It can also be used in security-restricted areas to detect unauthorized movement. The
+fall detection should be used in a system that has various levels of escalation. E.g. it is not easy to distinguish
+between a person doing exercises on a floor and a person that has fallen down. Accordingly the system should
+query if the person is well and not autonomously call for outside help.
+21
+4. Prototypes
+4.1.1. Data processing
+Using long wire electrodes may result in considerable noise and influence from outside electric fields. Therefore
+CapFloor requires preprocessing to reduce the noise and achieve a more robust high-level data processing. The
+localization uses the weighted average algorithm that has been presented previously. The fall detection is using
+Figure 4.2.: Shapes of a standing and lynig person on top of the CapFloor grid
+a time-series analysis of the aggregated values of the sensors that are currently detecting an object. This method
+is using the assumption that the overall sensor response is roughly equivalent to the shape of the object that is
+closest to the surface, resulting in a higher capacitance of the overall system, similar to the plate capacitor model.
+This effect is shown in Figure 4.2. The sum s of all n sensor values r is the closest equivalent to the system
+capacitance and therefore a viable measure. If the overall value is beyond a certain threshold v l we can consider
+a lying person p l .
+s =
+n
+∑
+i=0
+r i , p l =
+?
+1, s ≥ v l
+0, s < v l
+(4.1)
+In order to increase the robustness this threshold has to be exceeded for a certain amount of time t m . In conse-
+quence a fall f is detected if the following equation is 1.
+f =
+t m
+∏
+j=0
+p l,t j (4.2)
+4.1.2. Evaluation
+The CapFloor system was evaluated in the scope of the Indoor Localization Track of EvAAL 2011, where it
+participated out of competition [CK12]. In Figure 4.3 we can see a picture of the demonstration setup installed
+in the living lap using the system integrated into different mats that are placed in the environment. The system
+was tuned to detect a single person and was able to perform this reasonably in the areas covered. The resolution
+of the system is strongly depending on the given density of electrode wires. While there is a certain measure
+of proximity, it is not possible to detect objects that are more than a few centimeters away from the wires.
+Later iterations of the system are using higher voltages and shunt mode measurements to improve the tracking
+reliability and enhance the fall detection.
+22
+4.2. Smart Bed
+Figure 4.3.: Floor mats with integrated CapFloor system used at the EvAAL 2011 competition [BHW12]
+4.2. Smart Bed
+The Smart Bed is a regular bed frame that has been equipped with capacitive proximity sensors in order to
+determine occupation, posture and sleep phases [BH12] [DBM13]. A sketch can be seen in Figure 4.4. The
+electrodes are comprised of copper foil that is attached to the flexible wooden panels of the slatted frame. This
+allows the electrodes to be sensitive to both proximity and applied pressure, resulting in a superposed combined
+sensor value that is considerably higher as opposed to proximity measure on its own. The electrodes are equally
+distributed, with four being on both sides of the two person bed. The system is able to determine different sitting
+and lying postures of one or two persons, including less regular lying positions such as diagonal or orthogonal to
+the long side of the bed. Using an analysis of the movement gathered by variation in the sensor signal the sleep
+phases can be analyzed, similar to accelerometer-based systems that are popular for smartphones [KJJ11].
+The Smart Bed can be used for various purposes. A main application is connecting the occupation detection to
+a home automation system and timer in order to activate ambient lighting if the person is get-ting up in the night,
+presumably to find the way to the restroom. Accordingly, in a single person household the lights in unoccupied
+rooms could be turned off in order to conserve energy. In the domain of personal health the Smart Bed is able to
+give the user a feedback on sleep quality based on the sleep phase measurement performed in the night. Another
+potential application is to use the acquired pressure distribution as indicator for back-friendly lying positions that
+may be harmful over a longer period of time [HB10]. The occupation and posture detection relies on a simplified
+body model to approximate the pressure distribution and sensor values to a certain posture [BH12].
+23
+4. Prototypes
+Figure 4.4.: Smart Bed sketch - flexible plate electrode are attached on spring board
+4.2.1. Data processing
+The different components of the Smart Bed data processing are shown in Figure 4.5. Raw sensor data is dis-
+tributed to three different modules, the calibration which is determining the initial parameters for the sensor data
+fusion, the drift compensation that alters those parameters according to long term trends and finally the sensor
+data fusion module that processes the data and does feed it to the occupation & position detection. Calibration
+and drift compensation follow the previously presented model [BH12]. Occupation and position detection is
+performed by dividing the two person bed into left and right and individually calculating for each side the total
+sensor values, assumed center of pressure using weighted average and the standard deviation (Figure 4.6). The
+same calculation is done between the two sides to distinguish where is activity or if one person is lying diago-
+nally. Using these six intermediate values we can now map various poses. If all activity is on one side and the
+horizontal deviation is low, we can assume that one person is sitting. We can additionally use the intermediate
+values to calculate more information, e.g. the exact location a person is sitting at. The data processing for the
+sleep phase recognition is based on detecting the sensor data variations in order to analyze movement. Discrimi-
+nating between sleep phases using movement is a common approach that has been used in the past [SL86]. Using
+a sparse set of sensors it is possible to detect movement by comparing subsequent sensor readings and associate
+it to different sleep phases using different activity profiles. The system is based on the same prototype as the
+posture recognition system [DBM13].
+24
+4.3. The Capacitive Chair
+Figure 4.5.: Data processing components [BH12]
+Figure 4.6.: Calculating centers of pressures and deviation [BH12]
+4.2.2. Evaluation
+The Smart Bed posture recognition is able to successfully distinguish eight typical sitting and lying states. Using
+adaptation of the intermediate values it is possible to fit the state to an actual position on the bed, e.g. a person
+sitting on the right side of the bed state can be modified to any location on that specific side of the bed. Regarding
+the detection of sleep phases there has been an evaluation and benchmarking of three nights [DBM13]. The Smart
+Bed was able to achieve a comparable performance to smartphone applications that detect sleep phases based on
+accelerometers. Figure 4.7 gives an example of movement recordings using the capacitive proximity sensors over
+one night. The activities are grouped into distinct chunks that are later associated to the sleep phases. Currently
+breathing rate detection is added to the Smart Bed that can be used to improve the sleep phase detection and also
+can potentially detect anomalies that may be indicative of a certain health risk.
+25
+4. Prototypes
+Figure 4.7.: Sleep movement data over three hours in one night [DBM13]
+4.3. The Capacitive Chair
+The Capacitive Chair is a regular office chair equipped with eight capacitive proximity sensors that can detect
+differentsittingposturesandwork-relatedstresslevelsbyexaminingmovementandbreathingrate[BF13]. Seven
+solid copper electrodes that are placed below the covering are augmented by a single conductive thread electrode
+that is placed in a mesh on the backrest. In the past smart chairs have used pressure sensors to infer posture and
+occupation [TSPM01]. Combining presence and proximity sensing it is possible to directly infer postures where
+parts of the body do not touch the surface, e.g. if the body is arched towards the front, or if an arm is raised from
+the armrests. Additionally higher area electrodes in the backrest allow detecting the breathing rate by measuring
+the movement of the chest.
+The Capacitive Chair aims at providing different services to a typical office worker and office managers. Using
+the occupation detection it is possible to advise for some type of physical activity, if the time spent in front of the
+screen was too long. The system can also advise the user to change to a more back-friendly posture or regularly
+switch the stance to achieve a more general workout. Using the breathing rate detection we are able to get some
+sort of measure of the current stress level associated to the given working situation. By adapting the environment
+itispossibletoimprovetheworkingatmosphereandreducestress. TheCapacitiveChairusesamultifacetteddata
+processing approach. A machine learning algorithm is associating the sensing data to one of nine different typical
+sitting positions, inspired by a recent study of sitting positions for modern device usage [Inc13]. An adaptive
+body model that is fitted to the current sensor values allows for fine grained adaptation of those postures. Finally
+a combination of Fourier and data variation analysis is calculating the current breathing rate [BF13].
+4.3.1. Data processing
+In Figure 4.9 we can see a screenshot of the Capacitive Chair debug application. On the left side we see a
+3D model that is fitted to a chair model according to the current sensor values, in the middle the results of
+the machine learning module and the recognized posture and on the right side the currently running breathing
+rate detection as both Fourier analysis and signal deviation analysis. All processing methods work on filtered and
+normalizedsensordata. Thedifferenceinshape, materialandsizeoftheelectrodesnecessitatesslightadaptations
+26
+4.3. The Capacitive Chair
+Figure 4.8.: Smart office chair sketch - eight electrodes three in backrest, three on seat and two in armrests
+to noise filtering and data processing. As an example only the conductive thread backrest electrode is used in
+the breathing rate detection. The 3D model is using a simplified human joint model comprised of 13 connected
+components. Based on the current sensor readings, single parts or groups of components are fitted to the virtual
+chair. The process is a mix of posture mapping as found in the smart bed and modification of the dynamic links
+between the single components [BF13]. We use a simple RBF neural network and training data collected by two
+different persons to match the input from eight sensors to nine potential output postures that are associated to
+different working situations. An early observation is that certain postures are difficult to distinguish given the
+limited number of sensors and the similarity of the postures on the rigid chair. Either a higher number of sensors
+or a more versatile chair could be used that allows gathering additional information required to distinguish the
+different poses more reliably.
+The breathing rate detection is operating on a single electrode that is integrated into a mesh on the backrest
+using conductive thread. The setup is shown in Figure 4.10. Consequently the surface of the electrode is large
+and able to pick up the chest movement. Two different methods of data processing are used and fused to get the
+final breathing rate. Using a fast Fourier transformation the signal is transformed into the frequency space. We
+are looking for significant signal portions in frequency areas that can be associated to breathing, between 0.2Hz
+and 10Hz. The second method is to look for zero-crossings of the sensor signal through an adaptive baseline.
+If a person is breathing in the sensor value will decrease resulting in the signal dropping below the long-term
+average, and rise above when the person is breathing out. Accordingly the breathing rate can be calculated by
+counting the zero-crossings.
+27
+4. Prototypes
+Figure 4.9.: Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture
+detection on the upper right and the recognized posture on the lower right
+4.3.2. Evaluation
+4.4. Active Armrest
+The Active Armrest is a prototype to demonstrate unobtrusive gestural interaction in the domain of automotive
+applications [74]. The interior of modern cars can be considered a smart environment as it includes an ensemble
+of sensors and actors that adapt the system behavior according to user preference.
+Many cars use touch screens or jog dials to control primary and secondary car functions [SDKS10]. Capacitive
+proximity sensors allow integrating interactive areas into different existing surfaces of a car, e.g. an armrest. The
+Active Armrest is using a set of eight sensors that are separated into two different groups. There are two larger
+electrodes in the back of the armrest that are dedicated to recognizing the presence of an arm. In the front of the
+armrest there is an array of six small electrode sensors, in order to register finger gestures, as shown in Figure
+4.11. The basic idea is to disallow interaction when the arm is resting and enable it once it’s lifted. The Active
+Armrest supports swiping gestures of a single finger and static holding gestures of two fingers. This allows
+controlling various typical automotive applications, e.g. a navigation application, whereas holding is zooming in
+and out and swipe pan through the maps. Similar applications, such as multimedia features and comfort settings
+can be controlled in a similar fashion.
+4.4.1. Data processing
+As we already mentioned, the Active Armrest electrodes are put into two groups. The data processing for both
+groups is distinctly different. In order to detect the presence of the arm using the two-electrode group a simple
+threshold on the accumulated values is used. The six sensor array in the front (touch area) is using the presented
+weighted average method to calculate finger positions. Additionally a threshold is used to distinguish one and
+two fingers. Overall there is a data processing pipeline as shown in Figure 4.13. The finger tracking and gesture
+recognition will be inactive until it is ensured that no arm is present.
+28
+4.4. Active Armrest
+Figure 4.10.: Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture
+detection on the upper right and the recognized posture on the lower right
+Figure 4.11.: Active armrest sketch - six electrodes for finger gesture detection in front, two for arm detection in
+back
+4.4.2. Evaluation
+In order to evaluate the Active Armrest we have built the prototype shown in Figure 4.12. An aftermarket
+armrest was equipped with an OpenCapSense toolkit. The demonstration application is based on the SenseKit
+debug software supplied with the toolkit. As of now there is a simple USB connection to a nearby PC. Figure
+4.14 shows a screenshot of the finger tracking application on the left, with a two-finger touch registered on
+the upper left part of the touch area. It is interfaced with a TUIO [KBBC05] based maps application using
+OpenStreetMap [HW08] data. The map is moved around using simple swipe movements of the finger that are
+directly associated to pan-features of the demonstration application. Zooming is activated by two-finger hold
+gestures on the upper or lower part of the touch area. We have used public displays of this prototype to get an
+idea of how easily unaffiliated persons learn to use the system. While the majority agreed on the potential of
+the application, there have been some reservations regarding the current gesture set, particularly that a closer
+relationship to smartphone touch screen gestures would be welcome.
+29
+4. Prototypes
+Figure 4.12.: Data processing pipeline of Active Armrest
+Figure 4.13.: Active Armrest prototype, left - outside view, right - detail view of electronics
+4.5. Magic Box
+The so-called MagicBox was our first attempt to create an interaction device based on capacitive proximity
+sensing. It is using an array of six individual wireless capacitive sensors that communicate to a central station
+[BH11]. The electrodes are using a large surface area and are made of aluminum foil. A sketch is shown in
+Figure 4.15. The system is able to track the position of a single hand in three dimensions up to a distance of
+approximately 20cm, and uses different methods to infer gestures from the hand movement. It is designed to
+be a generic interaction device that can potentially be hidden below non-conductive surfaces. As it can be used
+without touching it is also applicable in sterile environments. A suite of demonstration applications has been
+created that showcase typical scenarios for the MagicBox. This includes multimedia applications, like image
+viewer and media player but also a 3D object viewer intended as demonstrator for potential medical applications,
+allowing a surgeon to check MRT or CT images in a sterile environment without touching any surface.
+4.5.1. Data processing
+The first data processing step of the MagicBox is the planar localization of the hand, following the weighted
+average algorithm previously presented. In order to calculate the distance of the hand from the plane we are using
+a piecewise linear interpolation, that resembles the response curve of a single sensor [BH11]. An addition of the
+MagicBox was a generic gesture recognition module based on methods similar to mouse gesture recognition
+[BDK13], albeit adapted for three dimensional locations. The developed debug software allows defining an
+30
+4.5. Magic Box
+Figure 4.14.: Active Armrest demo software, left - finger tracker, right - OSM based navigation application
+Figure 4.15.: MagicBox sketch - six electrodes uniformly distributed below surface
+arbitrary set of potential gestures and adding training data, as shown in Figure 4.17. The module is looking for
+matches based on the most recent set of locations.
+4.5.2. Evaluation
+The MagicBox prototype is based on the Cypress First Touch starter kit [Cor13] and combines six capaci-tive
+sensors communicating wirelessly to a single base station, that are put together with a USB-rechargeable power
+supply into a casing. A concep-tual rendering showing the interaction area and a detail view of the prototype
+electronics are shownin Figure 4.18. The different iterations ofthe MagicBox have been evaluated inconjunction
+with various demon-stration applications. A usability study with 18 per-sons led to general approval of the
+system [BH11]. Two of the applications used in this study are shown in Figure 4.19. On the left is a 3D object
+viewer that has to be controlled by a combination of menu and direct manipulation of the screen content. On the
+right side there is an image viewer that was controlled by gesture to trigger the next/previous images or perform
+zooming operations. The most common positive remarks gathered in this study can be roughly put into three
+groups:
+• The device very intuitive to use
+• The idea of interacting this way is novel and interesting
+• It is easy to control applications with those gestures
+Likewise we identified three main groups for negative comments about the prototype:
+31
+4. Prototypes
+Figure 4.16.: Piecewise linear hand distance estimation [BH11]
+Figure 4.17.: Gesture overview module (left) and gesture recorder (right)
+• The device is not very precise
+• The interaction speed is slow
+• It can be tiring for the arm
+Later iterations have been trying to improve some of the weaknesses presented above, e.g. by using a more
+sophisticatedgesturerecognitionsystemandfastersensorrefreshrates. Accordinglytherewerefewercomplaints
+about interaction speed and precision [BDK13]. However, the final complaint about the device being tiring for
+the arm, requires a different approach, that we are investigating in the final prototype to be presented in this
+system.
+4.6. CapTap
+The CapTap is a large area interaction device unobtrusively integrated into a living room table. It is comprised of
+24 capacitive sensors and a single sen-sor for knock detection that supports selection events within the demon-
+stration applications [80]. In the domain of free-air gestural interaction there are two prevalent challenges. The
+32
+4.6. CapTap
+Figure 4.18.: MagicBox conceptual rendering (left) and detail view of electronics (right) [BH11]
+Figure 4.19.: MagicBox demonstration application - 3D object viewer (left) and image viewer (right) [BH11]
+physical demands of pro-longed interaction with such systems is high [81], [82]. Additionally it is difficult to
+adapt selection events to gestural input. The latter is typically real-ized using time- or position-based gestures
+[81], [83]. There is no trivial solution to these challenges and any approach has to take into account the specific
+application scenario covered. Several systems are trying to provide specific GUIs, while others include additional
+input devices assisting the interaction [84], [85]. CapTap presents an approach to improve the interaction speed
+of invisible input devices based on capacitive proximity sensors. We have developed a method to unobtrusively
+detect knocks on a table equipped with a hand tracking system based on capacitive proximity sensors that allows
+emulating selection events that would typically require an additional time- or movement-based gesture.
+4.6.1. Data processing
+The hand location of the CapTap is similar to the methods presented for the MagicBox. We add the additional
+component of knock detection to provide selection events when touching the surface. Figure 4.20 shows a
+sketch of the knock detection system. The table has a glass plate that is suspended on some rubber supports.
+In the center of the table we attach a small peg (enlarged in sketch) that creates a connection between the glass
+plate and a piezo sensor. If the glass plate starts vibrating from a touch we can measure this using the piezo
+sensor [BF13]. If a notable vibration is measured we are collecting the next 50 samples, resulting in a window
+of 250 milliseconds. To distinguish single and double knocks we calculate the weighted average within this
+window to get a measure for the distribution of sensor values within. If the average is closer to the beginning
+of the window the resulting event should be a single knock, and a double if the average is closer to the end of
+the window. Hand localization and knock detection are working independently and are combined later in the
+33
+4. Prototypes
+Figure 4.20.: CapTap sketch - 24 electrodes placed under table surface
+Figure 4.21.: Suspended peg knock detection system for CapTap [BF13]
+software. It is reasonable to combine this, e.g. to ignore knock events that are occurring without a hand present.
+They may be indicative of a person doing a strong step close to the table.
+4.6.2. Evaluation
+The CapTap prototype is integrated into a common living room table. Some photos can be seen in Figure
+4.22. On the left side we see the 24 electrodes made of non-etched circuit boards. A sensor is attached to
+each. The knock detection box with fixation, housing and piezo sensor is shown on the right side. The overall
+abstracted layout of the prototype is shown in Figure 4.23. The capacitive sensors are con-trolled by three
+OpenCapSense boards; the knock detection is performed on an Arduino Uno microcontroller board. The data
+fusion is outsourced to a Mini-PC that can be placed in the table. Various evaluations have been performed with
+the CapTap. We have benchmarked the hand localization against the Leap Motion, concluding that the algorithm
+works reasonably precise in most parts of the interaction area. The next study was a quantitative study of the
+percentage of correctly recognized knocks, resulting in considerable misattribution of single and double knocks,
+34
+4.6. CapTap
+Figure 4.22.: Detail views of the prototype system: left - electrode and sensors, right - knock detection box
+[BF13]
+Figure 4.23.: Abstracted view of CapTap prototype including capacitive sensing electrodes and knock detection
+sensor [BF13]
+due to strongly varying knocking styles. However, the presence of any knock was detected with a precision of
+about 90% [BF13]. Our main evaluation of the system was concerned with the influence of our knock detection
+on the overall interaction speed of the system. The results concluded that merely adding the knock detection is
+not enough but that additionally the interfaces have to be adapted towards capacitive systems [BF13].
+35
+4. Prototypes
+36
+5. Classification of capacitive proximity sensors in
+smart environments
+Chapter description
+5.1. Classification of capacitive proximity sensors
+Classification
+5.2. Comparison to other sensing technologies
+In order to properly place capacitive proximity sensing in the smart environment domain it is neces-sary to
+include a comparison to other sensing tech-nologies. We have chosen systems that have a broad applicability
+and have been used in various smart environment applications. A short overview can be found in Table 7.
+We have included a comparison of application domains, environmental influences, de-tection range, processing
+complexity and unobtru-siveness of the technology. Capacitive touch sensing, as opposed to capacitive proximity
+sensing relies on an electrode being touched instead of an object being in proximity and is ubiquitous in touch
+screen applications. RGB cameras are a class of image sensors operating in the same frequency domain as the
+human eye. They are capable of processing different colors. Infrared cameras operate in near light frequencies
+that are invisible to the human eye. This allows for application in dark environments and we can project infrared
+light into the scene without disturbing the user. Ultrasound sensing is using a low frequency range just above
+the audible limit of human hearing. The waves propagate similar to sound signals and we can perform reflection
+measurements or time-of-flight methods. Microphone arrays detect signals in the range of human hearing, and
+thus work with audible signals, such as human speech. Radiofrequency (RF) sensing uses signals in a range
+between several hundred kHz up to 5GHz, typically used for wireless communication. Commonly the signal
+strength or time of flight is used to gather information about the environment. Most technologies are capable
+of supporting multiple application domains. Some non-intuitive examples include WiSee that enables whole-
+body gestural interaction using WiFi signals [86] or MoGees that uses a single microphone to enable gesture
+interfaces on various surfaces [87]. Capacitive sensors are disturbed by conductive objects and electric fields,
+whereas cameras struggle with occlusion and additional light sources. Occlusion is a weak point, and a line
+of sight is required. Sound sensors are prone to dampening materials and environmental noise interfering with
+the signal. RF signals usually propagate well through most materials and only external sources may be an
+issue. The detection range of the technologies varies strongly. RF ranges before light, sound and electric fields.
+However, this again strongly depends on apxplication and layout of the sensing devices. It is not easy to find
+a good measure about the processing complexity associated to a different sensing technology. We are using a
+simplified model, taking the dynamic range of a sensor and the number of sensors typically required. Dynamic
+range is the difference between the smallest detectable value and the largest detectable value. Microphones have
+a high dynamic range measuring over a larger frequency scale, whereas touch sensors only have two different
+37
+5. Classification of capacitive proximity sensors in smart environments
+Table 5.1.: Add caption
+Name Application Domains Environmental
+Influences
+Detection
+Range
+Processing
+Complexity
+Unobtrusiveness
+Capacitive
+proximity
+sensing
+indoor localization, smart appli-
+ances, physiological sensing, gestu-
+ral interaction
+electric fields,
+conductive
+objects
+near distance (<
+100cm)
+Few high dy-
+namic range
+data sources
+invisible inte-
+gration possible
+Capacitive
+touch sensing
+smart appliances, physiological
+sensing, gestural interaction
+electric fields,
+conductive
+objects
+touch Few binary sen-
+sors
+thin cover above
+electrodes
+RGB cameras indoor localization, smart appli-
+ances, physiological sensing, gestu-
+ral interaction
+occlusion,
+external lights
+far distance (>
+10m)
+Complex im-
+age processing
+based on resolu-
+tion
+pinhole lenses
+Infrared cam-
+eras
+indoor localization, physiological
+sensing, gestural interaction
+occlusion, ex-
+ternal infrared
+light
+medium dis-
+tance (< 5m)
+Complex im-
+age processing
+based on resolu-
+tion
+infrared source
+and camera
+Ultrasound
+sensing
+indoor localization, smart appli-
+ances, gestural interaction
+acoustic occlu-
+sion, absorbing
+materials
+medium dis-
+tance (< 5m)
+Few low dy-
+namic range
+data sources
+emitter and
+senders with
+exposed pin-
+hole speaker,
+microphone
+Microphone
+arrays
+indoor localization, smart appli-
+ances, physiological sensing
+environmental
+noise, absorbing
+materials
+medium dis-
+tance (< 5m)
+Very high dy-
+namic range
+data sources
+exposed pinhole
+microphones
+Radiofrequency
+sensing
+indoor localization, smart appli-
+ances, gestural interaction
+other RF de-
+vices
+far distance (>
+10m)
+Few low dy-
+namic range
+data sources
+hidden emitters
+andsenderspos-
+sible
+38
+5.3. Discussion
+states. Finally capacitive sensors and RF sensors can be applied completely invisible. Cameras, microphones
+and ultrasound need a direct connection to the out-side world. However, there are very small variants available
+that are barely visible to the naked eye.
+5.3. Discussion
+In the previous sections we have presented back-ground information on capacitive proximity sensors and various
+prototypes of this technology in different application domains within smart environments. In the following
+section we are building on the collected information to perform a meta-analysis of the acquired data, discussing
+benefits and limitations of the technology, compare it to competing technologies and give some guidelines to
+parties interested in developing further applications in this domain.
+5.3.1. Limitations
+Table 5.2.: Overview of capacitive proximity sensing limitations
+Name Examples
+Environmental influence Static electric fields, dynamic electric
+fields, temperature, humidity, conductive
+objects
+Physical range Small differences in capacitance, reduction
+due to influences, physical limitations
+Object detection Small number of data points, a priori
+knowledge
+Despite the potential that has been described in the previous sections there are various limitations of capacitive
+proximity sensing that we can put into the different groups of environmental influence, physical range and object
+detection that will be described in more detail in the following section. A short overview is given in Table 5.2.
+5.3.1.1. Environmental Influence
+One of the main limitations of capacitive proximity sensors is their sensitivity towards environmental influences.
+Any factor that modifies an electric field will also affect the measurement of a capacitive sensor. The current
+environmental parameters, like temperature and humidity are having a considerable effect on the atmosphere
+in which the electric field propagates. However, those changes are usually over a longer period of time and
+can be compensated using a factor for drift, as described in the previous sections about noise reduction. A
+more challenging factor is the other electric devices in the environment that emit stronger electromagnetic fields.
+While persistent sources, such as permanent electric installations can usually be countered using a galvanic
+isolation there are other non-obvious challenges. E.g. we noticed that certain plasma TVs are able to disturb the
+measurement and increase noise levels consider-ably. This change is even varying according to screen content.
+A minor effect is the presence of high-frequency fields that are getting more prevalent in modern IT equipped
+environments. Instead of the 2.4GHz and 5GHz ranges that are often used in wire-less communication, capacitive
+proximity sensors can operate in the range of a few kHz to one MHz. An additional issue might arise when
+39
+5. Classification of capacitive proximity sensors in smart environments
+placing sensors close to each other. The created electric fields may disturb the measurement if some electrodes
+are charged and create fields to adjacent electrodes while they are discharged for measurement. Consequently,
+specificcharge-dischargecyclesormultiplexingmethodshavetobeusedtocounterthiseffect. Amajorchallenge
+is dealing with conductive objects that are permanently placed in the immediate sensing environment. It is
+difficult to distinguish the object we want to detect from a disturbing object, if their influence on the electric field
+is similar. Long term data analysis may help in performing a successful detection. The CapFloor prototype is
+affected by environmental influences the most, given the small size of the electrodes relative to the interaction
+area and the changing environment on top of the floor. We are using a strong noise reduction algorithm and drift
+compensation to create a more stable result while reducing the detection range.
+5.3.1.2. Physical Range
+Figure 5.1.: Reduced angular resolution on smaller, distant objects
+The physical range of the generated electric field is one of the main limiting factors of capacitive proximity
+sensing. In order to detect objects that are further away we have to increase the electric field strength sufficiently.
+This is easier the larger the electrode is, as its potential capacitance is higher. However, this also leads to distant
+objects having an ever smaller influence on the overall capacitance, and we need more precise measurement
+circuits and longer measurement times to improve the signal-to-noise ratio. Additionally, looking at smaller
+objects the angular resolution will decrease as shown in Figure 5.1. This makes it more difficult to get a precise
+localization as the immanent noise leads to an angular error. While this can be compensated using more sensors,
+the far distance would require us to use large electrodes that have to be placed further apart resulting in a huge
+areathatwouldhavetobeequippedwithsensorelectrodes. Ingeneraltheachievableresolutionisnotcomparable
+to vision based system and has to be taken into consideration when designing the specific application. A balance
+between electrode size, physical range and achievable resolution has to be found. The MagicBox size does not
+allow an integration of very large electrodes. Instead we are optimizing the available space in order to achieve a
+detection that lets us detect hands in a distance between 15 and 20 centimeters.
+5.3.1.3. Object Detection
+Object detection using capacitive sensors can be partially compared to object detection using camera systems,
+with a single sensor being equivalent to a single photo sensor. The light intensity measure is comparable to field
+40
+5.3. Discussion
+Figure 5.2.: Same response to differently sized objects (left), different response to varying materials (right)
+intensity and likewise we can’t distinguish if the measurement is caused by a weak source in close proximity or a
+strong source at a further distance. As a practical example the capacitive sensor can’t decide if one hand is close
+to the sensor or two hands are a bit further away. This effect makes it challenging to provide object detection and
+we usually have to combine the information from various sensors to get a good idea about object shape and size.
+Due to the presented challenges in physical range and electrode size, capacitive proximity sensing systems do
+not have the same level of scalability as opposed to cameras, where millions of photo sensors can be placed in
+very small areas. Additionally, the effect of an object on the electric field is not always closely correlated to the
+object dimensions, but instead based on conductivity, material and other factors. We may get the same response
+to different objects at different distances or get a varying on similarly sized objects made of different materials,
+as shown in Figure 5.2. The Active Armrest has gestures for one and two fingers that are distinguished using
+a simple threshold. If another object is entering the field or the person has larger fingers the system will fail to
+properly differentiate gestures. Accordingly some other compensation methods should be used.
+5.3.2. Benefits
+Table 5.3.: Overview of capacitive proximity sensing benefits
+Name Examples
+Versatility Flexible electrode design, scalability, dif-
+ferent sensing methods
+Unobtrusiveness Invisible application, non-disturbing fre-
+quency range
+Processing Complexity Small number of sensors, variable dynamic
+range
+After discussing the various limitations of capacitive proximity sensing, the following section will give an
+overviewofthebenefits. Similartotheprevioussectionwehavethreegroups, namelyversatility, unobtrusiveness
+and processing complexity. Some examples within these groups are shown in Table 6.
+5.3.2.1. Versatility
+A main benefit of capacitive proximity sensing is the versatility in which they can be applied. The flexibility
+of electrode materials, size and geometry allows specifically creating highly individual applications. Example
+41
+5. Classification of capacitive proximity sensors in smart environments
+electrodes include transparent metal oxide layers, woven conductive thread, copper wires, PCB boards or simple
+aluminum foil. The sensors systems are also highly scalable. By choosing appropriate voltages and frequencies
+it is possible to add a high number of sensors to a single object. Using smart measurement windows and different
+multiplexing methods, sensors can be placed close together and electrodes may act as both sender and receiver.
+The different sensing methods presented - loading mode, shunt mode and transmit mode enable a variety of
+different sensing patterns. The human body can be used as both sender and receiver and smart electrode layouts
+allow using a smaller number of processing units. In conclusion, it is possible to add capacitive sensing to
+most everyday objects to enable different forms of interaction, create natural interfaces and smart objects. Our
+prototypes are using different electrode materials, flexible or solid electrodes, conductive thread, wires, shielded
+or non-shielded layouts.
+5.3.2.2. Unobtrusiveness
+Figure 5.3.: Electrodes and sensors hidden below mattress of Smart Bed
+Electric fields are not usually perceived by persons, unless they are of exceptional strength. Furthermore they
+propagate through many materials that we are typically using in our environment, including most plastics, wood
+or tiles. This allows us to invisibly apply capacitive proximity sensors without a strong effect on the measure-
+ment. Application below several centimeters of covering is possible, if the electrodes are designed properly for
+sensing in this distance. The frequency range in which the sensors are operating is usually not in an interval
+that disturbs other electronic systems. Thus it is feasible to use capacitive sensing even in environments, where
+non-disturbance is a main requirement. Additionally the used frequencies are not considered to be biologically
+active, and good results can be achieved using small currents. It is possible to equip most conductive objects
+directly with capacitive proximity sensors and hide them below non-conductive objects with minimal spatial re-
+quirements. Our Smart Bed and Active Armrest prototypes are using sensor sets that are completely invisible
+from the outside and communicate wirelessly to a PC only using a power supply. Figure 5.3 shows the electrodes
+and sensors hidden below the mattress of the Smart Bed.
+42
+5.3. Discussion
+5.3.2.3. Processing Complexity
+An appropriate analogy of capacitive proximity sensors is a single photodiode. As opposed to a light intensity
+we are measuring capacitance. While the information we can gain from such a measurement is limited, the
+processing required to analyze the signal is also low. Performing signal analysis on an array of 16 capacitive
+sensorsiscomparabletoprocessingtheimageofa4x4pixelcamera. Thereforitiseasytocreatehighlyintegrated
+systems with very low-power devices for performing any subsequent data analysis. While it is possible and
+in many cases beneficial to use complex data processing algorithms for object detection it is in most cases
+still possible to replace them with simpler methods for a comparable result. In many applications it is even
+viable to opt for a quantized capacitance measurement. In the case of a touch sensor a single binary measure is
+sufficient. However, it is also possible to select various different levels and reduce the dynamic range to an easily
+computable value that is 4 or 8 Bit long. Depending on the chosen algorithm this dynamic range reduction can
+occur either in pre-processing or high level processing. With the exception of the Capacitive Chair our prototypes
+are using simple data processing methods that can be easily applied on embedded systems. A preferred method
+for object localization is the weighted average algorithm. Regarding model-based data processing, even very
+simple cylindrical models, such as the one used for the Smart Bed, are capable to reliably predict numerous
+postures that are relevant in real world applications. In general, the low requirements for data preprocessing,
+allows dedicating more resources to high level data processing algorithms if the specific application is resource
+con-strained. The OpenCapSense toolkit that is the base for most of our prototypes has a fairly powerful micro-
+controller that is able to implement all of the processing steps - thus enabling highly integrated, low-power
+capacitive proximity sensing prototypes that can be used in smart environment applications.
+5.3.3. Guidelines
+After discussing the limitations and benefits of capacitive proximity sensors, the final section of this chapter will
+give some general guidelines on their application. The first step of this process is a decision if capacitive sensors
+technology is suitable for the given application. This part should be driven by three questions. What do I need
+to measure in my application scenario? Capacitive proximity sensors can measure the presence and properties
+of conductive, grounded objects. This includes the various application scenarios shown in the previous sections.
+However, if the application requires measuring properties of unsupported objects that are non-conductive, a
+different technology should be chosen.
+What sensing technologies are supporting the required measurements?
+It may be the case that multiple technologies sup-port the measurements required in this specific applications.
+Cameras often can provide similar recognition as capacitive sensors, e.g. in indoor localization applications.
+In this step all potential sensing technologies should be collected. Are capacitive proximity sensors beneficial
+for my scenario? An evaluation of the different candidates is the final step and should lead to a decision about
+the most suitable sensing technologies. If the distance is too high for capacitive proximity sensors or enough
+processing power is available and lighting conditions are static, cameras might be more suitable. This should be
+driven by the different benefits and limitations of the technologies. If there is a decision in favor of capacitive
+sensors the next step is to design the specific electrode layout. Similar to technology selection we can use a few
+basic questions to get an idea of what layout to use.
+How many sensors are required to get the measurement?
+The number of sensors required is depending on the area we want to cover, the specific object parameters that
+have to be determined and the desired resolution. The electrodes are inherently limited in size, as a single sensor
+can only charge and discharge to a specific maximum capacity. Therefore, if a large area has to be covered more
+43
+5. Classification of capacitive proximity sensors in smart environments
+electrodes and sensors are necessary. If we just want to measure the presence of a hand a single electrode may
+suffice. If orientation and position are interesting we need to combine measurements from various sensors.
+What should be the size and geometry of the electrodes?
+This is closely related to the previous question. If the application is not restricting the available space, the
+electrode should be approximately of the same size as the object that is to be detected. This generates the highest
+difference in capacitance when the distance is changing.
+What is the best electrode material to use?
+Copper is always a good first choice to create electrodes. If elasticity is necessary we can use copper foil and
+solidcopperifthatisofnoconcern. Fortransparentelectrodeswewillhavetouseoneofthepreviouslypresented
+materials, such as ITO. If electrodes have to be integrated into cloth, conductive thread is a good candidate. Any
+conductive material will act as an electrode, thus the application and budget should be the primary driver of this
+decision.
+Does my application require any shielding?
+Shielding allows detecting only objects approaching from a certain direction. If the application re-quires this
+additional hardware, because it is anticipated that other objects might disturb the measurement, shielding should
+be used. Finally, if the hardware is designed as desired the different variations of data processing have to be
+chosen and configured according to the application. Using baseline calibration is beneficial in the vast majority
+of applications. Having a distinct starting point simplifies all further steps of high-level data processing, such as
+normalization and setting different thresholds. This step may only be omitted in very stable environments and
+if the system has sufficient a priori information to operate on raw data. Drift compensation should be handled
+in a similar fashion. The common methods are not computationally expensive and having a stable baseline
+over time allows the same algorithms to be applied in a more robust fashion. The method and configuration of
+noise reduction are strongly depending on the specific case. Some form of noise reduction might be required in
+most applications. Yet, according to the type of noise different methods can be used. If outliers are an issue a
+median filter is appropriate; if a smoother signal is desired an average filter can be used. Regarding high-level
+data processing there are manifold variations of methods. Data-driven machine learning algorithms are a good
+method if we have a small set of potential outcomes of our applications, e.g. the different postures that could be
+recognized on a chair or couch. If our application has many different potential outcomes, e.g. the thousands of
+potential locations in a hand tracking system, it is typically beneficial to use a model-driven approach. However,
+these models may be supported by data-driven algorithms, such as particle filters. One example is the Swiss-
+Cheese object tracker by Grosse-Puppendahl et al. [GPBKK13]. The data processing examples shown in the
+previous sections give an idea of the decision rationale in various application domains. We can say in conclusion
+that capacitive proximity sensors are a viable, or even, ideal solution for a considerable number of different
+applications. However, a certain level of preparation is required in the design process to create a system that
+benefits from the technology.
+44
+6. Indoor localization in smart environments
+6.1. Background
+6.1.1. Technologies
+6.1.2. Smart Environment applications
+6.2. AmbiTrack
+6.2.1. EvAAL
+6.2.2. System Design
+6.2.3. Prototype
+6.2.4. Evaluation
+45
+6. Indoor localization in smart environments
+46
+7. Conclusions and Future Work
+This chapter summarizes what a great job you did and what could be done if you could do as a second PHD
+thesis :)
+47
+7. Conclusions and Future Work
+48
+A. Publications and Talks
+The thesis is partially based on the following publications and talks:
+A.1. Publications
+1. publication 1
+2. publication 2
+3. ....
+4. publication x
+49
+A. Publications and Talks
+A.2. Talks
+1. talk 1
+2. ...
+3. talk n
+50
+B. Supervising Activities
+The following list summarizes the student bachelor, diploma and master thesis supervised by the author. The
+results of these works were partially used as an input into the thesis.
+B.1. Diploma and Master Thesis
+1. Große-Puppendahl, Tobias - Multi-hand Interaction Using Custom Capacitive Proximity Sensors - MSc
+TU Darmstadt 2012
+2. Berghöfer, Yannick - Human-Machine-Interfaces in Automotive Environments using Capacitive Proximity
+Sensors - MSc TU Darmstadt 2013
+3. Krepp, Stefan - Unobtrusive Surface Touch Recognition using Acoustic Tracking - MSc TU Darmstadt
+2014
+B.2. Bachelor Thesis
+1. Fischer, Arthur - Unterstützung von zielbasierter Interaktion durch gestenerkennende Zeigegeräte - BSc
+TU Darmstadt 2012
+2. Majewski, Martin - Visual-aided Selection of Reactive Elements in Intelligent Environments - BSc TU
+Darmstadt 2012
+3. Neumann, Stephan - Automotive interfaces using an interactive armrest - BSc TU Darmstadt 2014
+51
+B. Supervising Activities
+52
+C. Curriculum Vitae
+Personal Data
+Name Andreas Braun
+Birth date & place 04.10.1982 Aschaffenburg, Germany
+Nationality German
+Education
+2008 – 2010 Master of Science in Computational Engineering at Technical University of Darmstadt, Ger-
+many
+2004 – 2008 Bachelor of Science in Computational Engineering at Technical University of Darmstadt,
+Germany
+2002 – 2004 Study of Physics at Julius-Maximilians Universität in Würzburg, Germany
+Work Experience
+2010 – Researcher, Competence Center Interactive Multimedia Appliances, Fraunhofer Institute for
+Computer Graphics Research, Darmstadt, Germany, Focus: HCI applications in smart envi-
+ronments
+2008 – 2009 Student Assistant, Competence Center Interactive Multimedia Appliances, Fraunhofer Insti-
+tute for Computer Graphics Research, Darmstadt, Germany, Focus: Sensor applications and
+interactive systems
+53
+C. Curriculum Vitae
+54
+Bibliography
+[Bax96] B AXTER L. K.: Capacitive Sensors. Sensors Peterborough NH, 1 (1996), 1–17. 5, 14, 15
+[BDK13] B RAUN A., D UTZ T., K AMIETH F.: Capacitive sensor-based hand gesture recognition in ambient
+intelligence scenarios. In Proceedings of the 6th International Conference on PErvasive Technolo-
+gies Related to Assistive Environments (2013), ACM, p. 5. 30, 32
+[BF13] B RAUN A., F RANK S.: The Capacitive Chair. 2013. 26, 27, 33, 34, 35
+[BH11] B RAUN A., H AMISU P.: Designing a multi-purpose capacitive proximity sensing input device. In
+Proceedings of the 4th International Conference on PErvasive Technologies Related to Assistive
+Environments PETRA 11 (2011), ACM Press. 30, 31, 32, 33
+[BH12] B RAUN A., H EGGEN H.: Contextrecognitionusingcapacitivesensorarraysinbeds. InTechnikfür
+ein selbstbestimmtes Leben - 5. Deutscher AAL-Kongress (Berlin, 2012), VDE VERLAG GmbH.
+23, 24, 25
+[BHK97] B ELHUMEUR P. N., H ESPANHA J. A . P., K RIEGMAN D. J.: Eigenfaces vs. fisherfaces: Recog-
+nition using class specific linear projection. Pattern Analysis and Machine Intelligence, IEEE
+Transactions on 19, 7 (1997), 711–720. 15
+[BHW12] B RAUN A., H EGGEN H., W ICHERT R.: CapFloor – A Flexible Capacitive Indoor Localization
+System. In Evaluating AAL Systems Through Competitive Benchmarking. Indoor Localization
+and Tracking (2012), Chessa S., Knauth S., (Eds.), Communications in Computer and Information
+Science, pp. 26–35. 21, 23
+[BO10a] B ARRETT G., O MOTE R.: Projected capacitive touch screens. Inf. Disp. Mag (2010). 9
+[BO10b] B ARRETT G., O MOTE R.: Projected-capacitive touch technology. Information Display (2010). 7,
+8
+[CD07] C OOK D. J., D AS S. K.: How smart are our environments? An updated look at the state of the art.
+Pervasive and mobile computing 3, 2 (2007), 53–73. 16, 17
+[CK12] C HESSA S., K NAUTH S.: Evaluating AAL Systems Through Competitive Benchmarking. Indoor
+Localization and Tracking, vol. 309 of Communications in Computer and Information Science.
+Springer Berlin Heidelberg, Berlin, Heidelberg, 2012. 22
+[Cla62] C LARKE A. C.: Hazards of prophecy: The failure of imagination. Profiles of the Future, Gollancz,
+London (1962). 1
+[Cor13] C ORPORATION C. S.: CY3271 PSoC R ? FirstTouchTM Starter Kit with CYFiTM Low-Power RF,
+2013. 31
+[Cyp12] C YPRESS : Cypress TrueTouch R ? Touchscreen Solution Drives "Floating Touch" Navigation Fea-
+ture in New Xperia TM sola Smartphone from Sony Mobile Communications. Tech. rep., 2012. 7
+[DBM13] D JAKOW M., B RAUN A., M ARINC A.: MoviBed - sleep analysis using capacitive sensors. 2013.
+23, 24, 25, 26
+[DL01] D IETZ P., L EIGH D.: DiamondTouch. In Proceedings of the 14th annual ACM symposium on
+User interface software and technology - UIST ’01 (New York, New York, USA, Nov. 2001),
+55
+Bibliography
+ACM Press, p. 219. 9
+[GePMB11] G ROSS E P UPPENDAHL T., M ARINC A., B RAUN A.: Classification of User Postures with Ca-
+pacitive Proximity Sensors in AAL-Environments. Ambient Intelligence 7040 (2011), 314–323.
+10
+[Gli00] G LINSKY A.: Theremin: Ether music and espionage. University of Illinois Press, 2000. 15, 16
+[GPBB ∗ 13] G ROSSE -P UPPENDAHL T., B ERGHOEFER Y., B RAUN A., W IMMER R., K UIJPER A.: Open-
+CapSense: A Rapid Prototyping Toolkit for Pervasive Interaction Using Capacitive Sensing. IEEE
+International Conference on Pervasive Computing and Communications (PerCom) 18 (2013), 22.
+8, 9
+[GPBKK13] G ROSSE -P UPPENDAHL T., B RAUN A., K AMIETH F., K UIJPER A.: Swiss-cheese extended: an
+object recognition method for ubiquitous interfaces based on capacitive proximity sensing. In
+Proceedings of the 2013 ACM annual conference on Human factors in computing systems (2013),
+ACM, pp. 1401–1410. 14, 44
+[GZBB09] G EORGE B., Z ANGL H., B RETTERKLIEBER T., B RASSEUR G.: Seat occupancy detection based
+on capacitive sensing. Instrumentation and Measurement, IEEE Transactions on 58, 5 (2009),
+1487–1494. 15
+[HB10] H AMISU P., B RAUN A.: Analyse des Schlafverhaltens durch kapazitive Sensorarrays zur Ermit-
+tlung der Wirbelsäulenbelastung. In 3. Deutscher AAL Kongress (2010), VDE VERLAG GmbH,
+pp. 3–6. 23
+[HPR00] H AN J., P RATT M., R EGLI W. C.: Manufacturing feature recognition from solid models: a status
+report. Robotics and Automation, IEEE Transactions on 16, 6 (2000), 782–796. 15
+[HW08] H AKLAY M., W EBER P.: Openstreetmap: User-generated street maps. Pervasive Computing,
+IEEE 7, 4 (2008), 12–18. 29
+[Inc13] I NC . S.: Global Posture Study, 2013. 26
+[KBBC05] K ALTENBRUNNER M., B OVERMANN T., B ENCINA R., C OSTANZA E.: TUIO: A protocol for
+table-top tangible user interfaces. In Proc. of the The 6th Int’l Workshop on Gesture in Human-
+Computer Interaction and Simulation (2005). 29
+[KJJ11] K REJCAR O., J IRKA J., J ANCKULIK D.: Use of mobile phones as intelligent sensors for sound
+input analysis and sleep state detection. Sensors (2011). 23
+[Lew04] L EWIS F. L.: Wireless sensor networks. Smart environments: technologies, protocols, and appli-
+cations (2004), 11–46. 16
+[Mit07] M ITCHELL H. B.: Multi-sensor data fusion. Springer, 2007. 13
+[MPLK05] M OON J., P ARK J., L EE T., K IM Y.: Transparent conductive film based on carbon nanotubes and
+PEDOT composites. Diamond and related materials 14, 11 (2005), 1882–1887. 8
+[Nok12] N OKIA : Puremotion Technology White Paper. Tech. rep., 2012. 7
+[Pos11] P OSLAD S.: Ubiquitous computing: smart devices, environments and interactions. Wiley. com,
+2011. 1
+[SAW94] S CHILIT B., A DAMS N., W ANT R.: Context-aware computing applications. In Mobile Computing
+Systems and Applications, 1994. WMCSA 1994. First Workshop on (1994), IEEE, pp. 85–90. 1
+[SDKS10] S CHMIDT A., D EY A. K., K UN A. L., S PIESSL W.: Automotive user interfaces: human computer
+interaction in the car. In CHI’10 Extended Abstracts on Human Factors in Computing Systems
+(2010), ACM, pp. 3177–3180. 28
+56
+Bibliography
+[SL86] S ALMI T., L EINONEN L.: Automatic analysis of sleep records with static charge sensitive bed.
+Electroencephalography and Clinical Neurophysiology 64, 1 (1986), 84–87. 24
+[Smi96] S MITH J. R.: Field mice: Extracting hand geometry from electric field measurements. IBM
+Systems Journal 35, 3.4 (1996), 587–608. 8
+[Smi99] S MITH J. R.: Electric field imaging. PhD thesis, Massachusetts Institute of Technology, 1999. 7,
+14, 16
+[TSPM01] T AN H. Z., S LIVOVSKY L. A., P ENTLAND A., M EMBER S.: A sensing chair using pressure
+distribution sensors. Mechatronics, IEEE/ASME Transactions on 6, 3 (2001), 261–268. 26
+[VMV09] V ALTONEN M., M AENTAUSTA J., V ANHALA J.: TileTrack: Capacitive human tracking using
+floor tiles. In IEEE International Conference on Pervasive Computing and Communications (Mar.
+2009), IEEE, pp. 1–10. 10
+[WB95] W ELCH G., B ISHOP G.: An introduction to the Kalman filter, 1995. 13
+[Wei91] W EISER M.: The Computer for the 21st Century. Scientific American 265, 3 (1991), 94–104. 1
+[WF07] W ILSON T. V., F ENLON W.: How the iPhone Works - Multi-touch systems, 2007. 14
+[WHKS06] W IMMER R., H OLLEIS P., K RANZ M., S CHMIDT A.: Thracker - Using Capacitive Sensing for
+Gesture Recognition. In 26th IEEE International Conference on Distributed Computing Systems
+Workshops (ICDCSW’06) (2006), IEEE, pp. 64–64. 15
+[YJS06] Y ILMAZ A., J AVED O., S HAH M.: Object tracking: A survey. Acm Computing Surveys (CSUR)
+38, 4 (2006), 13. 14
+[ZSP ∗ 95] Z IMMERMAN T. G., S MITH J. R., P ARADISO J. A., A LLPORT D., G ERSHENFELD N.: Applying
+electric field sensing to human-computer interfaces. In Proceedings of the SIGCHI conference on
+Human factors in computing systems - CHI ’95 (New York, New York, USA, 1995), no. May, ACM
+Press, pp. 280–287. 16
+57

@@ -17,13 +17,13 @@ Many cars use touch screens or jog dials to control primary and secondary car fu
 \label{fig:armrest_dataproc}
 \end{figure}
 %Figure 25 Data processing pipeline of Active Armrest
-As we already mentioned, the Active Armrest electrodes are put into two groups. The data processing for both groups is distinctly different. In order to detect the presence of the arm using the two-electrode group a simple threshold on the accumulated values is used. The six sensor array in the front (touch area) is using the presented weighted average method to calculate finger positions. Additionally a threshold is used to distinguish one and two fingers. Overall there is a data processing pipeline as shown in Figure \ref{fig:armrest_dataproc}. The finger tracking and gesture recognition will be inactive until it is ensured that no arm is present. 
+As we already mentioned, the Active Armrest electrodes are put into two groups. The data processing for both groups is distinctly different. In order to detect the presence of the arm using the two-electrode group a simple threshold on the accumulated values is used. The six sensor array in the front (touch area) is using the presented weighted average method to calculate finger positions. Additionally a threshold is used to distinguish one and two fingers. Overall there is a data processing pipeline as shown in Figure \ref{fig:armrest_proto}. The finger tracking and gesture recognition will be inactive until it is ensured that no arm is present. 
 \subsection{Evaluation}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{images/armrest_proto}
 \caption{Active Armrest prototype, left - outside view, right - detail view of electronics}
-\label{fig:armrest_dataproc}
+\label{fig:armrest_proto}
 \end{figure}
 %Figure 26 Active Armrest prototype, left - outside view, right - detail view of electronics
 In order to evaluate the Active Armrest we have built the prototype shown in Figure \ref{fig:armrest_dataproc}. An aftermarket armrest was equipped with an OpenCapSense toolkit. The demonstration application is based on the SenseKit debug software supplied with the toolkit. As of now there is a simple USB connection to a nearby PC.

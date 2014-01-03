@@ -15,75 +15,75 @@
 \contentsline {subsection}{\numberline {2.1.4}Materials and geometry}{8}{subsection.2.1.4}
 \contentsline {subsection}{\numberline {2.1.5}Data processing}{11}{subsection.2.1.5}
 \contentsline {subsubsection}{\numberline {2.1.5.1}Raw data processing}{11}{subsubsection.2.1.5.1}
-\contentsline {paragraph}{Noise Reduction}{11}{section*.5}
-\contentsline {paragraph}{Baseline Calibration}{12}{section*.6}
+\contentsline {paragraph}{Noise Reduction}{11}{section*.7}
+\contentsline {paragraph}{Baseline Calibration}{12}{section*.8}
 \contentsline {subsubsection}{\numberline {2.1.5.2}High-level processing}{12}{subsubsection.2.1.5.2}
-\contentsline {paragraph}{Sensor data fusion}{13}{section*.7}
-\contentsline {paragraph}{Object tracking}{14}{section*.8}
-\contentsline {paragraph}{Feature recognition}{15}{section*.9}
+\contentsline {paragraph}{Sensor data fusion}{13}{section*.9}
+\contentsline {paragraph}{Object tracking}{14}{section*.10}
+\contentsline {paragraph}{Feature recognition}{15}{section*.11}
 \contentsline {section}{\numberline {2.2}Capacitive proximity sensing applications}{16}{section.2.2}
 \contentsline {subsection}{\numberline {2.2.1}A brief history of capacitive proximity sensing}{16}{subsection.2.2.1}
 \contentsline {section}{\numberline {2.3}Sensor systems in smart environments}{16}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}RGB cameras}{17}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Infrared cameras}{19}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Ultrasound sensors}{20}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Microphone arrays}{21}{subsection.2.3.4}
-\contentsline {subsection}{\numberline {2.3.5}Radiofrequency sensing}{21}{subsection.2.3.5}
-\contentsline {section}{\numberline {2.4}Applications in smart environments}{21}{section.2.4}
-\contentsline {subsection}{\numberline {2.4.1}Location-aware services}{21}{subsection.2.4.1}
-\contentsline {subsection}{\numberline {2.4.2}Natural interfaces}{21}{subsection.2.4.2}
-\contentsline {subsection}{\numberline {2.4.3}Health monitoring}{21}{subsection.2.4.3}
-\contentsline {chapter}{\numberline {3}Benchmarking model for capacitive proximity sensors in smart environments}{23}{chapter.3}
-\contentsline {section}{\numberline {3.1}Overview of application domains in smart environments}{23}{section.3.1}
-\contentsline {section}{\numberline {3.2}Evaluation model}{23}{section.3.2}
-\contentsline {section}{\numberline {3.3}Discussion and selection}{23}{section.3.3}
-\contentsline {chapter}{\numberline {4}Prototypes}{25}{chapter.4}
-\contentsline {section}{\numberline {4.1}CapFloor}{25}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Data processing}{26}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Evaluation}{26}{subsection.4.1.2}
-\contentsline {section}{\numberline {4.2}Smart Bed}{27}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Data processing}{28}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Evaluation}{29}{subsection.4.2.2}
-\contentsline {section}{\numberline {4.3}The Capacitive Chair}{30}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Data processing}{30}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Evaluation}{32}{subsection.4.3.2}
-\contentsline {section}{\numberline {4.4}Active Armrest}{32}{section.4.4}
-\contentsline {subsection}{\numberline {4.4.1}Data processing}{32}{subsection.4.4.1}
-\contentsline {subsection}{\numberline {4.4.2}Evaluation}{33}{subsection.4.4.2}
-\contentsline {section}{\numberline {4.5}Magic Box}{34}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Data processing}{34}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Evaluation}{35}{subsection.4.5.2}
-\contentsline {section}{\numberline {4.6}CapTap}{36}{section.4.6}
-\contentsline {subsection}{\numberline {4.6.1}Data processing}{37}{subsection.4.6.1}
-\contentsline {subsection}{\numberline {4.6.2}Evaluation}{38}{subsection.4.6.2}
-\contentsline {chapter}{\numberline {5}Classification of capacitive proximity sensors in smart environments}{41}{chapter.5}
-\contentsline {section}{\numberline {5.1}Classification of capacitive proximity sensors}{41}{section.5.1}
-\contentsline {section}{\numberline {5.2}Comparison to other sensing technologies}{41}{section.5.2}
-\contentsline {section}{\numberline {5.3}Discussion}{43}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Limitations}{43}{subsection.5.3.1}
-\contentsline {subsubsection}{\numberline {5.3.1.1}Environmental Influence}{43}{subsubsection.5.3.1.1}
-\contentsline {subsubsection}{\numberline {5.3.1.2}Physical Range}{44}{subsubsection.5.3.1.2}
-\contentsline {subsubsection}{\numberline {5.3.1.3}Object Detection}{44}{subsubsection.5.3.1.3}
-\contentsline {subsection}{\numberline {5.3.2}Benefits}{45}{subsection.5.3.2}
-\contentsline {subsubsection}{\numberline {5.3.2.1}Versatility}{45}{subsubsection.5.3.2.1}
-\contentsline {subsubsection}{\numberline {5.3.2.2}Unobtrusiveness}{46}{subsubsection.5.3.2.2}
-\contentsline {subsubsection}{\numberline {5.3.2.3}Processing Complexity}{47}{subsubsection.5.3.2.3}
-\contentsline {subsection}{\numberline {5.3.3}Guidelines}{47}{subsection.5.3.3}
-\contentsline {chapter}{\numberline {6}Indoor localization in smart environments}{49}{chapter.6}
-\contentsline {section}{\numberline {6.1}Background}{49}{section.6.1}
-\contentsline {subsection}{\numberline {6.1.1}Technologies}{49}{subsection.6.1.1}
-\contentsline {subsection}{\numberline {6.1.2}Smart Environment applications}{49}{subsection.6.1.2}
-\contentsline {section}{\numberline {6.2}AmbiTrack}{49}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}EvAAL}{49}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}System Design}{49}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Prototype}{49}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Evaluation}{49}{subsection.6.2.4}
-\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{51}{chapter.7}
-\contentsline {chapter}{\numberline {A}Publications and Talks}{53}{appendix.A}
-\contentsline {section}{\numberline {A.1}Publications}{53}{section.A.1}
-\contentsline {section}{\numberline {A.2}Talks}{54}{section.A.2}
-\contentsline {chapter}{\numberline {B}Supervising Activities}{55}{appendix.B}
-\contentsline {section}{\numberline {B.1}Diploma and Master Thesis}{55}{section.B.1}
-\contentsline {section}{\numberline {B.2}Bachelor Thesis}{55}{section.B.2}
-\contentsline {chapter}{\numberline {C}Curriculum Vitae}{57}{appendix.C}
-\contentsline {chapter}{Bibliography}{59}{appendix*.10}
+\contentsline {subsection}{\numberline {2.3.3}Ultrasound sensors}{21}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.4}Microphone arrays}{22}{subsection.2.3.4}
+\contentsline {subsection}{\numberline {2.3.5}Radiofrequency sensing}{23}{subsection.2.3.5}
+\contentsline {section}{\numberline {2.4}Applications in smart environments}{24}{section.2.4}
+\contentsline {subsection}{\numberline {2.4.1}Location-aware services}{24}{subsection.2.4.1}
+\contentsline {subsection}{\numberline {2.4.2}Natural interfaces}{24}{subsection.2.4.2}
+\contentsline {subsection}{\numberline {2.4.3}Health monitoring}{24}{subsection.2.4.3}
+\contentsline {chapter}{\numberline {3}Benchmarking model for capacitive proximity sensors in smart environments}{25}{chapter.3}
+\contentsline {section}{\numberline {3.1}Overview of application domains in smart environments}{25}{section.3.1}
+\contentsline {section}{\numberline {3.2}Evaluation model}{25}{section.3.2}
+\contentsline {section}{\numberline {3.3}Discussion and selection}{25}{section.3.3}
+\contentsline {chapter}{\numberline {4}Prototypes}{27}{chapter.4}
+\contentsline {section}{\numberline {4.1}CapFloor}{27}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Data processing}{28}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Evaluation}{28}{subsection.4.1.2}
+\contentsline {section}{\numberline {4.2}Smart Bed}{29}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Data processing}{30}{subsection.4.2.1}
+\contentsline {subsection}{\numberline {4.2.2}Evaluation}{31}{subsection.4.2.2}
+\contentsline {section}{\numberline {4.3}The Capacitive Chair}{32}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Data processing}{32}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Evaluation}{34}{subsection.4.3.2}
+\contentsline {section}{\numberline {4.4}Active Armrest}{34}{section.4.4}
+\contentsline {subsection}{\numberline {4.4.1}Data processing}{34}{subsection.4.4.1}
+\contentsline {subsection}{\numberline {4.4.2}Evaluation}{35}{subsection.4.4.2}
+\contentsline {section}{\numberline {4.5}Magic Box}{36}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Data processing}{36}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Evaluation}{37}{subsection.4.5.2}
+\contentsline {section}{\numberline {4.6}CapTap}{38}{section.4.6}
+\contentsline {subsection}{\numberline {4.6.1}Data processing}{39}{subsection.4.6.1}
+\contentsline {subsection}{\numberline {4.6.2}Evaluation}{40}{subsection.4.6.2}
+\contentsline {chapter}{\numberline {5}Classification of capacitive proximity sensors in smart environments}{43}{chapter.5}
+\contentsline {section}{\numberline {5.1}Classification of capacitive proximity sensors}{43}{section.5.1}
+\contentsline {section}{\numberline {5.2}Comparison to other sensing technologies}{43}{section.5.2}
+\contentsline {section}{\numberline {5.3}Discussion}{45}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Limitations}{45}{subsection.5.3.1}
+\contentsline {subsubsection}{\numberline {5.3.1.1}Environmental Influence}{45}{subsubsection.5.3.1.1}
+\contentsline {subsubsection}{\numberline {5.3.1.2}Physical Range}{46}{subsubsection.5.3.1.2}
+\contentsline {subsubsection}{\numberline {5.3.1.3}Object Detection}{46}{subsubsection.5.3.1.3}
+\contentsline {subsection}{\numberline {5.3.2}Benefits}{47}{subsection.5.3.2}
+\contentsline {subsubsection}{\numberline {5.3.2.1}Versatility}{47}{subsubsection.5.3.2.1}
+\contentsline {subsubsection}{\numberline {5.3.2.2}Unobtrusiveness}{48}{subsubsection.5.3.2.2}
+\contentsline {subsubsection}{\numberline {5.3.2.3}Processing Complexity}{49}{subsubsection.5.3.2.3}
+\contentsline {subsection}{\numberline {5.3.3}Guidelines}{49}{subsection.5.3.3}
+\contentsline {chapter}{\numberline {6}Indoor localization in smart environments}{51}{chapter.6}
+\contentsline {section}{\numberline {6.1}Background}{51}{section.6.1}
+\contentsline {subsection}{\numberline {6.1.1}Technologies}{51}{subsection.6.1.1}
+\contentsline {subsection}{\numberline {6.1.2}Smart Environment applications}{51}{subsection.6.1.2}
+\contentsline {section}{\numberline {6.2}AmbiTrack}{51}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}EvAAL}{51}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}System Design}{51}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Prototype}{51}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Evaluation}{51}{subsection.6.2.4}
+\contentsline {chapter}{\numberline {7}Conclusions and Future Work}{53}{chapter.7}
+\contentsline {chapter}{\numberline {A}Publications and Talks}{55}{appendix.A}
+\contentsline {section}{\numberline {A.1}Publications}{55}{section.A.1}
+\contentsline {section}{\numberline {A.2}Talks}{56}{section.A.2}
+\contentsline {chapter}{\numberline {B}Supervising Activities}{57}{appendix.B}
+\contentsline {section}{\numberline {B.1}Diploma and Master Thesis}{57}{section.B.1}
+\contentsline {section}{\numberline {B.2}Bachelor Thesis}{57}{section.B.2}
+\contentsline {chapter}{\numberline {C}Curriculum Vitae}{59}{appendix.C}
+\contentsline {chapter}{Bibliography}{61}{appendix*.12}

@@ -112,13 +112,6 @@
 \newblock {MoviBed - sleep analysis using capacitive sensors}.
 \newblock 2013.
 
-\bibitem[DF05]{dutta2005utilization}
-\textsc{Dutta T., Fernie G.~R.}:
-\newblock {Utilization of ultrasound sensors for anti-collision systems of
-  powered wheelchairs}.
-\newblock \emph{Neural Systems and Rehabilitation Engineering, IEEE
-  Transactions on 13}, 1 (2005), 24--32.
-
 \bibitem[DL01]{Dietz2001a}
 \textsc{Dietz P., Leigh D.}:
 \newblock {DiamondTouch}.
@@ -236,11 +229,11 @@
 \newblock \emph{{Puremotion Technology White Paper}}.
 \newblock Tech. rep., 2012.
 
-\bibitem[OHR13]{ochiai2013reflective}
-\textsc{Ochiai Y., Hoshi A. O.~T., Rekimoto J.}:
-\newblock {Reflective, deformable, colloidal display: a waterfall-based
-  colloidal membrane using focused ultrasonic waves}.
-\newblock In \emph{ACM SIGGRAPH 2013 Posters} (2013), ACM, p.~49.
+\bibitem[OHR13]{ochiai2013three}
+\textsc{Ochiai Y., Hoshi T., Rekimoto J.}:
+\newblock {Three-dimensional Mid-air Acoustic Manipulation by Ultrasonic Phased
+  Arrays}.
+\newblock \emph{arXiv preprint arXiv:1312.4006} (2013).
 
 \bibitem[Pan12]{panger2012kinect}
 \textsc{Panger G.}:
@@ -279,6 +272,11 @@
   interactions}}.
 \newblock Wiley. com, 2011.
 
+\bibitem[PSF01]{prassler2001robotics}
+\textsc{Prassler E., Scholz J., Fiorini P.}:
+\newblock {A robotics wheelchair for crowded public environment}.
+\newblock \emph{Robotics \& Automation Magazine, IEEE 8}, 1 (2001), 38--45.
+
 \bibitem[SAW94]{schilit1994context}
 \textsc{Schilit B., Adams N., Want R.}:
 \newblock {Context-aware computing applications}.
@@ -290,6 +288,12 @@
 \newblock {Automotive user interfaces: human computer interaction in the car}.
 \newblock In \emph{CHI'10 Extended Abstracts on Human Factors in Computing
   Systems} (2010), ACM, pp.~3177--3180.
+
+\bibitem[SFC{\etalchar{*}}13]{Shotton2013}
+\textsc{Shotton J., Fitzgibbon A., Cook M., Sharp T., Finocchio M., Moore R.,
+  Kipman A., Blake A.}:
+\newblock {Real-time human pose recognition in parts from single depth images}.
+\newblock \emph{Communications of the ACM 56}, 1 (June 2013), 116--124.
 
 \bibitem[SKOM06]{sugano2006indoor}
 \textsc{Sugano M., Kawazoe T., Ohta Y., Murata M.}:
@@ -398,6 +402,11 @@
 \newblock {Maximum likelihood sound source localization and beamforming for
   directional microphone arrays in distributed meetings}.
 \newblock \emph{Multimedia, IEEE Transactions on 10}, 3 (2008), 538--548.
+
+\bibitem[Zha12]{zhang2012microsoft}
+\textsc{Zhang Z.}:
+\newblock {Microsoft kinect sensor and its effect}.
+\newblock \emph{Multimedia, IEEE 19}, 2 (2012), 4--10.
 
 \bibitem[ZSP{\etalchar{*}}95]{Zimmerman1995}
 \textsc{Zimmerman T.~G., Smith J.~R., Paradiso J.~A., Allport D., Gershenfeld

@@ -10,6 +10,12 @@
 \newblock {Capacitive Sensors}.
 \newblock \emph{Sensors Peterborough NH}, 1 (1996), 1--17.
 
+\bibitem[BB98]{bertozzi1998gold}
+\textsc{Bertozzi M., Broggi A.}:
+\newblock {GOLD: A parallel real-time stereo vision system for generic obstacle
+  and lane detection}.
+\newblock \emph{Image Processing, IEEE Transactions on 7}, 1 (1998), 62--81.
+
 \bibitem[BDK13]{braun2013capacitive}
 \textsc{Braun A., Dutz T., Kamieth F.}:
 \newblock {Capacitive sensor-based hand gesture recognition in ambient
@@ -65,6 +71,11 @@
 \newblock {Projected-capacitive touch technology}.
 \newblock \emph{Information Display} (2010).
 
+\bibitem[CC89]{camp1989benchmarking}
+\textsc{Camp R.~C., {Camp Robert} C.}:
+\newblock {Benchmarking: the search for industry best practices that lead to
+  superior performance}.
+
 \bibitem[CD07]{cook2007smart}
 \textsc{Cook D.~J., Das S.~K.}:
 \newblock {How smart are our environments? An updated look at the state of the
@@ -93,6 +104,12 @@
 \newblock {CY3271 PSoC® FirstTouchTM Starter Kit with CYFiTM Low-Power RF},
   2013.
 
+\bibitem[Cro09]{crolotte2009issues}
+\textsc{Crolotte A.}:
+\newblock {Issues in benchmark metric selection}.
+\newblock In \emph{Performance Evaluation and Benchmarking}. Springer, 2009,
+  pp.~146--152.
+
 \bibitem[CRV08]{corbishley2008breathing}
 \textsc{Corbishley P., Rodr\'{\i}guez-Villegas E.}:
 \newblock {Breathing detection: towards a miniaturized, wearable,
@@ -118,6 +135,12 @@
 \newblock In \emph{Proceedings of the 14th annual ACM symposium on User
   interface software and technology - UIST '01} (New York, New York, USA, Nov.
   2001), ACM Press, p.~219.
+
+\bibitem[DLP03]{dongarra2003linpack}
+\textsc{Dongarra J.~J., Luszczek P., Petitet A.}:
+\newblock {The LINPACK benchmark: past, present and future}.
+\newblock \emph{Concurrency and Computation: practice and experience 15}, 9
+  (2003), 803--820.
 
 \bibitem[Fra13]{frank2013understanding}
 \textsc{Frank R.}:
@@ -162,6 +185,11 @@
 \newblock In \emph{3. Deutscher AAL Kongress} (2010), VDE VERLAG GmbH,
   pp.~3--6.
 
+\bibitem[Hen00]{henning2000spec}
+\textsc{Henning J.~L.}:
+\newblock {SPEC CPU2000: Measuring CPU performance in the new millennium}.
+\newblock \emph{Computer 33}, 7 (2000), 28--35.
+
 \bibitem[HPR00]{han2000manufacturing}
 \textsc{Han J., Pratt M., Regli W.~C.}:
 \newblock {Manufacturing feature recognition from solid models: a status
@@ -185,6 +213,13 @@
   Wireless Communication Protocols and Transducer Electronic Data Sheet (TEDS)
   Formats}, 2007.
 
+\bibitem[IHQ04]{ingram2004ultrawideband}
+\textsc{Ingram S.~J., Harmer D., Quinlan M.}:
+\newblock {Ultrawideband indoor positioning systems and their use in
+  emergencies}.
+\newblock In \emph{Position Location and Navigation Symposium, 2004. PLANS
+  2004} (2004), IEEE, pp.~706--715.
+
 \bibitem[IKH11]{Izadi2011}
 \textsc{Izadi S., Kim D., Hilliges O.}:
 \newblock {KinectFusion: real-time 3D reconstruction and interaction using a
@@ -194,6 +229,11 @@
 \bibitem[Inc13]{globalPosture}
 \textsc{Inc. S.}:
 \newblock {Global Posture Study}, 2013.
+
+\bibitem[Jai91]{jain1991art}
+\textsc{Jain R.}:
+\newblock \emph{{The art of computer systems performance analysis}}, vol.~182.
+\newblock John Wiley \& Sons Chichester, 1991.
 
 \bibitem[KBBC05]{kaltenbrunner2005tuio}
 \textsc{Kaltenbrunner M., Bovermann T., Bencina R., Costanza E.}:
@@ -207,11 +247,32 @@
   and sleep state detection}.
 \newblock \emph{Sensors} (2011).
 
+\bibitem[LBO11]{leser2011local}
+\textsc{Leser R., Baca A., Ogris G.}:
+\newblock {Local positioning systems in (game) sports}.
+\newblock \emph{Sensors 11}, 10 (2011), 9778--9797.
+
+\bibitem[LC85]{lewis1985evolution}
+\textsc{Lewis B.~C., Crews A.~E.}:
+\newblock {The evolution of benchmarking as a computer performance evaluation
+  technique}.
+\newblock \emph{MIS Quarterly} (1985), 7--16.
+
 \bibitem[Lew04]{lewis2004wireless}
 \textsc{Lewis F.~L.}:
 \newblock {Wireless sensor networks}.
 \newblock \emph{Smart environments: technologies, protocols, and applications}
   (2004), 11--46.
+
+\bibitem[LWG05]{landsiedel2005accurate}
+\textsc{Landsiedel O., Wehrle K., G\"{o}tz S.}:
+\newblock {Accurate prediction of power consumption in sensor networks}.
+\newblock In \emph{Proc. of the Second Workshop on Embedded Networked Sensors}
+  (2005), Citeseer.
+
+\bibitem[Mic]{microsoftWEI}
+\textsc{Microsoft}:
+\newblock {What Is the Windows Experience Index}.
 
 \bibitem[Mit07]{mitchell2007introduction}
 \textsc{Mitchell H.~B.}:
@@ -277,6 +338,22 @@
 \newblock {A robotics wheelchair for crowded public environment}.
 \newblock \emph{Robotics \& Automation Magazine, IEEE 8}, 1 (2001), 38--45.
 
+\bibitem[RAMB{\etalchar{*}}05]{ranganathan2005towards}
+\textsc{Ranganathan A., Al-Muhtadi J., Biehl J., Ziebart B., Campbell R.~H.,
+  Bailey B.}:
+\newblock {Towards a pervasive computing benchmark}.
+\newblock In \emph{Pervasive Computing and Communications Workshops, 2005.
+  PerCom 2005 Workshops. Third IEEE International Conference on} (2005), IEEE,
+  pp.~194--198.
+
+\bibitem[Rek02]{rekimoto2002smartskin}
+\textsc{Rekimoto J.}:
+\newblock {SmartSkin: an infrastructure for freehand manipulation on
+  interactive surfaces}.
+\newblock In \emph{Proceedings of the SIGCHI conference on Human factors in
+  computing systems: Changing our world, changing ourselves} (2002), ACM,
+  pp.~113--120.
+
 \bibitem[SAW94]{schilit1994context}
 \textsc{Schilit B., Adams N., Want R.}:
 \newblock {Context-aware computing applications}.
@@ -308,6 +385,11 @@
 \newblock \emph{Electroencephalography and Clinical Neurophysiology 64}, 1
   (1986), 84--87.
 
+\bibitem[Smi88]{smith1988characterizing}
+\textsc{Smith J.~E.}:
+\newblock {Characterizing computer performance with a single number}.
+\newblock \emph{Communications of the ACM 31}, 10 (1988), 1202--1206.
+
 \bibitem[Smi96]{Smith1996a}
 \textsc{Smith J.~R.}:
 \newblock {Field mice: Extracting hand geometry from electric field
@@ -324,6 +406,14 @@
 \newblock {Human Activity Detection from RGBD Images.}
 \newblock In \emph{Plan, Activity, and Intent Recognition} (2011).
 
+\bibitem[TCD{\etalchar{*}}00]{thomas2000arquake}
+\textsc{Thomas B., Close B., Donoghue J., Squires J., {De Bondi} P., Morris M.,
+  Piekarski W.}:
+\newblock {ARQuake: An outdoor/indoor augmented reality first person
+  application}.
+\newblock In \emph{Wearable Computers, The Fourth International Symposium on}
+  (2000), IEEE, pp.~139--146.
+
 \bibitem[TKA06]{tabar2006smart}
 \textsc{Tabar A.~M., Keshavarz A., Aghajan H.}:
 \newblock {Smart home care network using sensor fusion and distributed
@@ -336,6 +426,11 @@
 \newblock {A sensing chair using pressure distribution sensors}.
 \newblock \emph{Mechatronics, IEEE/ASME Transactions on 6}, 3 (2001), 261--268.
 
+\bibitem[Val08]{Valli2008}
+\textsc{Valli A.}:
+\newblock {The design of natural interaction}.
+\newblock \emph{Multimedia Tools and Applications 38}, 3 (2008), 295--305.
+
 \bibitem[VMV09]{Valtonen2009a}
 \textsc{Valtonen M., Maentausta J., Vanhala J.}:
 \newblock {TileTrack: Capacitive human tracking using floor tiles}.
@@ -345,6 +440,11 @@
 \bibitem[WB95]{welch1995introduction}
 \textsc{Welch G., Bishop G.}:
 \newblock {An introduction to the Kalman filter}, 1995.
+
+\bibitem[Wei84]{weicker1984dhrystone}
+\textsc{Weicker R.~P.}:
+\newblock {Dhrystone: a synthetic systems programming benchmark}.
+\newblock \emph{Communications of the ACM 27}, 10 (1984), 1013--1030.
 
 \bibitem[Wei91]{Weiser1991}
 \textsc{Weiser M.}:
@@ -360,6 +460,11 @@
 \newblock {Thracker - Using Capacitive Sensing for Gesture Recognition}.
 \newblock In \emph{26th IEEE International Conference on Distributed Computing
   Systems Workshops (ICDCSW'06)} (2006), IEEE, pp.~64--64.
+
+\bibitem[Wil04]{wilson2004sensor}
+\textsc{Wilson J.~S.}:
+\newblock \emph{{Sensor technology handbook}}.
+\newblock Access Online via Elsevier, 2004.
 
 \bibitem[WP10]{wilson2010radio}
 \textsc{Wilson J., Patwari N.}:

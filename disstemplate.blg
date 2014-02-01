@@ -4,9 +4,10 @@ Database file #1: ../../Sources/Dissertation.bib
 Warning--to sort, need author or key in ieee1451
 Warning--empty journal in adib20133d
 Warning--empty note in Braun2013ChairAid
+Warning--empty journal in camp1989benchmarking
 Warning--can't use both author and editor fields in chessa_eval
 Warning--empty institution in Cypress2012
 Warning--empty note in Djakow2013movibed
 Warning--empty institution in Nokia2012
 Warning--there's a number but no series in Zimmerman1995
-(There were 8 warnings)
+(There were 9 warnings)

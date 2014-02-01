@@ -4,17 +4,22 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Baseline calibrations terms and methods}}{12}{table.2.1}
-\contentsline {table}{\numberline {2.2}{\ignorespaces Overview of high-level processing methods for capacitive proximity sensors}}{13}{table.2.2}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Feature recognition methods}}{15}{table.2.3}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Sensors for smart environments \cite {cook2007smart}}}{17}{table.2.4}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Sensing technologies and measured properties}}{18}{table.2.5}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Baseline calibrations terms and methods}}{14}{table.2.1}
+\contentsline {table}{\numberline {2.2}{\ignorespaces Overview of high-level processing methods for capacitive proximity sensors}}{15}{table.2.2}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Feature recognition methods}}{17}{table.2.3}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Sensors for smart environments \cite {cook2007smart}}}{19}{table.2.4}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Sensing technologies and measured properties}}{20}{table.2.5}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Feature matrix denoting capabilities required for a certain rating}}{34}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces The importance weighting of different applications, based on the features.}}{38}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Feature rating of the different sensor technologies}}{38}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Regular and normalized benchmark score matrix of different applications and technologies}}{39}{table.3.4}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Search result frequency given specific applications, sensor technologies and synonyms for ACM Digital Library (DL) and Google Scholar (GS)}}{39}{table.3.5}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Add caption}}{44}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Overview of capacitive proximity sensing limitations}}{45}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Overview of capacitive proximity sensing benefits}}{47}{table.5.3}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Add caption}}{58}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Overview of capacitive proximity sensing limitations}}{59}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Overview of capacitive proximity sensing benefits}}{61}{table.5.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

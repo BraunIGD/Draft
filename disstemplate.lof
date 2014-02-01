@@ -4,49 +4,55 @@
 \select@language {english}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Black box setup of a capacitive proximity sensor}}{5}{figure.2.1}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Capacitive sensing procedure}}{6}{figure.2.2}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Different projected capacitive sensing methods based on distance}}{7}{figure.2.3}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces Three measurement modes for capacitive proximity sensing \cite {Smith1996a}}}{8}{figure.2.4}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Spatial resolution of different materials at various distances \cite {grosse2013opencapsense}}}{9}{figure.2.5}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces Examples of multilayer layouts for touch screens - grid (a), interlocking diamonds (b) and trademarked complex patterns (c) \cite {BarrettScreen}}}{9}{figure.2.6}
-\contentsline {figure}{\numberline {2.7}{\ignorespaces Electrode placement below upholstery \cite {Couch2011}}}{10}{figure.2.7}
-\contentsline {figure}{\numberline {2.8}{\ignorespaces Abstracted sensor data processing pipeline}}{11}{figure.2.8}
-\contentsline {figure}{\numberline {2.9}{\ignorespaces Example of baseline reset using a threshold rule}}{12}{figure.2.9}
-\contentsline {figure}{\numberline {2.10}{\ignorespaces Generic pipeline of probability based methods of capacitive proximity sensing}}{14}{figure.2.10}
-\contentsline {figure}{\numberline {2.11}{\ignorespaces Leon Theremin playing his epnoymous electronic musical instrument \cite {Glinsky2000}}}{16}{figure.2.11}
-\contentsline {figure}{\numberline {2.12}{\ignorespaces A bayer pattern on a sensor in isometric perspective \cite {img_bayer_pattern}}}{18}{figure.2.12}
-\contentsline {figure}{\numberline {2.13}{\ignorespaces Recognition under random corruption. (a) Top row: 30 percent of pixels are corrupted. Middle row: 50 percent corrupted. Bottom row: 70 percent corrupted. (b) Estimated errors (c) Estimated sparse coefficients (d) Reconstructed images (e) The recognition rate across the entire range of corruption for various algorithms. Newly presented (red curve) significantly outperforms others, performing almost perfectly upto 60 percent random corruption \cite {wright2009robust}}}{19}{figure.2.13}
-\contentsline {figure}{\numberline {2.14}{\ignorespaces \emph {Left}: Eulerian Video Magnification to attenuate the human pulse with original (a) and amplified (b) video sequence \cite {Wu2012}. \emph {Right}: FoodBoard schematics (top), underside view (second row), original, reconstructed and segmented image (third row) and final system (bottom) \cite {pham2013foodboard}}}{20}{figure.2.14}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Black box setup of a capacitive proximity sensor}}{7}{figure.2.1}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Capacitive sensing procedure}}{8}{figure.2.2}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Different projected capacitive sensing methods based on distance}}{9}{figure.2.3}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Three measurement modes for capacitive proximity sensing \cite {Smith1996a}}}{10}{figure.2.4}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Spatial resolution of different materials at various distances \cite {grosse2013opencapsense}}}{11}{figure.2.5}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces Examples of multilayer layouts for touch screens - grid (a), interlocking diamonds (b) and trademarked complex patterns (c) \cite {BarrettScreen}}}{11}{figure.2.6}
+\contentsline {figure}{\numberline {2.7}{\ignorespaces Electrode placement below upholstery \cite {Couch2011}}}{12}{figure.2.7}
+\contentsline {figure}{\numberline {2.8}{\ignorespaces Abstracted sensor data processing pipeline}}{13}{figure.2.8}
+\contentsline {figure}{\numberline {2.9}{\ignorespaces Example of baseline reset using a threshold rule}}{14}{figure.2.9}
+\contentsline {figure}{\numberline {2.10}{\ignorespaces Generic pipeline of probability based methods of capacitive proximity sensing}}{16}{figure.2.10}
+\contentsline {figure}{\numberline {2.11}{\ignorespaces Leon Theremin playing his epnoymous electronic musical instrument \cite {Glinsky2000}}}{18}{figure.2.11}
+\contentsline {figure}{\numberline {2.12}{\ignorespaces A bayer pattern on a sensor in isometric perspective \cite {img_bayer_pattern}}}{20}{figure.2.12}
+\contentsline {figure}{\numberline {2.13}{\ignorespaces \emph {Left}: Tracking of body masks using cameras \cite {tabar2006smart}. \emph {Right}: Eigenfaces created from input picture set \cite {pentland2000face}}}{21}{figure.2.13}
+\contentsline {figure}{\numberline {2.14}{\ignorespaces \emph {Left}: Eulerian Video Magnification to attenuate the human pulse with original (a) and amplified (b) video sequence \cite {Wu2012}. \emph {Right}: FoodBoard schematics (top), underside view (second row), original, reconstructed and segmented image (third row) and final system (bottom) \cite {pham2013foodboard}}}{22}{figure.2.14}
+\contentsline {figure}{\numberline {2.15}{\ignorespaces \emph {Top Left}: ORL Active Badge \cite {Weiser1991}. \emph {Top Right}: Kinect infrared projection \cite {zhang2012microsoft}. \emph {Bottom Left}: Kinect Fusion reconstrucion \cite {Izadi2011}. \emph {Bottom Right}: Kinect kitchen interaction \cite {panger2012kinect}}}{23}{figure.2.15}
+\contentsline {figure}{\numberline {2.16}{\ignorespaces \emph {Top Left}: Cricket Indoor Localization hardware \cite {priyantha2000cricket}. \emph {Top Right}: Mid-air particle manipulation \cite {ochiai2013three}. \emph {Bottom Left}: Robotic wheelchair MAid with ultrasound range sensors \cite {prassler2001robotics}. \emph {Bottom Right}: Activity and context recognition using ultrasound sensors \cite {watanabe2013ultrasound}}}{24}{figure.2.16}
+\contentsline {figure}{\numberline {2.17}{\ignorespaces \emph {Top Left}: Visualization of speaker count in different areas \cite {xu2013crowd++}. \emph {Top Right}: Directional microphone and conference room for speech source localization \cite {zhang2008maximum}. \emph {Bottom}: TapSense detecting different tap events \cite {harrison2011tapsense}.}}{25}{figure.2.17}
+\contentsline {figure}{\numberline {2.18}{\ignorespaces \emph {Top left} ZigBee node. \emph {Bottom Left} Sensors and targets in larger room \cite {sugano2006indoor}. \emph {Top right} Photo of radio tomography setup. \emph {Bottom right} Result attenuated signal \cite {wilson2010radio}.}}{27}{figure.2.18}
+\contentsline {figure}{\numberline {2.19}{\ignorespaces \emph {Top left} WiTrack antennas and signal generator. \emph {Bottom Left} WiTrack 2D and 3D localization method \cite {adib20133d}. \emph {Top right} WiSee supported gestures. \emph {Bottom right} WiSee Doppler profiles of gestures \cite {pu2013whole}.}}{28}{figure.2.19}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Benchmarking process}}{35}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces CapFloor sketch - grid layout of electrodes is placed below a floor layer with sensors attached on the sides}}{27}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Shapes of a standing and lynig person on top of the CapFloor grid}}{28}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Floor mats with integrated CapFloor system used at the EvAAL 2011 competition \cite {Braun2012CapFloor}}}{29}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Smart Bed sketch - flexible plate electrode are attached on spring board}}{30}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Data processing components \cite {braun2012context}}}{31}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Calculating centers of pressures and deviation \cite {braun2012context}}}{31}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Sleep movement data over three hours in one night \cite {Djakow2013movibed}}}{32}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Smart office chair sketch - eight electrodes three in backrest, three on seat and two in armrests}}{33}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}}{34}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}}{35}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Active armrest sketch - six electrodes for finger gesture detection in front, two for arm detection in back}}{35}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Data processing pipeline of Active Armrest}}{36}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Active Armrest prototype, left - outside view, right - detail view of electronics}}{36}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Active Armrest demo software, left - finger tracker, right - OSM based navigation application}}{37}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces MagicBox sketch - six electrodes uniformly distributed below surface}}{37}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Piecewise linear hand distance estimation \cite {Braun2011MultiInputDevice}}}{38}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces Gesture overview module (left) and gesture recorder (right)}}{38}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces MagicBox conceptual rendering (left) and detail view of electronics (right) \cite {Braun2011MultiInputDevice}}}{39}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces MagicBox demonstration application - 3D object viewer (left) and image viewer (right) \cite {Braun2011MultiInputDevice}}}{39}{figure.4.19}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces CapTap sketch - 24 electrodes placed under table surface}}{40}{figure.4.20}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Suspended peg knock detection system for CapTap \cite {Braun2013ChairAid}}}{40}{figure.4.21}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Detail views of the prototype system: left - electrode and sensors, right - knock detection box \cite {Braun2013ChairAid}}}{41}{figure.4.22}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Abstracted view of CapTap prototype including capacitive sensing electrodes and knock detection sensor \cite {Braun2013ChairAid}}}{41}{figure.4.23}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces CapFloor sketch - grid layout of electrodes is placed below a floor layer with sensors attached on the sides}}{41}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Shapes of a standing and lynig person on top of the CapFloor grid}}{42}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Floor mats with integrated CapFloor system used at the EvAAL 2011 competition \cite {Braun2012CapFloor}}}{43}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Smart Bed sketch - flexible plate electrode are attached on spring board}}{44}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Data processing components \cite {braun2012context}}}{45}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Calculating centers of pressures and deviation \cite {braun2012context}}}{45}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Sleep movement data over three hours in one night \cite {Djakow2013movibed}}}{46}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Smart office chair sketch - eight electrodes three in backrest, three on seat and two in armrests}}{47}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}}{48}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}}{49}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Active armrest sketch - six electrodes for finger gesture detection in front, two for arm detection in back}}{49}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Data processing pipeline of Active Armrest}}{50}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Active Armrest prototype, left - outside view, right - detail view of electronics}}{50}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Active Armrest demo software, left - finger tracker, right - OSM based navigation application}}{51}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces MagicBox sketch - six electrodes uniformly distributed below surface}}{51}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Piecewise linear hand distance estimation \cite {Braun2011MultiInputDevice}}}{52}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Gesture overview module (left) and gesture recorder (right)}}{52}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces MagicBox conceptual rendering (left) and detail view of electronics (right) \cite {Braun2011MultiInputDevice}}}{53}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces MagicBox demonstration application - 3D object viewer (left) and image viewer (right) \cite {Braun2011MultiInputDevice}}}{53}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces CapTap sketch - 24 electrodes placed under table surface}}{54}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Suspended peg knock detection system for CapTap \cite {Braun2013ChairAid}}}{54}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Detail views of the prototype system: left - electrode and sensors, right - knock detection box \cite {Braun2013ChairAid}}}{55}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Abstracted view of CapTap prototype including capacitive sensing electrodes and knock detection sensor \cite {Braun2013ChairAid}}}{55}{figure.4.23}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Reduced angular resolution on smaller, distant objects}}{46}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Same response to differently sized objects (left), different response to varying materials (right)}}{47}{figure.5.2}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Electrodes and sensors hidden below mattress of Smart Bed}}{48}{figure.5.3}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Reduced angular resolution on smaller, distant objects}}{60}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Same response to differently sized objects (left), different response to varying materials (right)}}{61}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Electrodes and sensors hidden below mattress of Smart Bed}}{62}{figure.5.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

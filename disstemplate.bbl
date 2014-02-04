@@ -230,6 +230,10 @@
 \textsc{Inc. S.}:
 \newblock {Global Posture Study}, 2013.
 
+\bibitem[Inc14]{moog2014}
+\textsc{Inc. M.~M.}:
+\newblock {Theremini}, 2014.
+
 \bibitem[Jai91]{jain1991art}
 \textsc{Jain R.}:
 \newblock \emph{{The art of computer systems performance analysis}}, vol.~182.
@@ -289,6 +293,10 @@
 \textsc{Nokia}:
 \newblock \emph{{Puremotion Technology White Paper}}.
 \newblock Tech. rep., 2012.
+
+\bibitem[{Nov}14]{novint2014}
+\textsc{{Novint Technologies Inc}}:
+\newblock {Novint Falcon}, 2014.
 
 \bibitem[OHR13]{ochiai2013three}
 \textsc{Ochiai Y., Hoshi T., Rekimoto J.}:
@@ -385,6 +393,12 @@
 \newblock \emph{Electroencephalography and Clinical Neurophysiology 64}, 1
   (1986), 84--87.
 
+\bibitem[SM95]{schmandt1995audiostreamer}
+\textsc{Schmandt C., Mullins A.}:
+\newblock {AudioStreamer: exploiting simultaneity for listening}.
+\newblock In \emph{Conference companion on Human factors in computing systems}
+  (1995), ACM, pp.~218--219.
+
 \bibitem[Smi88]{smith1988characterizing}
 \textsc{Smith J.~E.}:
 \newblock {Characterizing computer performance with a single number}.
@@ -405,6 +419,11 @@
 \textsc{Sung J., Ponce C., Selman B., Saxena A.}:
 \newblock {Human Activity Detection from RGBD Images.}
 \newblock In \emph{Plan, Activity, and Intent Recognition} (2011).
+
+\bibitem[SWD{\etalchar{*}}98]{smith1998electric}
+\textsc{Smith J., White T., Dodge C., Paradiso J., Gershenfeld N., Allport D.}:
+\newblock {Electric field sensing for graphical interfaces}.
+\newblock \emph{Computer Graphics and Applications, IEEE 18}, 3 (1998), 54--60.
 
 \bibitem[TCD{\etalchar{*}}00]{thomas2000arquake}
 \textsc{Thomas B., Close B., Donoghue J., Squires J., {De Bondi} P., Morris M.,
@@ -441,6 +460,20 @@
 \textsc{Welch G., Bishop G.}:
 \newblock {An introduction to the Kalman filter}, 1995.
 
+\bibitem[WB09]{wimmer2009handsense}
+\textsc{Wimmer R., Boring S.}:
+\newblock {HandSense: discriminating different ways of grasping and holding a
+  tangible user interface}.
+\newblock In \emph{Proceedings of the 3rd International Conference on Tangible
+  and Embedded Interaction} (2009), ACM, pp.~359--362.
+
+\bibitem[WB11]{wimmer2011modular}
+\textsc{Wimmer R., Baudisch P.}:
+\newblock {Modular and deformable touch-sensitive surfaces based on time domain
+  reflectometry}.
+\newblock In \emph{Proceedings of the 24th annual ACM symposium on User
+  interface software and technology} (2011), ACM, pp.~517--526.
+
 \bibitem[Wei84]{weicker1984dhrystone}
 \textsc{Weicker R.~P.}:
 \newblock {Dhrystone: a synthetic systems programming benchmark}.
@@ -465,6 +498,13 @@
 \textsc{Wilson J.~S.}:
 \newblock \emph{{Sensor technology handbook}}.
 \newblock Access Online via Elsevier, 2004.
+
+\bibitem[WKBS07]{Wimmer2007a}
+\textsc{Wimmer R., Kranz M., Boring S., Schmidt A.}:
+\newblock {A Capacitive Sensing Toolkit for Pervasive Activity Detection and
+  Recognition}.
+\newblock \emph{Fifth Annual IEEE International Conference on Pervasive
+  Computing and Communications PerCom07} (2007), 171--180.
 
 \bibitem[WP10]{wilson2010radio}
 \textsc{Wilson J., Patwari N.}:

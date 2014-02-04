@@ -1,4 +1,4 @@
-\section{Magic Box}
+\subsection{Magic Box}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.6\textwidth]{images/magicbox}
@@ -8,24 +8,8 @@
 %Figure 28 MagicBox sketch - six electrodes uniformly distributed below surface
 The so-called MagicBox was our first attempt to create an interaction device based on capacitive proximity sensing. It is using an array of six individual wireless capacitive sensors that communicate to a central station \cite{Braun2011MultiInputDevice}. The electrodes are using a large surface area and are made of aluminum foil. A sketch is shown in Figure \ref{fig:magicbox_sketch}. The system is able to track the position of a single hand in three dimensions up to a distance of approximately $20cm$, and uses different methods to infer gestures from the hand movement. 
 It is designed to be a generic interaction device that can potentially be hidden below non-conductive surfaces. As it can be used without touching it is also applicable in sterile environments. A suite of demonstration applications has been created that showcase typical scenarios for the MagicBox. This includes multimedia applications, like image viewer and media player but also a 3D object viewer intended as demonstrator for potential medical applications, allowing a surgeon to check MRT or CT images in a sterile environment without touching any surface.
-\subsection{Data processing}
- \begin{figure}[h]
-\centering
-\includegraphics[width=0.6\textwidth]{images/magicbox_data_zaxis}
-\caption{Piecewise linear hand distance estimation \cite{Braun2011MultiInputDevice}}
-\label{fig:magicbox_data_zaxis}
-\end{figure}
-%Figure 29 Piecewise linear hand distance estimation [78]
-The first data processing step of the MagicBox is the planar localization of the hand, following the weighted average algorithm previously presented. In order to calculate the distance of the hand from the plane we are using a piecewise linear interpolation, that resembles the response curve of a single sensor \cite{Braun2011MultiInputDevice}.
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.7\textwidth]{images/magicbox_data_gest}
-\caption{Gesture overview module (left) and gesture recorder (right)}
-\label{fig:magicbox_data_gest}
-\end{figure}
-%Figure 30 Gesture overview module (left) and gesture recorder (right)
-An addition of the MagicBox was a generic gesture recognition module based on methods similar to mouse gesture recognition \cite{braun2013capacitive}, albeit adapted for three dimensional locations. The developed debug software allows defining an arbitrary set of potential gestures and adding training data, as shown in Figure \ref{fig:magicbox_data_gest}. The module is looking for matches based on the most recent set of locations. 
-\subsection{Evaluation}
+
+\subsubsection{Evaluation}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.8\textwidth]{images/magicbox_proto}

@@ -1,4 +1,4 @@
-\section{Smart Bed}
+\subsection{Smart Bed}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.7\textwidth]{images/smartbed}
@@ -9,24 +9,8 @@ The Smart Bed is a regular bed frame that has been equipped with capacitive prox
 
 The Smart Bed can be used for various purposes. A main application is connecting the occupation detection to a home automation system and timer in order to activate ambient lighting if the person is get-ting up in the night, presumably to find the way to the restroom. Accordingly, in a single person household the lights in unoccupied rooms could be turned off in order to conserve energy. In the domain of personal health the Smart Bed is able to give the user a feedback on sleep quality based on the sleep phase measurement performed in the night. Another potential application is to use the acquired pressure distribution as indicator for back-friendly lying positions that may be harmful over a longer period of time \cite{Hamisu2010}.
 The occupation and posture detection relies on a simplified body model to approximate the pressure distribution and sensor values to a certain posture \cite{braun2012context}.  
-\subsection{Data processing}
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.7\textwidth]{images/smartbed_proc}
-\caption{Data processing components \cite{braun2012context}}
-\label{fig:smartbed_proc}
-\end{figure}
-The different components of the Smart Bed data processing are shown in Figure \ref{fig:smartbed_proc}. Raw sensor data is distributed to three different modules, the calibration which is determining the initial parameters for the sensor data fusion, the drift compensation that alters those parameters according to long term trends and finally the sensor data fusion module that processes the data and does feed it to the occupation \& position detection. Calibration and drift compensation follow the previously presented model \cite{braun2012context}. 
-\begin{figure}[h]
-\centering
-\includegraphics[width=0.7\textwidth]{images/smartbed_cog}
-\caption{Calculating centers of pressures and deviation \cite{braun2012context}}
-\label{fig:smartbed_cog}
-\end{figure}
-Occupation and position detection is performed by dividing the two person bed into left and right and individually calculating for each side the total sensor values, assumed center of pressure using weighted average and the standard deviation (Figure \ref{fig:smartbed_cog}). The same calculation is done between the two sides to distinguish where is activity or if one person is lying diagonally.
-Using these six intermediate values we can now map various poses. If all activity is on one side and the horizontal deviation is low, we can assume that one person is sitting. We can additionally use the intermediate values to calculate more information, e.g. the exact location a person is sitting at. 
-The data processing for the sleep phase recognition is based on detecting the sensor data variations in order to analyze movement. Discriminating between sleep phases using movement is a common approach that has been used in the past \cite{salmi86}. Using a sparse set of sensors it is possible to detect movement by comparing subsequent sensor readings and associate it to different sleep phases using different activity profiles. The system is based on the same prototype as the posture recognition system \cite{Djakow2013movibed}. 
-\subsection{Evaluation}
+ 
+\subsubsection{Evaluation}
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.9\textwidth]{images/smartbed_sleepphase}

@@ -1,6 +1,10 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: disstemplate.aux
 The style file: eg-alpha.bst
 Database file #1: ../../Sources/Dissertation.bib
+Repeated entry---line 686 of file ../../Sources/Dissertation.bib
+ : @article{valtonen2012capacitive
+ :                                ,
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in ieee1451
 Warning--empty journal in adib20133d
 Warning--empty note in Braun2013ChairAid
@@ -10,4 +14,4 @@ Warning--empty institution in Cypress2012
 Warning--empty note in Djakow2013movibed
 Warning--empty institution in Nokia2012
 Warning--there's a number but no series in Zimmerman1995
-(There were 9 warnings)
+(There was 1 error message)

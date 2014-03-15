@@ -71,6 +71,12 @@
 \newblock {Projected-capacitive touch technology}.
 \newblock \emph{Information Display} (2010).
 
+\bibitem[CAL10]{cheng2010active}
+\textsc{Cheng J., Amft O., Lukowicz P.}:
+\newblock {Active capacitive sensing: Exploring a new wearable sensing modality
+  for activity recognition}.
+\newblock In \emph{Pervasive Computing}. Springer, 2010, pp.~319--336.
+
 \bibitem[CC89]{camp1989benchmarking}
 \textsc{Camp R.~C., {Camp Robert} C.}:
 \newblock {Benchmarking: the search for industry best practices that lead to
@@ -158,6 +164,13 @@
 \newblock \emph{{Theremin: Ether music and espionage}}.
 \newblock University of Illinois Press, 2000.
 
+\bibitem[GPB12]{grosse2012honey}
+\textsc{Grosse-Puppendahl T., Braun A.}:
+\newblock {Honeyfish - a high resolution gesture recognition system based on
+  capacitive proximity sensing}.
+\newblock In \emph{Embedded World Conference 2012} (2012), Haar: WEKA
+  Fachmedien, 2012 (Design \& Elektronik), p.~10pp.
+
 \bibitem[GPBB{\etalchar{*}}13]{grosse2013opencapsense}
 \textsc{Grosse-Puppendahl T., Berghoefer Y., Braun A., Wimmer R., Kuijper A.}:
 \newblock {OpenCapSense: A Rapid Prototyping Toolkit for Pervasive Interaction
@@ -202,6 +215,18 @@
 \newblock {TapSense: enhancing finger interaction on touch surfaces}.
 \newblock In \emph{Proceedings of the 24th annual ACM symposium on User
   interface software and technology} (2011), ACM, pp.~627--636.
+
+\bibitem[HSP12]{harrison2012capacitive}
+\textsc{Harrison C., Sato M., Poupyrev I.}:
+\newblock {Capacitive fingerprinting: exploring user differentiation by sensing
+  electrical properties of the human body}.
+\newblock In \emph{Proceedings of the 25th annual ACM symposium on User
+  interface software and technology} (2012), ACM, pp.~537--544.
+
+\bibitem[Hu62]{hu1962visual}
+\textsc{Hu M.-K.}:
+\newblock {Visual pattern recognition by moment invariants}.
+\newblock \emph{Information Theory, IRE Transactions on 8}, 2 (1962), 179--187.
 
 \bibitem[HW08]{haklay2008openstreetmap}
 \textsc{Haklay M., Weber P.}:
@@ -268,11 +293,21 @@
 \newblock \emph{Smart environments: technologies, protocols, and applications}
   (2004), 11--46.
 
+\bibitem[LS09]{lauterbach2009}
+\textsc{Lauterbach C., Steinhage A.}:
+\newblock {SensFloor ® - A Large-area Sensor System Based on Printed Textiles
+  Printed Electronics}.
+\newblock In \emph{Ambient Assisted Living Congress} (2009), VDE Verlag.
+
 \bibitem[LWG05]{landsiedel2005accurate}
 \textsc{Landsiedel O., Wehrle K., G\"{o}tz S.}:
 \newblock {Accurate prediction of power consumption in sensor networks}.
 \newblock In \emph{Proc. of the Second Workshop on Embedded Networked Sensors}
   (2005), Citeseer.
+
+\bibitem[Mac04]{MacLachlan2004}
+\textsc{MacLachlan R.}:
+\newblock {Spread Spectrum Capacitive Proximity Sensor}, 2004.
 
 \bibitem[Mic]{microsoftWEI}
 \textsc{Microsoft}:
@@ -335,6 +370,12 @@
 \newblock In \emph{Proceedings of the 2013 ACM international joint conference
   on Pervasive and ubiquitous computing} (2013), ACM, pp.~749--752.
 
+\bibitem[PLCH02]{Paradiso2002}
+\textsc{Paradiso J.~A., Leo C.~K., Checka N., Hsiao K.}:
+\newblock {Passive acoustic knock tracking for interactive windows}.
+\newblock In \emph{CHI '02 extended abstracts on Human factors in computing
+  systems - CHI '02} (New York, New York, USA, Apr. 2002), ACM Press, p.~732.
+
 \bibitem[Pos11]{poslad2011ubiquitous}
 \textsc{Poslad S.}:
 \newblock \emph{{Ubiquitous computing: smart devices, environments and
@@ -345,6 +386,11 @@
 \textsc{Prassler E., Scholz J., Fiorini P.}:
 \newblock {A robotics wheelchair for crowded public environment}.
 \newblock \emph{Robotics \& Automation Magazine, IEEE 8}, 1 (2001), 38--45.
+
+\bibitem[PSLS12]{poupyrev2012botanicus}
+\textsc{Poupyrev I., Schoessler P., Loh J., Sato M.}:
+\newblock {Botanicus Interacticus: interactive plants technology}.
+\newblock In \emph{ACM SIGGRAPH 2012 Emerging Technologies} (2012), ACM, p.~4.
 
 \bibitem[RAMB{\etalchar{*}}05]{ranganathan2005towards}
 \textsc{Ranganathan A., Al-Muhtadi J., Biehl J., Ziebart B., Campbell R.~H.,
@@ -415,10 +461,22 @@
 \newblock \emph{{Electric field imaging}}.
 \newblock PhD thesis, Massachusetts Institute of Technology, 1999.
 
+\bibitem[SPH12]{Sato2012}
+\textsc{Sato M., Poupyrev I., Harrison C.}:
+\newblock {Touch\'{e}: enhancing touch interaction on humans, screens, liquids,
+  and everyday objects}.
+\newblock In \emph{Proceedings of the 2012 ACM annual conference on Human
+  Factors in Computing Systems} (May 2012), pp.~483--492.
+
 \bibitem[SPSS11]{sung2011human}
 \textsc{Sung J., Ponce C., Selman B., Saxena A.}:
 \newblock {Human Activity Detection from RGBD Images.}
 \newblock In \emph{Plan, Activity, and Intent Recognition} (2011).
+
+\bibitem[SV01]{schmidt2001build}
+\textsc{Schmidt A., {Van Laerhoven} K.}:
+\newblock {How to build smart appliances?}
+\newblock \emph{Personal Communications, IEEE 8}, 4 (2001), 66--71.
 
 \bibitem[SWD{\etalchar{*}}98]{smith1998electric}
 \textsc{Smith J., White T., Dodge C., Paradiso J., Gershenfeld N., Allport D.}:
@@ -450,11 +508,30 @@
 \newblock {The design of natural interaction}.
 \newblock \emph{Multimedia Tools and Applications 38}, 3 (2008), 295--305.
 
+\bibitem[VKMV11]{valtonen2011unobtrusive}
+\textsc{Valtonen M., Kaila L., M\"{a}entausta J., Vanhala J.}:
+\newblock {Unobtrusive human height and posture recognition with a capacitive
+  sensor}.
+\newblock \emph{Journal of Ambient Intelligence and Smart Environments 3}, 4
+  (2011), 305--332.
+
+\bibitem[VKV12]{valtonen2012capacitive}
+\textsc{Valtonen M., Kivim\"{a}ki T., Vanhala J.}:
+\newblock {Capacitive 3D user tracking with a mobile demonstration platform}.
+\newblock In \emph{Proceeding of the 16th International Academic MindTrek
+  Conference} (2012), ACM, pp.~61--63.
+
 \bibitem[VMV09]{Valtonen2009a}
 \textsc{Valtonen M., Maentausta J., Vanhala J.}:
 \newblock {TileTrack: Capacitive human tracking using floor tiles}.
 \newblock In \emph{IEEE International Conference on Pervasive Computing and
   Communications} (Mar. 2009), IEEE, pp.~1--10.
+
+\bibitem[VRV10]{valtonen2010human}
+\textsc{Valtonen M., Raula H., Vanhala J.}:
+\newblock {Human body tracking with electric field ranging}.
+\newblock In \emph{Proceedings of the 14th International Academic MindTrek
+  Conference: Envisioning Future Media Environments} (2010), ACM, pp.~183--186.
 
 \bibitem[WB95]{welch1995introduction}
 \textsc{Welch G., Bishop G.}:

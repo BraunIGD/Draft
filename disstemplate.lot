@@ -18,13 +18,17 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Application domains and derived implemented use cases for capacitive proximity sensing}}{47}{table.4.1}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Challenges associated to the different use cases for capacitive proximity sensors}}{50}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Results of touch detection for single and double taps (SFT, DFT), knocks (SKK, DKK), finger swipe (FS), hand swipe (HS) and stomp (STO). Noted are the overall samples, errors, no event errors, wrong classification errors and the percentage of correct classification.}}{78}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Results for interaction time in the different runs of the interaction speed test}}{80}{table.4.4}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Add caption}}{75}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Overview of capacitive proximity sensing limitations}}{76}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Overview of capacitive proximity sensing benefits}}{79}{table.5.3}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Add caption}}{87}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Overview of capacitive proximity sensing limitations}}{88}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Overview of capacitive proximity sensing benefits}}{91}{table.5.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Percentage of correctly classified postures using manually set classifier}}{87}{table.A.1}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Percentage of correctly classified postures using manually set classifier}}{99}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces CapTap evaluation raw results}}{102}{table.A.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces CapTap questionnaire results}}{103}{table.A.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

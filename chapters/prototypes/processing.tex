@@ -1,6 +1,7 @@
 \section{Processing methods}
 Looking at the challenges presented in the previous section it is obvious that there are numerous factors, in which the existing state-of-the-art systems for capacitive sensing can be improved. 
 \subsection{Sparsely distributed sensor arrays}
+Sparsely distributed sensor arrays refer to layouts that limit the number of available sensors either by environmental parameters or by design. 
 \subsubsection{3D location tracking}
  \begin{figure}[h]
 \centering
@@ -19,7 +20,6 @@ The first data processing step of the MagicBox is the planar localization of the
 %Figure 30 Gesture overview module (left) and gesture recorder (right)
 An addition of the MagicBox was a generic gesture recognition module based on methods similar to mouse gesture recognition \cite{braun2013capacitive}, albeit adapted for three dimensional locations. The developed debug software allows defining an arbitrary set of potential gestures and adding training data, as shown in Figure \ref{fig:magicbox_data_gest}. The module is looking for matches based on the most recent set of locations. 
 \subsubsection{Large-area location tracking}
-\subsubsection{Data processing}
 Using long wire electrodes may result in considerable noise and influence from outside electric fields. Therefore CapFloor requires preprocessing to reduce the noise and achieve a more robust high-level data processing. The localization uses the weighted average algorithm that has been presented previously. 
 \begin{figure}[h]
 \centering

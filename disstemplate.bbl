@@ -16,6 +16,11 @@
   and lane detection}.
 \newblock \emph{Image Processing, IEEE Transactions on 7}, 1 (1998), 62--81.
 
+\bibitem[BBL93]{Baudel1993}
+\textsc{Baudel T., Beaudouin-Lafon M.}:
+\newblock {Charade: remote control of objects using free-hand gestures}.
+\newblock \emph{Communications of the ACM 36}, 7 (July 1993), 28--35.
+
 \bibitem[BDK13]{braun2013capacitive}
 \textsc{Braun A., Dutz T., Kamieth F.}:
 \newblock {Capacitive sensor-based hand gesture recognition in ambient
@@ -276,10 +281,23 @@
   and sleep state detection}.
 \newblock \emph{Sensors} (2011).
 
+\bibitem[KOR{\etalchar{*}}02]{Krum2002}
+\textsc{Krum D.~M., Omoteso O., Ribarsky W., Starner T., Hodges L.~F.}:
+\newblock {Speech and gesture multimodal control of a whole Earth 3D
+  visualization environment}.
+\newblock 195--200.
+
 \bibitem[LBO11]{leser2011local}
 \textsc{Leser R., Baca A., Ogris G.}:
 \newblock {Local positioning systems in (game) sports}.
 \newblock \emph{Sensors 11}, 10 (2011), 9778--9797.
+
+\bibitem[LBT02]{lenman2002}
+\textsc{Lenman S., Bretzner L., Thuresson B.}:
+\newblock {Using marking menus to develop command sets for computer vision
+  based hand gesture interfaces}.
+\newblock \emph{Proceedings of the second Nordic conference on Human-computer
+  interaction} (2002), 239--242.
 
 \bibitem[LC85]{lewis1985evolution}
 \textsc{Lewis B.~C., Crews A.~E.}:
@@ -537,6 +555,14 @@
 \textsc{Welch G., Bishop G.}:
 \newblock {An introduction to the Kalman filter}, 1995.
 
+\bibitem[WB03]{Wu2003}
+\textsc{Wu M., Balakrishnan R.}:
+\newblock {Multi-finger and whole hand gestural interaction techniques for
+  multi-user tabletop displays}.
+\newblock In \emph{Proceedings of the 16th annual ACM symposium on User
+  interface software and technology - UIST '03} (New York, New York, USA, Nov.
+  2003), ACM Press, pp.~193--202.
+
 \bibitem[WB09]{wimmer2009handsense}
 \textsc{Wimmer R., Boring S.}:
 \newblock {HandSense: discriminating different ways of grasping and holding a
@@ -629,6 +655,11 @@
 \textsc{Zhang Z.}:
 \newblock {Microsoft kinect sensor and its effect}.
 \newblock \emph{Multimedia, IEEE 19}, 2 (2012), 4--10.
+
+\bibitem[ZLB{\etalchar{*}}86]{Zimmerman1986}
+\textsc{Zimmerman T.~G., Lanier J., Blanchard C., Bryson S., Harvill Y.}:
+\newblock {A hand gesture interface device}.
+\newblock \emph{ACM SIGCHI Bulletin 17}, SI (May 1986), 189--192.
 
 \bibitem[ZSP{\etalchar{*}}95]{Zimmerman1995}
 \textsc{Zimmerman T.~G., Smith J.~R., Paradiso J.~A., Allport D., Gershenfeld

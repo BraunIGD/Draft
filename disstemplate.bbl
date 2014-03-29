@@ -1,5 +1,5 @@
 \newcommand{\etalchar}[1]{$^{#1}$}
-\begin{thebibliography}{\uppercase{GPBKK13}}
+\begin{thebibliography}{\uppercase{BZWW{\etalchar{*}}13}}
 
 \bibitem[AKKM13]{adib20133d}
 \textsc{Adib F., Kabelac Z., Katabi D., Miller R.~C.}:
@@ -75,6 +75,12 @@
 \textsc{Barrett G., Omote R.}:
 \newblock {Projected-capacitive touch technology}.
 \newblock \emph{Information Display} (2010).
+
+\bibitem[BZWW{\etalchar{*}}13]{Braun2013captap}
+\textsc{Braun A., Zander-Walz S., Wichert R., Augusto J.~C., Kuijper A.}:
+\newblock {CapTap - Combining Capacitive Gesture Recognition and Knock
+  Detection}.
+\newblock 2013.
 
 \bibitem[CAL10]{cheng2010active}
 \textsc{Cheng J., Amft O., Lukowicz P.}:
@@ -158,12 +164,6 @@
 \newblock \emph{{Understanding smart sensors}}.
 \newblock Artech House, 2013.
 
-\bibitem[GePMB11]{Couch2011}
-\textsc{Gro\ss~e Puppendahl T., Marinc A., Braun A.}:
-\newblock {Classification of User Postures with Capacitive Proximity Sensors in
-  AAL-Environments}.
-\newblock \emph{Ambient Intelligence 7040} (2011), 314--323.
-
 \bibitem[Gli00]{Glinsky2000}
 \textsc{Glinsky A.}:
 \newblock \emph{{Theremin: Ether music and espionage}}.
@@ -189,6 +189,15 @@
   interfaces based on capacitive proximity sensing}.
 \newblock In \emph{Proceedings of the 2013 ACM annual conference on Human
   factors in computing systems} (2013), ACM, pp.~1401--1410.
+
+\bibitem[GPMB11]{Couch2011}
+\textsc{Grosse-Puppendahl T., Marinc A., Braun A.}:
+\newblock {Classification of User Postures with Capacitive Proximity Sensors in
+  AAL-Environments}.
+\newblock In \emph{Ambient Intelligence} (2011), Keyson D.~V., Maher M.~L.,
+  Streitz N., Cheok A., Augusto J.~C., Wichert R., Englebienne G., Aghajan H.,
+  Kr\"{o}se B. J.~A., (Eds.), vol.~7040 of \emph{Lecture Notes in Computer
+  Science}, Springer, pp.~314--323.
 
 \bibitem[GZBB09]{george2009seat}
 \textsc{George B., Zangl H., Bretterklieber T., Brasseur G.}:
@@ -330,6 +339,12 @@
 \bibitem[Mic]{microsoftWEI}
 \textsc{Microsoft}:
 \newblock {What Is the Windows Experience Index}.
+
+\bibitem[{Mic}13]{microchip2013}
+\textsc{{Microchip Technology Inc.}}:
+\newblock \emph{{GestIC ® Design Guide : Electrodes and System Design
+  MGC3130}}.
+\newblock Tech. rep., 2013.
 
 \bibitem[Mit07]{mitchell2007introduction}
 \textsc{Mitchell H.~B.}:
@@ -474,11 +489,6 @@
   measurements}.
 \newblock \emph{IBM Systems Journal 35}, 3.4 (1996), 587--608.
 
-\bibitem[Smi99]{Smith1999a}
-\textsc{Smith J.~R.}:
-\newblock \emph{{Electric field imaging}}.
-\newblock PhD thesis, Massachusetts Institute of Technology, 1999.
-
 \bibitem[SPH12]{Sato2012}
 \textsc{Sato M., Poupyrev I., Harrison C.}:
 \newblock {Touch\'{e}: enhancing touch interaction on humans, screens, liquids,
@@ -533,12 +543,6 @@
 \newblock \emph{Journal of Ambient Intelligence and Smart Environments 3}, 4
   (2011), 305--332.
 
-\bibitem[VKV12]{valtonen2012capacitive}
-\textsc{Valtonen M., Kivim\"{a}ki T., Vanhala J.}:
-\newblock {Capacitive 3D user tracking with a mobile demonstration platform}.
-\newblock In \emph{Proceeding of the 16th International Academic MindTrek
-  Conference} (2012), ACM, pp.~61--63.
-
 \bibitem[VMV09]{Valtonen2009a}
 \textsc{Valtonen M., Maentausta J., Vanhala J.}:
 \newblock {TileTrack: Capacitive human tracking using floor tiles}.
@@ -550,6 +554,12 @@
 \newblock {Human body tracking with electric field ranging}.
 \newblock In \emph{Proceedings of the 14th International Academic MindTrek
   Conference: Envisioning Future Media Environments} (2010), ACM, pp.~183--186.
+
+\bibitem[VV12]{valtonen2012capacitive}
+\textsc{Valtonen M., Vuorela T.}:
+\newblock {Capacitive User Tracking Methods for Smart Environments}.
+\newblock \emph{InTech, New Approach in Indoor and Outdoor Localization
+  Systems} (2012), 113--138.
 
 \bibitem[WB95]{welch1995introduction}
 \textsc{Welch G., Bishop G.}:

@@ -1,0 +1,214 @@
+\newcommand{\etalchar}[1]{$^{#1}$}
+\begin{thebibliography}{\uppercase{BZWW{\etalchar{*}}13}}
+
+\bibitem[BCZ{\etalchar{*}}14]{Braun2014}
+\textsc{Braun A., Cieslik S., Zmugg R., Wichert R., Klein P., Havemann S.}:
+\newblock {V2me - Virtual Coaching for Seniors}.
+\newblock In \emph{Wohnen – Pflege – Teilhabe - Besser leben durch Technik.
+  7. Deutscher AAL-Kongress} (2014), VDE Verlag.
+
+\bibitem[BD13]{braun2013ambitrack}
+\textsc{Braun A., Dutz T.}:
+\newblock {AmbiTrack-Marker-free Indoor Localization and Tracking of Multiple
+  Users in Smart Environments with a Camera-based Approach}.
+\newblock In \emph{Evaluating AAL Systems Through Competitive Benchmarking}.
+  Springer Berlin Heidelberg, 2013, pp.~83--93.
+
+\bibitem[BDA{\etalchar{*}}13]{Braun2013MarkerFree}
+\textsc{Braun A., Dutz T., Alekseew M., Schillinger P., Marinc A.}:
+\newblock {Marker-Free Indoor Localization and Tracking of Multiple Users in
+  Smart Environments Using a Camera-Based Approach}.
+\newblock In \emph{Distributed, Ambient and Pervasive Interactions} (2013).
+
+\bibitem[BDK13]{braun2013capacitive}
+\textsc{Braun A., Dutz T., Kamieth F.}:
+\newblock {Capacitive sensor-based hand gesture recognition in ambient
+  intelligence scenarios}.
+\newblock In \emph{Proceedings of the 6th International Conference on PErvasive
+  Technologies Related to Assistive Environments} (2013), ACM, p.~5.
+
+\bibitem[BF13]{Braun2013ChairAid}
+\textsc{Braun A., Frank S.}:
+\newblock {The Capacitive Chair}.
+\newblock 2013.
+
+\bibitem[BFM{\etalchar{*}}13]{braun2013context}
+\textsc{Braun A., Fischer A., Marinc A., Stockl\"{o}w C., Majewski M.}:
+\newblock {Context-based bounding volume morphing in pointing gesture
+  applications}.
+\newblock In \emph{HCII'13 Proceedings of the 15th international conference on
+  Human-computer interaction} (2013), Springer Berlin Heidelberg, pp.~147--156.
+
+\bibitem[BH09]{Braun2009HumanBodyField}
+\textsc{Braun A., Hamisu P.}:
+\newblock {Using the human body field as a medium for natural interaction}.
+\newblock In \emph{Proceedings of the 2nd International Conference on PErvsive
+  Technologies Related to Assistive Environments - PETRA '09} (New York, New
+  York, USA, June 2009), ACM Press, pp.~1--7.
+
+\bibitem[BH11]{Braun2011MultiInputDevice}
+\textsc{Braun A., Hamisu P.}:
+\newblock {Designing a multi-purpose capacitive proximity sensing input
+  device}.
+\newblock In \emph{Proceedings of the 4th International Conference on PErvasive
+  Technologies Related to Assistive Environments PETRA 11} (2011), ACM Press.
+
+\bibitem[BH12]{braun2012context}
+\textsc{Braun A., Heggen H.}:
+\newblock {Context recognition using capacitive sensor arrays in beds}.
+\newblock In \emph{Technik f\"{u}r ein selbstbestimmtes Leben - 5. Deutscher
+  AAL-Kongress} (Berlin, 2012), VDE VERLAG GmbH.
+
+\bibitem[BHW12]{Braun2012CapFloor}
+\textsc{Braun A., Heggen H., Wichert R.}:
+\newblock {CapFloor – A Flexible Capacitive Indoor Localization System}.
+\newblock In \emph{Evaluating AAL Systems Through Competitive Benchmarking.
+  Indoor Localization and Tracking} (2012), Chessa S., Knauth S., (Eds.),
+  Communications in Computer and Information Science, pp.~26--35.
+
+\bibitem[BK11]{Braun2011ArbiDevi}
+\textsc{Braun A., Kamieth F.}:
+\newblock {Passive identification and control of arbitrary devices in smart
+  environments}.
+\newblock In \emph{HCII'11 Proceedings of the 14th international conference on
+  Human-computer interaction: towards mobile and intelligent interaction
+  environments} (Berlin, July 2011), {Julie A. Jacko}, (Ed.), Springer-Verlag,
+  pp.~147--154.
+
+\bibitem[BNSW13]{Braun2013ActiveArmrest}
+\textsc{Braun A., Neumann S., Schmidt S., Wichert R.}:
+\newblock {Active Armrest}.
+\newblock 2013.
+
+\bibitem[BRFI11]{Braun2011EISVC}
+\textsc{Braun A., Roelofsma P. H. M.~P., Ferring D., Immonen M.}:
+\newblock {Empowering and integrating senior citizens with virtual coaching}.
+\newblock In \emph{Ambient Intelligence} (Berlin, Heidelberg, Nov. 2011),
+  Keyson D.~V., Maher M.~L., Streitz N., Cheok A., Augusto J.~C., Wichert R.,
+  Englebienne G., Aghajan H., Kr\"{o}se B. J.~A., (Eds.), vol.~7040 of
+  \emph{Lecture Notes in Computer Science}, Springer Berlin Heidelberg,
+  pp.~369--370.
+
+\bibitem[BW12]{braun2012dynamic}
+\textsc{Braun A., Wichert R.}:
+\newblock {Dynamic User Representation in Video Phone Applications}.
+\newblock In \emph{Constructing Ambient Intelligence}. Springer Berlin
+  Heidelberg, 2012, pp.~184--188.
+
+\bibitem[BZWW{\etalchar{*}}13]{Braun2013captap}
+\textsc{Braun A., Zander-Walz S., Wichert R., Augusto J.~C., Kuijper A.}:
+\newblock {CapTap - Combining Capacitive Gesture Recognition and Knock
+  Detection}.
+\newblock 2013.
+
+\bibitem[DBM13]{Djakow2013movibed}
+\textsc{Djakow M., Braun A., Marinc A.}:
+\newblock {MoviBed - sleep analysis using capacitive sensors}.
+\newblock 2013.
+
+\bibitem[GePMB11]{Couch2011}
+\textsc{Gro\ss~e Puppendahl T., Marinc A., Braun A.}:
+\newblock {Classification of User Postures with Capacitive Proximity Sensors in
+  AAL-Environments}.
+\newblock \emph{Ambient Intelligence 7040} (2011), 314--323.
+
+\bibitem[GPB12]{grosse2012honey}
+\textsc{Grosse-Puppendahl T., Braun A.}:
+\newblock {Honeyfish - a high resolution gesture recognition system based on
+  capacitive proximity sensing}.
+\newblock In \emph{Embedded World Conference 2012} (2012), Haar: WEKA
+  Fachmedien, 2012 (Design \& Elektronik), p.~10pp.
+
+\bibitem[GPBB{\etalchar{*}}13]{grosse2013opencapsense}
+\textsc{Grosse-Puppendahl T., Berghoefer Y., Braun A., Wimmer R., Kuijper A.}:
+\newblock {OpenCapSense: A Rapid Prototyping Toolkit for Pervasive Interaction
+  Using Capacitive Sensing}.
+\newblock \emph{IEEE International Conference on Pervasive Computing and
+  Communications (PerCom) 18} (2013), 22.
+
+\bibitem[GPBK{\etalchar{*}}13]{grosse2013unobtrusive}
+\textsc{Grosse-Puppendahl T., Benchea S., Kamieth F., Braun A., Schuster C.}:
+\newblock {Unobtrusive Recognition of Working Situations}.
+\newblock In \emph{Distributed, Ambient, and Pervasive Interactions}. Springer
+  Berlin Heidelberg, 2013, pp.~115--121.
+
+\bibitem[GPBKK13]{grosse2013swiss}
+\textsc{Grosse-Puppendahl T., Braun A., Kamieth F., Kuijper A.}:
+\newblock {Swiss-cheese extended: an object recognition method for ubiquitous
+  interfaces based on capacitive proximity sensing}.
+\newblock In \emph{Proceedings of the 2013 ACM annual conference on Human
+  factors in computing systems} (2013), ACM, pp.~1401--1410.
+
+\bibitem[HB10]{Hamisu2010}
+\textsc{Hamisu P., Braun A.}:
+\newblock {Analyse des Schlafverhaltens durch kapazitive Sensorarrays zur
+  Ermittlung der Wirbels\"{a}ulenbelastung}.
+\newblock In \emph{3. Deutscher AAL Kongress} (2010), VDE VERLAG GmbH,
+  pp.~3--6.
+
+\bibitem[KBS11]{Kamieth2011}
+\textsc{Kamieth F., Braun A., Schlehuber C.}:
+\newblock {Adaptive implicit interaction for healthy nutrition and food intake
+  supervision}.
+\newblock In \emph{HCII'11 Proceedings of the 14th international conference on
+  Human-computer interaction: towards mobile and intelligent interaction
+  environments} (Berlin, Heidelberg, July 2011), Springer-Verlag, pp.~205--212.
+
+\bibitem[KMB{\etalchar{*}}12]{klauss2012synergieeffekte}
+\textsc{Klau\ss K., M\"{u}ller S., Braun A., Dutz T., Kamieth F., Klein P.}:
+\newblock {Synergieeffekte aus der Kombination verschiedener AAL
+  L\{\"{o}\}sungen}.
+\newblock In \emph{Mensch \& Computer 2012--Workshopband: interaktiv
+  informiert--allgegenw\{\"{a}\}rtig und allumfassend!?} (M\"{u}nchen, 2012),
+  Reiterer H., Deussen O., (Eds.), Oldenbourg Verlag, pp.~61--67.
+
+\bibitem[LFK{\etalchar{*}}11]{leist2011user}
+\textsc{Leist A., Ferring D., Klauss K., Klein P., Braun A., Wichert R.}:
+\newblock {User requirements in ICT-based social media use: Acceptance of a
+  virtual coach}.
+
+\bibitem[MBMK12]{Majewski2012}
+\textsc{Majewski M., Braun A., Marinc A., Kuijper A.}:
+\newblock {Visual Support System for Selecting Reactive Elements in Intelligent
+  Environments}.
+\newblock In \emph{International Conference on Cyberworlds} (2012),
+  pp.~251--255.
+
+\bibitem[MBMK13]{majewski2013providing}
+\textsc{Majewski M., Braun A., Marinc A., Kuijper A.}:
+\newblock {Providing Visual Support for Selecting Reactive Elements in
+  Intelligent Environments}.
+\newblock In \emph{Transactions on Computational Science XVIII}. Springer,
+  2013, pp.~248--263.
+
+\bibitem[MKB{\etalchar{*}}13]{muller2013user}
+\textsc{M\"{u}ller S., Kamieth F., Braun A., Dutz T., Klein P.}:
+\newblock {User requirements for navigation assistance in public transit for
+  elderly people}.
+\newblock In \emph{Proceedings of the 6th International Conference on PErvasive
+  Technologies Related to Assistive Environments} (2013), ACM, p.~55.
+
+\bibitem[MLB{\etalchar{*}}12]{muuraiskangas2012v2me}
+\textsc{Muuraiskangas S., Leist A.~K., Braun A., Klau\ss K., Roelofsma P. H.
+  M.~P., Wichert R., Klein P., Ferring D.}:
+\newblock {V2me: Evaluating the first steps in mobile friendship coaching}.
+\newblock \emph{Journal of Ambient Intelligence and Smart Environments 4}, 6
+  (2012), 517--534.
+
+\bibitem[MSB{\etalchar{*}}11]{Marinc2011}
+\textsc{Marinc A., Stockl\"{o}w C., Braun A., Limberger C., Hofmann C., Kuijper
+  A.}:
+\newblock {Interactive personalization of ambient assisted living
+  environments}.
+\newblock In \emph{Proceeding HI'11 Proceedings of the 2011 international
+  conference on Human interface and the management of information} (July 2011),
+  vol.~Part I, pp.~567--576.
+
+\bibitem[MSB13]{marinc2013building}
+\textsc{Marinc A., Stockl\"{o}w C., Braun A.}:
+\newblock {Building Up Virtual Environments Using Gestures}.
+\newblock In \emph{Universal Access in Human-Computer Interaction. Applications
+  and Services for Quality of Life}. Springer Berlin Heidelberg, 2013,
+  pp.~70--78.
+
+\end{thebibliography}

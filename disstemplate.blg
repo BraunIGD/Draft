@@ -1,18 +1,21 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: disstemplate.aux
 The style file: eg-alpha.bst
 Database file #1: ../../Sources/Dissertation.bib
-Repeated entry---line 1250 of file ../../Sources/Dissertation.bib
- : @article{valtonen2012capacitive
- :                                ,
+Repeated entry---line 944 of file ../../Sources/Dissertation.bib
+ : @inproceedings{valtonen2012capacitive
+ :                                      ,
 I'm skipping whatever remains of this entry
+Warning--I didn't find a database entry for "Smith1999a"
 Warning--to sort, need author or key in ieee1451
 Warning--empty journal in adib20133d
 Warning--empty note in Braun2013ChairAid
+Warning--empty note in Braun2013captap
 Warning--empty journal in camp1989benchmarking
 Warning--can't use both author and editor fields in chessa_eval
 Warning--empty institution in Cypress2012
 Warning--empty note in Djakow2013movibed
 Warning--empty journal in Krum2002
+Warning--empty institution in microchip2013
 Warning--empty institution in Nokia2012
 Warning--there's a number but no series in Zimmerman1995
 (There was 1 error message)

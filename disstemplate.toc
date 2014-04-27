@@ -64,39 +64,39 @@
 \contentsline {subsection}{\numberline {4.2.2}Model-driven fitting methods}{66}{subsection.4.2.2}
 \contentsline {subsubsection}{\numberline {4.2.2.1}Single-body models}{67}{subsubsection.4.2.2.1}
 \contentsline {subsubsection}{\numberline {4.2.2.2}Multi-body models}{69}{subsubsection.4.2.2.2}
-\contentsline {subsection}{\numberline {4.2.3}Heterogeneous sensor systems}{70}{subsection.4.2.3}
-\contentsline {subsubsection}{\numberline {4.2.3.1}Heterogeneous capacitive arrays}{70}{subsubsection.4.2.3.1}
-\contentsline {subsubsection}{\numberline {4.2.3.2}Heterogeneous sensor fusion}{71}{subsubsection.4.2.3.2}
-\contentsline {subsection}{\numberline {4.2.4}Image-based processing}{71}{subsection.4.2.4}
-\contentsline {subsubsection}{\numberline {4.2.4.1}Acquire and optimize contours}{72}{subsubsection.4.2.4.1}
-\contentsline {subsubsection}{\numberline {4.2.4.2}Palm and arm fitting}{73}{subsubsection.4.2.4.2}
-\contentsline {subsubsection}{\numberline {4.2.4.3}Intensity-based elevation estimate}{74}{subsubsection.4.2.4.3}
-\contentsline {subsection}{\numberline {4.2.5}Physiological signals in frequency- and time-domain}{75}{subsection.4.2.5}
-\contentsline {subsubsection}{\numberline {4.2.5.1}Respiratory rate}{75}{subsubsection.4.2.5.1}
-\contentsline {subsubsection}{\numberline {4.2.5.2}Sleep phase recognition}{75}{subsubsection.4.2.5.2}
-\contentsline {section}{\numberline {4.3}Application prototypes}{78}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}CapFloor}{78}{subsection.4.3.1}
-\contentsline {subsubsection}{\numberline {4.3.1.1}Evaluation}{79}{subsubsection.4.3.1.1}
-\contentsline {subsection}{\numberline {4.3.2}Smart Bed}{81}{subsection.4.3.2}
-\contentsline {subsubsection}{\numberline {4.3.2.1}Evaluation}{82}{subsubsection.4.3.2.1}
-\contentsline {subsection}{\numberline {4.3.3}The Capacitive Chair}{83}{subsection.4.3.3}
-\contentsline {subsubsection}{\numberline {4.3.3.1}Capacitive layout}{84}{subsubsection.4.3.3.1}
-\contentsline {subsubsection}{\numberline {4.3.3.2}Processing}{85}{subsubsection.4.3.3.2}
-\contentsline {subsubsection}{\numberline {4.3.3.3}Evaluation}{86}{subsubsection.4.3.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Active Armrest}{89}{subsection.4.3.4}
-\contentsline {subsubsection}{\numberline {4.3.4.1}Evaluation}{90}{subsubsection.4.3.4.1}
-\contentsline {subsection}{\numberline {4.3.5}Magic Box}{92}{subsection.4.3.5}
-\contentsline {subsubsection}{\numberline {4.3.5.1}Evaluation}{92}{subsubsection.4.3.5.1}
-\contentsline {subsection}{\numberline {4.3.6}CapTap}{95}{subsection.4.3.6}
-\contentsline {subsubsection}{\numberline {4.3.6.1}Capacitive layout}{96}{subsubsection.4.3.6.1}
-\contentsline {subsubsection}{\numberline {4.3.6.2}Processing}{97}{subsubsection.4.3.6.2}
-\contentsline {subsubsection}{\numberline {4.3.6.3}Evaluation}{98}{subsubsection.4.3.6.3}
-\contentsline {section}{\numberline {4.4}Other capacitive prototypes}{103}{section.4.4}
-\contentsline {section}{\numberline {4.5}Capacitive prototypes from related work}{107}{section.4.5}
-\contentsline {subsection}{\numberline {4.5.1}Indoor localization}{107}{subsection.4.5.1}
-\contentsline {subsection}{\numberline {4.5.2}Smart Appliances}{108}{subsection.4.5.2}
-\contentsline {subsection}{\numberline {4.5.3}Physiological sensing}{108}{subsection.4.5.3}
-\contentsline {subsection}{\numberline {4.5.4}Gestural interaction}{108}{subsection.4.5.4}
+\contentsline {subsection}{\numberline {4.2.3}Heterogeneous sensor systems}{71}{subsection.4.2.3}
+\contentsline {subsubsection}{\numberline {4.2.3.1}Heterogeneous capacitive arrays}{71}{subsubsection.4.2.3.1}
+\contentsline {subsubsection}{\numberline {4.2.3.2}Heterogeneous sensor fusion}{72}{subsubsection.4.2.3.2}
+\contentsline {subsection}{\numberline {4.2.4}Image-based processing}{73}{subsection.4.2.4}
+\contentsline {subsubsection}{\numberline {4.2.4.1}Acquire and optimize contours}{74}{subsubsection.4.2.4.1}
+\contentsline {subsubsection}{\numberline {4.2.4.2}Palm and arm fitting}{74}{subsubsection.4.2.4.2}
+\contentsline {subsubsection}{\numberline {4.2.4.3}Intensity-based elevation estimate}{75}{subsubsection.4.2.4.3}
+\contentsline {subsection}{\numberline {4.2.5}Physiological signals in frequency- and time-domain}{76}{subsection.4.2.5}
+\contentsline {subsubsection}{\numberline {4.2.5.1}Respiratory rate}{76}{subsubsection.4.2.5.1}
+\contentsline {subsubsection}{\numberline {4.2.5.2}Sleep phase recognition}{76}{subsubsection.4.2.5.2}
+\contentsline {section}{\numberline {4.3}Application prototypes}{79}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}CapFloor}{79}{subsection.4.3.1}
+\contentsline {subsubsection}{\numberline {4.3.1.1}Evaluation}{80}{subsubsection.4.3.1.1}
+\contentsline {subsection}{\numberline {4.3.2}Smart Bed}{82}{subsection.4.3.2}
+\contentsline {subsubsection}{\numberline {4.3.2.1}Evaluation}{83}{subsubsection.4.3.2.1}
+\contentsline {subsection}{\numberline {4.3.3}The Capacitive Chair}{84}{subsection.4.3.3}
+\contentsline {subsubsection}{\numberline {4.3.3.1}Capacitive layout}{85}{subsubsection.4.3.3.1}
+\contentsline {subsubsection}{\numberline {4.3.3.2}Processing}{86}{subsubsection.4.3.3.2}
+\contentsline {subsubsection}{\numberline {4.3.3.3}Evaluation}{87}{subsubsection.4.3.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Active Armrest}{90}{subsection.4.3.4}
+\contentsline {subsubsection}{\numberline {4.3.4.1}Evaluation}{91}{subsubsection.4.3.4.1}
+\contentsline {subsection}{\numberline {4.3.5}Magic Box}{93}{subsection.4.3.5}
+\contentsline {subsubsection}{\numberline {4.3.5.1}Evaluation}{93}{subsubsection.4.3.5.1}
+\contentsline {subsection}{\numberline {4.3.6}CapTap}{96}{subsection.4.3.6}
+\contentsline {subsubsection}{\numberline {4.3.6.1}Capacitive layout}{97}{subsubsection.4.3.6.1}
+\contentsline {subsubsection}{\numberline {4.3.6.2}Processing}{98}{subsubsection.4.3.6.2}
+\contentsline {subsubsection}{\numberline {4.3.6.3}Evaluation}{99}{subsubsection.4.3.6.3}
+\contentsline {section}{\numberline {4.4}Other capacitive prototypes}{104}{section.4.4}
+\contentsline {section}{\numberline {4.5}Capacitive prototypes from related work}{108}{section.4.5}
+\contentsline {subsection}{\numberline {4.5.1}Indoor localization}{108}{subsection.4.5.1}
+\contentsline {subsection}{\numberline {4.5.2}Smart Appliances}{109}{subsection.4.5.2}
+\contentsline {subsection}{\numberline {4.5.3}Physiological sensing}{109}{subsection.4.5.3}
+\contentsline {subsection}{\numberline {4.5.4}Gestural interaction}{109}{subsection.4.5.4}
 \contentsline {chapter}{\numberline {5}Evaluating capacitive proximity sensors in smart environments}{111}{chapter.5}
 \contentsline {section}{\numberline {5.1}Comparison to other sensing technologies}{111}{section.5.1}
 \contentsline {section}{\numberline {5.2}Limitations}{112}{section.5.2}

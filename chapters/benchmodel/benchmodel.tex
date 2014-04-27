@@ -112,7 +112,7 @@ In order to determine the optimal (chosen) sensor technology $b_c$ for an applic
 b_c=max(B_{S_p})
 \end{equation}
 \subsection{Feature score normalization}
-With regards to actual benchmarking the problem of bias towards a specific technology may occur. If the average features ratings are different between two technologies the calculated benchmark score will increase. In many instances this might be beneficial, yet if comparing numerous technologies to a set of different applications a trend might be more important than absolute scores. Thus, we provide an optional step of calculating the normalized feature vector $r_{s_l,F_{d_i},norm}$ with regard to the average associated value of $0.5$, using the following equation.
+With regards to actual benchmarking the problem of bias towards a specific technology may occur. If the average features ratings are different between two technologies the calculated benchmark score will increase. In many instances this might be beneficial, yet if comparing numerous technologies to a set of different applications a trend might be more important than absolute scores. Thus, an optional step is provided that calculates the normalized feature vector $r_{s_l,F_{d_i},norm}$ with regard to the average associated value of $0.5$, using the following equation.
 \begin{equation}
 \overrightarrow{r_{s_l,F_{d_i},norm}}= \begin{pmatrix}
 r_{s_l,f_{1,_i}}\\ 
@@ -123,10 +123,10 @@ r_{s_l,f_{o,_i}}
 \end{equation} 
 The feature-normalized benchmark score is accordingly determined with the following equation.
 \begin{equation}
-b_{s_l}=\tfrac{\overrightarrow{r_{s_l,F_{d_i},norm}}\cdot \overrightarrow{w_{a_j}}}{\sum_{k=1}^{o}w_{f_k,a_j}}
+b_{s_l,norm}=\tfrac{\overrightarrow{r_{s_l,F_{d_i},norm}}\cdot \overrightarrow{w_{a_j}}}{\sum_{k=1}^{o}w_{f_k,a_j}}
 \end{equation}
 \subsection{Scoring}
-Now with the formal model and the available set of feature matrix and weights we are able to calculate the benchmarking score for a set of sensor technologies. As an example we are choosing the application indoor localization in a public shopping area to monitor customer behavior. The requirements include a tracking accuracy of 50 cm, with a large area to cover and potentially fast moving persons. Thus the importance ratings for performance characteristics are moderately important for resolution, important for update rate and very important for detection range. The system can also be used for security purposes, thus unobtrusiveness is less important. There can be dedicated servers, so processing complexity is not important, but the system should be difficult to disturb, thus robustness is important. Disturbance frequency is moderately important, as a large number of per-sons is monitored, leading to statistically significant results, even if single measurements are disturbed. The environment is fairly static, thus calibration complexity is less important. It is possible that a crowded shop produces a lot of acoustic noise, therefore no unique limitations towards acoustic disturbances should be present and this is moderately important. The resulting vector of weights is:
+Now with the formal model and the available set of feature matrix and weights it is possible to calculate the benchmarking score for a set of sensor technologies. As an example the application indoor localization in a public shopping area is chosen, in order to monitor customer behavior. The requirements include a tracking accuracy of 50 cm, with a large area to cover and potentially fast moving persons. Thus the importance ratings for performance characteristics are moderately important for resolution, important for update rate and very important for detection range. The system can also be used for security purposes, thus unobtrusiveness is less important. There can be dedicated servers, so processing complexity is not important, but the system should be difficult to disturb, thus robustness is important. Disturbance frequency is moderately important, as a large number of per-sons is monitored, leading to statistically significant results, even if single measurements are disturbed. The environment is fairly static, thus calibration complexity is less important. It is possible that a crowded shop produces a lot of acoustic noise, therefore no unique limitations towards acoustic disturbances should be present and this is moderately important. The resulting vector of weights is:
 \begin{equation}
 \overrightarrow{w_a}=
 \begin{pmatrix}
@@ -140,12 +140,12 @@ Based on previous experiences and best practice a camera-based system is evaluat
 1.00 & 0.75 & 1.00 & 0.25 & 0.00 & 0.50 & 0.75 & 0.25 & 1.00
 \end{pmatrix}^{-1}
 \end{equation}
-Using those two vectors we can calculate the final scoring for this sensor system using the equations of the previous section, leading to $b_s \approx 0.78$ and a feature-normalized score of $b_{s,norm} \approx 0.63$. Determining the feature rating vector for other technologies is possible in a similar fashion. The optimal technology would have the highest score $b_s$ or $b_{s,norm}$.
+Using those two vectors the final scoring for this sensor system can be calculated, using the equations of the previous section, leading to $b_s \approx 0.78$ and a feature-normalized score of $b_{s,norm} \approx 0.63$. Determining the feature rating vector for other technologies is possible in a similar fashion. The optimal technology would have the highest score $b_s$ or $b_{s,norm}$.
 \clearpage
 \section{Evaluating technology popularity}
-In order to evaluate the method we propose a discussion based on previous successful works in the domain of smart environments. We will select three different application areas and for each benchmark three different sensor technologies. In order to estimate how popular a certain technology is for a given application we will be using the ACM Digital Library to query scientific publications with respective author keywords. This method is limited, as the chosen keywords may not catch all relevant publications. Therefor we will slightly increase the focus by using multiple associated search terms for each application and technology. Additionally we will also perform respective searches using the Google Scholar data-base that has a much broader scope-The advantages of the latter are the huge collection of scientific resources and no strong selection bias. However, there are various associated issues that may affect the method. The search results vary on the search term, additionally there will be results that mention the search term but do not necessarily rely on the technology for their respective system. Therefore, the results should be considered as an indicator for popularity in the research community. Similar to the ACM DL search we are also looking for synonyms and calculate an average between the search results.
+In order to evaluate the method I propose a verification based on previous successful works in the domain of smart environments. Three different application areas are selected and for each benchmark three different sensor technologies. In order to estimate how popular a certain technology is for a given application the ACM Digital Library is used to query scientific publications with respective author keywords. This method is limited, as the chosen keywords may not catch all relevant publications. Therefor the focus is slightly increased by using multiple associated search terms for each application and technology. Additionally, respective searches are also performed using the Google Scholar database that has a much broader scope. The advantages of the latter are the huge collection of scientific resources and no strong selection bias. However, there are various associated issues that may affect the method. The search results vary on the search term, additionally there will be results that mention the search term but do not necessarily rely on the technology for their respective system. Therefore, the results should be considered as an indicator for popularity in the research community. Similar to the ACM DL search different synonyms are considered and an average between the search results is calculated.
 
-As applications we choose hand gesture interaction, a marker-based identification system and obstacle avoidance for an autonomous system. The technologies are camera systems, radio-based systems, depth or stereo cameras and ultrasound devices.
+The chosen applications are hand gesture interaction, a marker-based identification system and obstacle avoidance for an autonomous system. The technologies are camera systems, radio-based systems, depth or stereo cameras and ultrasound devices.
 \subsection{Scoring}
 % Table generated by Excel2LaTeX from sheet 'Tabelle1'
 \begin{table}[htbp]
@@ -162,7 +162,7 @@ As applications we choose hand gesture interaction, a marker-based identificatio
     \end{tabular}%
   \label{tab:bench_appweights}%
 \end{table}%
-At first we determine the weights of the different applications with regards to the features. The results are shown in Table \ref{tab:bench_appweights}. For the tables in this section we are using short notation of the features in order of appearance in Section \ref{ch:bench_sec_featscore}.
+At first the weights of the different applications with regards to the features are determined. The results are shown in Table \ref{tab:bench_appweights}. For the tables in this section the short notation of the features is used, in order of appearance in Section \ref{ch:bench_sec_featscore}.
 \begin{table}[htbp]
   \centering
   \caption{Feature rating of the different sensor technologies}
@@ -178,7 +178,7 @@ At first we determine the weights of the different applications with regards to 
     \end{tabular}
   \label{tab:bench_feature_rating}
 \end{table}
-The rating of the different technologies and the resulting score is shown in Table \ref{tab:bench_feature_rating}. Here it is possible to follow different strategies regarding the rating. In terms of unbiased comparison looking at the equations it would be necessary that all technologies have the same average feature rating. The second strategy is to apply an absolute ranking to all technologies, independent of the given application. This might lead to certain technologies being unsuited for a given task, or technologies that have the best benchmark score regardless of application. In this specific case the average rating is 0.53 for cameras, 0.58 for radio, 0.44 for depth cameras and 0.56 for ultrasound devices. Table \ref{tab:bench_scores} displays the different calculated benchmark scores for the combinations between applications and technologies. As we are comparing numerous technologies and applications the feature-normalized benchmark score is also included.
+The rating of the different technologies and the resulting score is shown in Table \ref{tab:bench_feature_rating}. Here it is possible to follow different strategies regarding the rating. In terms of unbiased comparison looking at the equations it would be necessary that all technologies have the same average feature rating. The second strategy is to apply an absolute ranking to all technologies, independent of the given application. This might lead to certain technologies being unsuited for a given task, or technologies that have the best benchmark score regardless of application. In this specific case the average rating is 0.53 for cameras, 0.58 for radio, 0.44 for depth cameras and 0.56 for ultrasound devices. Table \ref{tab:bench_scores} displays the different calculated benchmark scores for the combinations between applications and technologies. As numerous technologies and applications are compared, the feature-normalized benchmark score is also included.
 
 \begin{table}[htbp]
   \centering
@@ -201,7 +201,7 @@ The rating of the different technologies and the resulting score is shown in Tab
 \end{table}%
 The effect of the normalization is easily visible. Particularly radio has a high feature rating and is negatively affected by the normalization. The only example with a negative average feature rating is the depth camera. After applying the normalization it becomes competitive in some applications.
 
-Finally, Table \ref{tab:bench_search_res} shows the search results regarding the different technologies and applications. Particularly the ACM DL keyword search can generate empty results if the search terms are too specific. Thus, the search terms we were using are “gesture“, “identification and “obstacle” in this regard and add synonyms for the different technologies. For each sensor category we allowed the following synonyms. “Camera” and “video” for the first technology, “radio”, “rf” and “wifi” for the second, “depth camera”, “stereo camera” and “Kinect” for the third and “ultrasound” as well as “ultrasonic” for the last one. All search results were averaged according to the number of synonyms used For the Google Scholar search we used more specific terms, “hand gesture”, “user identification” and “obstacle avoidance” with the same synonyms to prevent an excessive number of search results and prevented inclusion of patents and citations. All searches were performed on January 30th, 2014.
+Finally, Table \ref{tab:bench_search_res} shows the search results regarding the different technologies and applications. Particularly the ACM DL keyword search can generate empty results if the search terms are too specific. Thus, the search terms used are “gesture“, “identification and “obstacle” in this regard and add synonyms for the different technologies. For each sensor category the following synonyms are allowed. “Camera” and “video” for the first technology, “radio”, “rf” and “wifi” for the second, “depth camera”, “stereo camera” and “Kinect” for the third and “ultrasound” as well as “ultrasonic” for the last one. All search results were averaged according to the number of synonyms used. For the Google Scholar search more specific terms were used: “hand gesture”, “user identification” and “obstacle avoidance” with the same synonyms to prevent an excessive number of search results and prevented inclusion of patents and citations. All searches were performed on January 30th, 2014.
 % Table generated by Excel2LaTeX from sheet 'Tabelle1'
 \begin{table}[htbp]
   \centering
@@ -220,9 +220,146 @@ Finally, Table \ref{tab:bench_search_res} shows the search results regarding the
 \end{table}%
 
 \section{Discussion}
-In this evaluation we included both benchmark score types to outline their dif-ferences. “Camera”, “radio” and “ultrasound” have a feature rating above average, whereas “depth cameras” had a lower than average rating. The feature-normalized benchmark score is thus adapted accordingly. Regarding the application of “hand-gesture recognition” this leads to “depth cameras” being considered the optimal technology as opposed to “cameras” that had a higher score before normalization. For the other applications there is no change in optimal technology. The preferred strategy for applying feature-normalized or non-feature-normalized benchmark scoring should depend on the specific benchmarking process. If we are bench-marking numerous technologies and applications in a single process the feature-normalization might be helpful to get a tendency regarding the optimal system. However, if the application is very specific it might be preferred to get a clear ranking and penalize unsuited technologies, regardless of their average feature weight. Accordingly, it is possible to refrain from normalization.
-Looking at the search results we can draw several conclusions. The prevalence is unequally distributed between the different technologies. Both in keywords and general occurrence cameras are the most commonly occurring sensor device, with radio and depth camera ranked behind. Ultrasound on the other hand is less frequently occurring. This may be explained by the higher versatility of the other options. Regarding the “hand gesture” application, cameras have both the highest benchmark scores and most results in the database searches. The benchmark score for “user identification” and “radio” are matched for the ACM DL. However, there are more GS results for “camera”. As already mentioned cameras are more com-monly used, yet, the difference in keyword search results is significant. “Obstacle avoidance” is least common in the ACM DL, however quite popular in GS. Accordingly, “ultrasound” sensors are significantly more common in both searches, as opposed to the previous applications. Nonetheless, “stereo cameras” are the most common sensor device for this application. They are commonly used in automotive scenarios, where the detection range of ultrasound is insufficient, as the objects are moving fast \cite{bertozzi1998gold}. Therefore, the application scenario might have to be redefined for fast-moving object detection in open areas as opposed to obstacle avoidance for robots in home scenarios. 
-We additionally have to discuss the method of using database searches for verifying the benchmarking method, as opposed to expert opinion. Surveys of a specific application or certain technologies are common in scientific literature. How-ever, while they might be comprehensive and cite several hundred different applications, the ACM DL database covers more than 2.2 million entries and GS searches can lead to more than 9.7 million results. Therefore, the index searches are preferable in terms of broadness. The search for keywords in ACM DL results in few hits compared to the database size. As they are chosen by the authors there is a large variety in word choice, spelling or number of keywords. While extend-ing the number of different searches might lead to more results overall, it may also lead to additional overshoot, including work that do not cover the desired topics. The GS searches are very prone to overshooting, and should be preferably used to discover trends in data, as opposed to narrowly clustered results.
-Finally we want to briefly discuss the tendency of the benchmark scores to crowd around 0.5. While the benchmark may result in any number between 0 and 1 the two normalization processes and the tendency to avoid extreme scoring for features and weights leads to an average close to 0.5. Thus, even slower differences close to this average may have a higher significance. It would also be possible to put more emphasis by using a correction term.
+In this evaluation both benchmark score types are included to outline their differences. “Camera”, “radio” and “ultrasound” have a feature rating above average, whereas “depth cameras” had a lower than average rating. The feature-normalized benchmark score is thus adapted accordingly. Regarding the application of “hand-gesture recognition” this leads to “depth cameras” being considered the optimal technology as opposed to “cameras” that had a higher score before normalization. For the other applications there is no change in optimal technology. The preferred strategy for applying feature-normalized or non-feature-normalized benchmark scoring should depend on the specific benchmarking process. If numerous technologies and applications are benchmarked in a single process, the feature-normalization might be helpful to get a tendency regarding the optimal system. However, if the application is very specific it might be preferred to get a clear ranking and penalize unsuited technologies, regardless of their average feature weight. Accordingly, it is possible to refrain from normalization.
+Looking at the search results several conclusions can be drawn. The prevalence is unequally distributed between the different technologies. Both in keywords and general occurrence cameras are the most commonly occurring sensor device, with radio and depth camera ranked behind. Ultrasound on the other hand is less frequently occurring. This may be explained by the higher versatility of the other options. Regarding the “hand gesture” application, cameras have both the highest benchmark scores and most results in the database searches. The benchmark score for “user identification” and “radio” are matched for the ACM DL. However, there are more GS results for “camera”. As already mentioned cameras are more com-monly used, yet, the difference in keyword search results is significant. “Obstacle avoidance” is least common in the ACM DL, however quite popular in GS. Accordingly, “ultrasound” sensors are significantly more common in both searches, as opposed to the previous applications. Nonetheless, “stereo cameras” are the most common sensor device for this application. They are commonly used in automotive scenarios, where the detection range of ultrasound is insufficient, as the objects are moving fast \cite{bertozzi1998gold}. Therefore, the application scenario might have to be redefined for fast-moving object detection in open areas as opposed to obstacle avoidance for robots in home scenarios. 
+Additionally, the method of using database searches for verifying the benchmarking method has to be discussed, as opposed to expert opinion. Surveys of a specific application or certain technologies are common in scientific literature. However, while they might be comprehensive and cite several hundred different applications, the ACM DL database covers more than 2.2 million entries and GS searches can lead to more than 9.7 million results. Therefore, the index searches are preferable in terms of broadness. The search for keywords in ACM DL results in few hits compared to the database size. As they are chosen by the authors there is a large variety in word choice, spelling or number of keywords. While extending the number of different searches might lead to more results overall, it may also lead to additional overshoot, including work that do not cover the desired topics. The GS searches are very prone to overshooting, and should be preferably used to discover trends in data, as opposed to narrowly clustered results.
+
+\subsection{Central tendency bias}
+I want to briefly discuss the tendency of the benchmark scores to crowd around 0.5. While the benchmark may result in any number between 0 and 1 the two normalization processes the average is close to 0.5. Thus, even slower differences close to this average may have a higher significance. This effect is called central tendency bias and is a common occurrence on Likert-scale questionnaires and rating systems \cite{crawford2000category}. Experts scoring technologies, just like survey respondents have a tendency to avoid extreme responses to a question. 
+
+While experience of the person executing the benchmarking process might avoid this problem, it is also possible to use a corrective term in the calculation of the final benchmarking score. The primary purpose of this corrective term is to make the comparison between different scores easier to the reader. The following equations can be used to fix either regular or normalized benchmarking scores, resulting in the modified benchmarking score $m_b$, respectively $m_{b,norm}$.
+
+\begin{align}
+m_b&=(b_{s_l}+0.5)^a & m_{b,norm}&=(b_{s_l,norm}+0.5)^a
+\end{align}
+
+The exponent $a$ should be a value higher $1$ and chosen according to the level of adjustment that is desired. As an example, Table shows adaptations of $b_{s_l}$ and $b_{s_l,norm}$ for cameras and ultrasound, taken from Table \ref{tab:bench_scores}. The different values for $a$ are 1 , 5 and 10. 
+
+% Table generated by Excel2LaTeX from sheet 'Tabelle2'
+\begin{table}[htbp]
+  \centering
+  \caption{Central tendency bias correction for different exponents a}
+    \begin{tabular}{rrrrrrrr}
+    \toprule
+          &       & \multicolumn{3}{c}{Camera} & \multicolumn{3}{c}{Ultrasound} \\
+          &       & a=1   & a=5   & a=10  & a=1   & a=5   & a=10 \\
+    \midrule
+    \multirow{2}[0]{*}{Hand Gesture} & $m_b$   & 1.08  & 1.47  & 2.16  & 1.04  & 1.28  & 1.63 \\
+          & $m_{b,norm}$ & 1.04  & 1.22  & 1.48  & 0.99  & 1.00  & 1.00 \\
+    \multirow{2}[0]{*}{Identification} & $m_b$   & 0.99  & 0.95  & 0.90  & 0.96  & 1.40  & 1.97 \\
+          & $m_{b,norm}$ & 0.96  & 0.82  & 0.66  & 0.97  & 1.05  & 1.10 \\
+    \multirow{2}[0]{*}{Obstacle Avoidance} & $m_b$  & 0.97  & 0.86  & 0.74  & 0.94  & 1.54  & 2.37 \\
+          & $m_{b,norm}$ & 0.94  & 0.73  & 0.54  & 0.50  & 1.16  & 1.34 \\
+    \bottomrule
+    \end{tabular}%
+
+  \label{tab:bench_bias_corr}%
+\end{table}%
+
 
 \section{Applications for capacitive proximity sensors}
+In the previous sections I have presented a generic method to evaluate different sensor technologies, with respect to various applications and provided evidence based on analyzing the frequency of technology popularity in scientific literature. In the following section I will use this method to verify potential application domains for capacitive proximity sensors. In section \ref{ch:rel_se_app} - \emph{\nameref{ch:rel_se_app}}, seven different application domains within smart environments have been introduced. Using the specified benchmarking method I will specify the different feature weights and calculate the resulting scores. Afterwards, I will perform another frequency analysis of capacitive sensing in literature to determine if the existing scores are suitable. 
+
+\subsection{Benchmark weights}
+
+% Table generated by Excel2LaTeX from sheet 'Tabelle3'
+\begin{table}[htbp]
+  \centering
+  \caption{Importance weights of applications for capacitive proximity sensors}
+       \begin{tabular}{rccccccccc}
+    \toprule
+          & res   & upd   & det   & unob  & proc  & robu  & disfr & calco & uniqd \\
+    \midrule
+        Indoor localization & o     & +     & ++    & +     & -     & +     & o     & +     & - \\
+    Gestural hand interaction & ++    & ++    & -     & +     & o     & o     & +     & +     & - \\
+    Physiological sensing & ++    & o     & --    & +     & -     & +     & -     & o     & o \\
+    Wearable activity recognition & o     & -     & -     & +     & +     & +     & +     & o     & o \\
+    Person-sensing smart appliances & -     & +     & +     & ++    & o     & +     & +     & +     & + \\
+    Mobile augmented reality & o     & ++    & +     & -     & o     & +     & -     & o     & + \\
+    Obstacle detection & -     & +     & -     & o     & +     & +     & ++    & ++    & + \\
+
+    \bottomrule
+    \end{tabular}%1
+  \label{tab:bench_cap_apps}%
+\end{table}%
+
+\emph{Indoor localization} will not typically require a high resolution, as it is in most cases sufficient to identify the approximate position of the different actors in the environment. However, a high update rate is required as it is necessary to follow the trajectories of the different persons. Achieving a high detection distance is often the most important aspect, e.g. if it is intended to cover large areas. The system should be unobtrusive and not disturb the actors, while processing complexity is less relevant, since it can be integrated and hidden in the existing environment. The system should be robust. The frequency of disturbances is less of an issue, as indoor surroundings are more controlled, as opposed to outdoor environments. However, if a disturbance occurs it should be calibrated quickly to resume normal operation. The unique disturbances are usually considered in system design and should not affect the overall situation too much.
+
+\emph{Gestural hand interaction} requires high resolution and high update rate, as it is intended to capture fine movements of the fingers. The detection distance is not critical, since it is assumed that the capturing device can be put in close proximity of the hands. Most systems are designed for explicit interaction and it is not necessary to be unobtrusive. Likewise, enough processing capabilities are typically included. The system should be fairly robust, as reliable input is expected and it should not be disturbed, resulting in unwanted actions. The calibration in case of disturbance should be ensured, or at least a feedback has to be given to the user. There are no critical unique disturbances in this specific application.
+
+\emph{Physiological sensing} often has to work on weak signals produced by the body and thus needs a high resolution. The required update rate likewise should be high as various of those signals are fast, such as heart rate or brain functions. The detection distance is weighted least favorably, as they mostly require a direct touch. However, even then it should be fairly unobtrusive, leading to wearable systems that have restricted processing capabilities, but nonetheless should be very robust. The signals are typically noisy with high frequency of disturbance, yet recalibration is not very costly and due to the touch properties no particular unique disturbers should be present. 
+
+\emph{Wearable activity recognition} is mostly performed by wearable fitness trackers that have to be very conscious about energy usage. Thus the resolution is average and the update rate low. The system has to be close to follow the movements directly. However, it is preferable if there is an integration into other devices, or a small form factor, so they are less obtrusive. Processing capabilities are limited, yet the design should be very robust to avoid damage during typical activities. Disturbance mostly occurs due to unforeseen movements that can be misinterpreted, though are not very difficult to calibrate. Likewise, there are no particular unique disturbances apart from movement that we have to consider.
+
+\emph{Person-sensing smart appliances} are designed to just detect the presence of a human being, without providing any additional information apart from its own location. Therefore, the requirements for resolution are low, while this information should be available with a high update rate and preferably over a fairly large detection distance. The systems should be unobtrusive and robust, while the processing complexity of the signal is not critical, given the simple measurements that can be handled even by very low-powered devices. The systems should distinguish between persons and other moving objects, thus being reliable towards unique disturbances that may occur often. A recalibration can be fully automated.
+
+\emph{Mobile augmented reality} is typically executed on a smart phone. The localization is based on GPS using the limited resolution. However, the other sensors should clearly and precisely identify orientation, leading to mixed requirements on resolution. The update rate and detection distance has to be high, particularly regarding the orientation estimate. The systems can't be unobtrusive, as an additional device is needed to overlay the visual information. The processing complexity is average and can be performed even by slower smart phones. The system should be robust and provide its service at all times. The system is difficult to disturb, can be easily calibrated and there are no obvious unique disturbers that have to be considered.
+
+\emph{Obstacle detection} is a primary concern of autonomous systems operating in a smart environment. The resolution is less critical than the update rate, as there are various strategies to deal with encountered obstacles, but they have to be detected swiftly and robustly. Thus a higher detection distance is preferred. It is not necessary to be unobtrusive and it can be assumed that enough processing capabilities are present. For this application we have to account for disturbing factors, as it is mandatory that the system detects obstacles of all materials, shapes and most sizes. For most sensor categories there are materials that will prevent a proper detection. Thus unique disturbers have to be factored in, according to their prevalence in the given scenario.
+
+\subsubsection*{Capacitive proximity sensor feature rating}
+% Table generated by Excel2LaTeX from sheet 'feat_caps'
+\begin{table}[htbp]
+  \centering
+  \caption{Feature weights for capacitive proximity sensors}
+    \begin{tabular}{rccccccccc}
+    \toprule
+          & res   & upd   & det   & unob  & proc  & robu  & disfr & calco & uniqd \\
+    \midrule
+    \textit{\textbf{Capacitive proximity sensors}} & \textit{\textbf{-}} & \textit{\textbf{+}} & \textit{\textbf{-}} & \textit{\textbf{++}} & \textit{\textbf{o}} & \textit{\textbf{o}} & \textit{\textbf{o}} & \textit{\textbf{+}} & \textit{\textbf{-}} \\
+    \midrule
+    Camera & ++    & o     & +     & -     & o     & o     & o     & -     & o \\
+    Radio & -     & +     & ++    & +     & o     & o     & o     & o     & - \\
+    Depth camera & +     & o     & o     & -     & -     & o     & -     & o     & o \\
+    Ultrasound & -     & +     & o     & o     & +     & o     & +     & o     & o \\
+    \bottomrule
+    \end{tabular}%
+
+  \label{tab:bench_cap_feat_weights}
+\end{table}
+
+As the next step in the benchmarking process the feature weights of capacitive proximity sensors have to be determined. Following the same process used for the different technologies discussed previously the result can be seen in Table \ref{tab:bench_cap_feat_weights}.
+
+Looking at the group of sensor performance characteristics the resolution has to be considered coarse. While it is possible to create highly sensitive and precise sensors, this is typically restrained to very close distances. The majority of capacitive proximity sensor applications are operating over a certain distance. However, the sensor layouts that allow detection in this area do not have the resolution to precisely distinguish precise object locations without extensive post-processing. There is no set limitation to the update rate of capacitive sensors, as also high-frequency electric circuits can be evaluated, e.g. we created an exemplary application that has an update rate of about $1kHz$ \cite{grosse2013opencapsense}. This will affect the achievable resolution and distance. Most setups operate in the range between real-time $20Hz$ up to $100Hz$ leading to a favorable update rate. The detection distance of the sensors is limited. While there are some systems that operate in distances of more than $1m$ \cite{MacLachlan2004}, they are restricted in their sensing abilities. Typically the systems are operating in a range somewhere between $10cm$ and $50cm$. 
+
+Discussing briefly the pervasive metrics, the major advantage of capacitive proximity sensors is their ability to be installed completely invisible. They also operate in a frequency spectrum that is not considered biologically active and at low voltages. The processing complexity varies, based on applications. They will require pre-processing and calibration, that is more complex compared to other sensors. However, as there are not many sensor value the post-processing is simpler, e.g. compared to cameras. Some data processing methods can use fairly complex statistical methods if multiple objects are to be tracked or there is additional gesture recognition \cite{grosse2013swiss}. Overall, the processing complexity is rated average. Similar to the other sensor systems presented robustness and quality of service depend on the particular application. It is possible to design systems that fail easily, or that are fully redundant. In consequence, they receive an average rating. 
+
+Finally, the environmental characteristics are discussed. The frequency of unique disturbances is average. The sensors can be disturbed by electrical signals that are present in the environment. The majority of potential disturbing signals can be compensated in an initial calibration phase and by using appropriate measures to isolate the measuring system from the existing electric circuits. The remaining disturbances are either caused by devices that are brought into the environment after, or by irregular disturbances in the electric supply. E.g. in our laboratory we had a persistent issue caused by a faulty power supply in a neighboring building that was affecting the stability of the supply frequency. The complexity of calibrating the sensors is low. There is no need to use any external measure and it is sufficient to consider a time-series of previous measurements for calibration. The example above about a single power supply disturbing all capacitive sensors is one example why unique disturbers have to be taken into account. While these instances are limited the rating is reduced to "not favorable".
+
+
+\subsection{Benchmarking scores for capcitive proximity sensors}
+
+Using the methods of the previous pages it is now possible to calculate the different benchmark score for capacitive proximity sensors and the various applications. In this case there is no comparison between different technologies. To provide a complete overview all four varieties are calculated and discussed. The results are shown in Table \ref{tab:bench_capapps_scores}. 
+
+% Table generated by Excel2LaTeX from sheet 'cap_rating_applications'
+\begin{table}[htbp]
+  \centering
+  \caption{Benchmarking scores for capacitive proximity sensors in different applications}
+   \begin{tabular}{rrrrr}
+    \toprule
+          & $b_{s_l}$ & $b_{s_l,norm}$ & $m_b$ (a=10) & $m_{b,norm}$ (a=10) \\
+    \midrule
+    Indoor localization & 0.56  & 0.53  & 1.79  & 1.34 \\
+    Gestural hand interaction & 0.51  & 0.49  & 1.10  & 0.90 \\
+    Physiological sensing & 0.57  & 0.54  & 1.97  & 1.48 \\
+    Wearable activity recognition & 0.55  & 0.52  & 1.63  & 1.22 \\
+    Person-sensing smart appliances & 0.57  & 0.54  & 1.97  & 1.48 \\
+    Mobile augmented reality & 0.50  & 0.47  & 1.00  & 0.74 \\
+    Obstacle detection & 0.55  & 0.53  & 1.63  & 1.34 \\
+
+    \bottomrule
+    \end{tabular}%
+  \label{tab:bench_capapps_scores}%
+\end{table}%
+
+As seven different applications without comparison of different sensing technologies, the normalized scores have the purpose of putting the calculated scores around the 0.5 average feature rating. Additionally, the correction term for central-tendency bias is included for both regular and normalized scores. 
+
+The lowest scores are associated to mobile augmented reality and gestural hand interaction
+
+are tested it can be assumed that the non-normalized benchmark scores will have a tendency towards the highest-rated application. In fact there is a spread between physiological sensing having an average feature rating of $0.53$ and person-sensing smart appliances with an average feature rating of $0.69$. The non-normalized score for both is $0.57$ and diverges to 
+
+
+
+\subsection{Popularity of capacitive proximity sensors in literature}
+
+

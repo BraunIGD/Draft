@@ -38,3 +38,19 @@ Likewise we identified three main groups for negative comments about the prototy
 \item{It can be tiring for the arm}
 \end{itemize}
 Later iterations have been trying to improve some of the weaknesses presented above, e.g. by using a more sophisticated gesture recognition system and faster sensor refresh rates. Accordingly there were fewer complaints about interaction speed and precision \cite{braun2013capacitive}. However, the final complaint about the device being tiring for the arm, requires a different approach, that we are investigating in the final prototype to be presented in this system.
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=0.7\textwidth]{images/magicbox_data_gest}
+\caption{Gesture overview module (left) and gesture recorder (right) \cite{braun2013capacitive}}
+\label{fig:magicbox_data_gest}
+\end{figure}
+%Figure 30 Gesture overview module (left) and gesture recorder (right)
+The overall method is similar to mouse gesture recognition, albeit adapted for three dimensional locations. The developed system allows defining an arbitrary set of potential gestures and adding training data. In Figure \ref{fig:magicbox_data_gest} the defined gestures can be seen u. The module is looking for matches based on the most recent set of locations. 
+
+In our cases this is an array of capacitive proximity sensors that will be detailed in the prototype section.
+Figure 3 - Screenshots of gesture manager and gesture
+recorder
+The key aspect of gestures by example – providing examples - is realized in a debug application. It provides a simple way to record exemplary movements and associate them to gesture sets. The main screens realizing this functionality are shown in Figure 3.
+On the left side we can see the management screen that allows
+adding and deleting of gestures, as well as a preview window that is an average of the sample data associated to this gesture. The process of entering data is shown on the right side where several samples can be recorded and associated to the selected gesture and the user can decide, whether the current movement should be stored or discarded.

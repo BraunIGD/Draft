@@ -1,7 +1,7 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: disstemplate.aux
 The style file: eg-alpha.bst
 Database file #1: ../../Sources/Dissertation.bib
-Repeated entry---line 807 of file ../../Sources/Dissertation.bib
+Repeated entry---line 1429 of file ../../Sources/Dissertation.bib
  : @article{valtonen2012capacitive
  :                                ,
 I'm skipping whatever remains of this entry
@@ -14,7 +14,7 @@ Warning--empty note in Braun2013captap
 Warning--empty journal in camp1989benchmarking
 Warning--can't use both author and editor fields in chessa_eval
 Warning--empty institution in Cypress2012
-Warning--empty note in Djakow2013movibed
+Warning--empty publisher in Djakow2013movibed
 Warning--empty journal in Krum2002
 Warning--empty institution in microchip2013
 Warning--empty institution in Nokia2012

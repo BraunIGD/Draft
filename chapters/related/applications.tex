@@ -1,5 +1,5 @@
 \section{Applications in smart environments}
-
+\label{ch:rel_se_app}
 \begin{table}[htbp]
   \centering
   \caption{Application domains and relevant works}
@@ -7,34 +7,37 @@
     \toprule
     Application Domain & Relevant Works \\
     \midrule
-    \multirow{4}[0]{*}{Indoor Localization} & AmbiTrack camera system \cite{braun2013ambitrack} \\
-          & EZ Indoor localization \cite{ chintalapudi2010indoor} \\
+    \multirow{4}[0]{*}{Indoor Localization} & Braun - AmbiTrack camera system \cite{braun2013ambitrack} \\
+          & Chintalapudi - EZ Indoor localization \cite{ chintalapudi2010indoor} \\
           & Mulloni - signpost markers \cite{mulloni2009indoor} \\
           & Pirkl - resonant magnetic coupling \cite{pirkl2013resonant} \\ [1em]
-    \multirow{4}[0]{*}{Gestural Interaction} & Zimmerman - hand gesture \cite{zimmerman1987hand} \\
-          & XWand \cite{Wilson2003} \\
-          & uWave \cite{liu2009uwave} \\
-          & Lee et al. - natural content manipulation \cite{lee2013towards} \\[1em]
-    \multirow{4}[0]{*}{Emotion-aware computing} & Cowie et al. - emotion recognition \cite{cowie2001emotion} \\
-          & Khosrowabadi et al. - EEG emotion \cite{khosrowabadi2010eeg} \\
-          & Wöllmer et al. - multimodal emotion recognition \cite{wollmer2010context} \\
-          & MACH \cite{hoque2013mach} \\[1em]
-    \multirow{4}[0]{*}{Activity Recognition} & Bao et al. - user-annotated acceleration data \cite{Bao2004} \\
-          & Bulling et al. - electrooculography \cite{bulling2011eye} \\
-          & Lasecki et al. - real-time crowd labeling \cite{lasecki2013real} \\
-          & Hon4D \cite{oreifej2013hon4d} \\[1em]
-    \multirow{4}[0]{*}{Smart Appliances} & MediaCups \cite{gellersen1999mediacup} \\
-          & StickEar \cite{yeo2013stickear} \\
-          & Smart Medication Dispenser \cite{tsai2011smart} \\
-          & Bistable Display Tags \cite{dementyev2013wirelessly} \\[1em]
-    \multirow{4}[0]{*}{Mobile devices} & DyPers \cite{jebara1998dypers} \\
-          & MirageTable \cite{benko2012miragetable} \\
-          & InterReality learning portal \cite{pena2012towards} \\
-          & Lotte et al. - BCI and virtual reality \cite{lotte2013combining} \\[1em]
-    \multirow{4}[0]{*}{Autonomous systems} & Coradeschi et al. - symbiotic robotic systems \cite{coradeschi2006symbiotic} \\
-          & PEIS ecology \cite{broxvall2006peis} \\
-          & Arndt et al. - robotic frameworks \cite{arndt2013performance} \\
-          & Huijnen et al. - companion robotics and smart homes \cite{huijnen2011maybe} \\
+    \multirow{4}[0]{*}{Gestural interaction} & Zimmerman - hand gesture \cite{zimmerman1987hand} \\
+          & Wilson - XWand pointing interaction\cite{Wilson2003} \\
+          & Majewski - visual feedback \cite{majewski2013providing} \\
+          & Liu - uWave \cite{liu2009uwave} \\
+          & Pu - WiSee \cite{pu2013whole} \\[1em]
+    \multirow{4}[0]{*}{Physiological sensing} & Cowie - emotion recognition \cite{cowie2001emotion} \\
+          & Khosrowabadi - EEG emotion \cite{khosrowabadi2010eeg} \\
+          & Wöllmer - multimodal emotion recognition \cite{wollmer2010context} \\          
+          & Hoque - MACH \cite{hoque2013mach} \\
+          & Koelstra - DEAP database \cite{koelstra2012deap} \\[1em]
+    \multirow{4}[0]{*}{Activity recognition} & Bao - user-annotated acceleration data \cite{Bao2004} \\
+          & Bulling - electrooculography \cite{bulling2011eye} \\
+          & Lasecki - real-time crowd labeling \cite{lasecki2013real} \\
+          & Oreifej - Hon4D \cite{oreifej2013hon4d} \\[1em]
+    \multirow{4}[0]{*}{Smart appliances} & Gellersen - MediaCups \cite{gellersen1999mediacup} \\
+          & Yeo - StickEar \cite{yeo2013stickear} \\
+          & Tsai - Smart Medication Dispenser \cite{tsai2011smart} \\
+          & Dementyev - Bistable Display Tags \cite{dementyev2013wirelessly} \\[1em]
+    \multirow{4}[0]{*}{Mobile devices} & Ballages - mobile devices in ubiquitous computing \cite{ballagas2006smart} \\
+          & Dearman - Bluetone \cite{dearman2009bluetone} \\
+          	& Vajk - TiltRacer \cite{vajk2007using} \\
+          & Nazari Shirejini - PECo \cite{shirehjini2004novel} \\
+          & Olsson - mobile augmented reality \cite{olsson2012user} \\[1em]
+    \multirow{4}[0]{*}{Autonomous systems} & Coradeschi - symbiotic robotic systems \cite{coradeschi2006symbiotic} \\
+          & Broxvall - PEIS ecology \cite{broxvall2006peis} \\
+          & Arndt - robotic frameworks \cite{arndt2013performance} \\
+          & Huijnen - companion robotics and smart homes \cite{huijnen2011maybe} \\
     \bottomrule
     \end{tabular}%
   \label{tab:rel_se_apps}%
@@ -44,8 +47,8 @@ The field of smart environments is not strictly and conclusively limited and dis
 
 The selected areas-of-interest are collected in Table \ref{tab:rel_se_apps}. I will briefly introduce relevant work in those domains and outline existing links to capacitive sensing applications. 
 
-\subsection{Indoor Localization}
-The domain of indoor localization has been briefly touched, when discussing the different sensing technologies used in smart environments in section \ref{ch:rel_sensor_tech}. The reliable tracking and localization of multiple users is a major challenge in smart environments. It is one of most important contextual information that can be used to adapt the behavior of the environment using a set of deployed actuators. Often basic motion sensors are used, e.g. if just a single person should be detected or if there is a single area of interest that should be covered. However, determining a more exact location or following multiple users requires more sophisticated systems. If a varying number of non-relevant actors are moving in the environment, e.g. pets the challenge increases further. Together with Tim Dutz I participated in the EvAAL competition 2013 with our AmbiTrack system, reaching a second place, \cite{braun2013ambitrack}. The system was based on a set of cheap off-the-shelf cameras connected to different processing nodes that employ an efficient tracking algorithm based on background subtraction, ray intersections and clustering methods \cite{Braun2013MarkerFree}. It also supports analyzing the coverage of areas where it is installed, as shown in Figure \ref{fig:rel_app_indoor}.
+\subsection{Indoor localization}
+The domain of indoor localization has been briefly touched, when discussing the different sensing technologies used in smart environments in section \ref{ch:rel_sensor_tech}. The reliable tracking and localization of multiple users is a major challenge in smart environments. It is one of most important contextual information that can be used to adapt the behavior of the environment using a set of deployed actuators. Often basic motion sensors are used, e.g. if just a single person should be detected or if there is a single area of interest that should be covered. However, determining a more exact location or following multiple users requires more sophisticated systems. If a varying number of non-relevant actors are moving in the environment, e.g. pets the challenge increases further. Together with Tim Dutz, I participated in the EvAAL competition 2013 with our AmbiTrack system, reaching a second place, \cite{braun2013ambitrack}. The system was based on a set of cheap off-the-shelf cameras connected to different processing nodes that employ an efficient tracking algorithm based on background subtraction, ray intersections and clustering methods \cite{Braun2013MarkerFree}. It also supports analyzing the coverage of areas where it is installed, as shown in Figure \ref{fig:rel_app_indoor}.
 
 \begin{minipage}{\linewidth}
 \centering
@@ -62,7 +65,45 @@ Another system was presented by Mulloni et al. \cite{mulloni2009indoor}. They ar
 
 A final example is a system created by Pirkl and Lukowicz based on resonant magnetic coupling \cite{pirkl2013resonant}. Based on the magnetic field created by static coils an arbitrary number of mobile receivers can localize themselves by measuring the field strength and estimating the distance from the different static coils. The system can be calibrated to ignore other magnetic objects in vicinity and enables a planar localization of about $1m^2$ accuracy. The static coils can be seen in Figure \ref{fig:rel_app_indoor} in the background with the receiver circuit in the foreground.
 
-\subsection{Activity Recognition}
+\subsection{Gestural interaction}
+Gesture recognition enables the detection of meaningful expressions of motion by a human body, including the hands, arms, face, head and body \cite{mitra2007gesture}	. If these expressions are translated into machine commands the result is gestural interaction. The most expressive and explicit form of gestures are performed by the hands, further distinguished into free-air gestures and touch gestures that typically involve one or more fingers interacting with a surface, the latter being called multi-touch.
+
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=0.8\textwidth]{images/rel_app_gesture}
+\captionof{figure}{\emph{Left:} FTIR multitouch table \cite{Han2005}. \emph{Middle:} DataGlove hand gesture system \cite{zimmerman1987hand}. \emph{Right:} XWand interaction device \cite{Wilson2003}}
+\label{fig:rel_app_gesture}
+\end{minipage}
+
+Jeff Han showed a low-cost system based on frustrated total internal reflection (FTIR) of infrared light. This system allows tracking ten or more objects in real-time on large surface areas \cite{Han2005}, as shown in Figure \ref{fig:rel_app_gesture} on the left. Acoustic systems are another popular technology in this domain. Surface acoustic wave (SAW) uses the signal decrease of ultrasonic waves as they pass through an object touching the surface to infer its location \cite{Armstrong1998}.
+  
+Throughout the years there have been various attempts to enable the tracking of gestures in free air. A common attempt in the late 1980s were data gloves, sensor-augmented gloves put on the hand that translated finger movements to gestural input, e.g. the system presented by Zimmerman\cite{zimmerman1987hand}. It uses optical sensors to measure the flex of the fingers and ultrasonic sensors to detect the absolute position and orientation of the hand. It is shown in Figure \ref{fig:rel_app_gesture} in the middle. Applications included the evaluation of hand impairments and object manipulations in three-dimensional scenes.
+
+A different approach is performing gestural interaction supported by interaction devices that can sense orientation and position in the room. A popular example is the Nintendo Wii Remote that is used in gaming applications. A predecessor was the XWand by Wilson et al. \cite{Wilson2003}. This interaction device is using accelerometers to sense orientation and has infrared diodes that are tracked by an external camera system to determine the absolute position in the room. It is shown in Figure \ref{fig:rel_app_gesture} on the right. Using knowledge about the location of different appliances within this room, it is possible to control them by pointing in this direction. They later extended the system with a pointing device based on a laser that indicated the position in the environment currently pointed at \cite{Wilson2003a}. We have used a similar method, based on skeleton tracking provided by a Kinect and different varieties of pointing gestures \cite{majewski2013providing}.
+
+An extension of accelerometer-based gesture systems was presented by Lui et al. \cite{liu2009uwave}. Their uWave system is capable of building a personalized gesture set using dynamic time warping and HMM classification, enabling a high recognition rate of almost $99\%$ using just one training sample. Additional applications of this approach include using personal gestures for authentication, reaching an error rate of approximately $3\%$. However, this method can be bypassed if the movements are observed and mimicked and thus is not suitable for critical applications.
+
+Another interesting system for whole body gestures is WiSee presented by Pu et al. \cite{pu2013whole}. Using two sources of wireless signals, they are using the Doppler shift caused by the human body moving in the area and reflecting the signal to determine gestures. The system was able to detect nine different full-body gestures with a precision of $94\%$. The system uses the MIMO capabilities of modern WiFi systems to distinguish users and providing the option to support multiple users within an environment.
+
+\subsection{Physiological sensing}
+In the 1990s researchers began to distinguish different channels when interacting with machines. The explicit channel, whereas the user gives distinct commands to the user, and the implicit channel that comprises information about the user himself \cite{cowie2001emotion}. One interesting parameter to consider for this implicit interaction is emotion. Based on physiological cues it is possible to determine the current state of the user and translate it to an input machines. Thus, an area has emerged that uses acquired physiological signals of the users to provide additional input. In this section I will present four different works of recent years that proposed important technologies and methods.
+
+\begin{minipage}{\linewidth}
+\centering
+\includegraphics[width=0.8\textwidth]{images/rel_app_emotion}
+\captionof{figure}{\emph{Left:} MACH conversation coach system \cite{hoque2013mach}. \emph{Right:} Study setup to collect emotion data \cite{koelstra2012deap}}
+\label{fig:rel_app_emotion}
+\end{minipage}
+
+Khosrowabadi et al. presented a machine learning approach to discriminate four different emotions from EEG readings \cite{khosrowabadi2010eeg}. The subjects were asked to fill out self-assessment questionnaires regarding their emotional state with the states being induced by a set of pictures. The signals were classified using a self-organizing map and nearest-neighbor classification. The system was able to correctly classify $84.5\%$ of four different emotional states.
+
+A multimodal emotion recognition system based on speech and facial expression was introduced by Wöllmer et al.  \cite{wollmer2010context}. They apply a method based on Long Short-Term Memory Networks that allows to model long-range temporal dependencies between features. They combine 46 facial markers and a variety of waveform speech features that are combined using a correlation-based feature subset selection that leads to a selection between 66 and 224 features. They are able to improve the recognition performance compared to HMM-based classifiers by $4\%$ to $6\%$.
+
+An example application for emotion-aware systems has been presented by Hoque et al. \cite{hoque2013mach}. \emph{MACH: My Automated Conversation coacH} is a training system that tries to improve the social skills of its users. It collects facial expressions, speech data and analysis prosody from an attached camera to create a personalized feedback of the users behavior when talking to a virtual agent. This agent is shown in Figure \ref{fig:rel_app_emotion} on the left. A study with 90 participants showed a significant performance improvement as opposed to the control group. 
+
+In this domain it is also very important to build databases of labeled emotions and physiological signals that allows other researchers to try new methods. Koelstra et al. \cite{koelstra2012deap} created a database by collecting EEG information, playing different video clips and collecting the perceived emotions in a self-assessment. This database includes the physiological signals of 32 users and frontal face videos of 22 users that are reacting to 40 different videos. The setup of this study can be seen in Figure \ref{fig:rel_app_emotion} on the right.
+
+\subsection{Activity recognition}
 Activity recognition, also called situation awareness, describes the interpretation of sensor data into higher domain-level information that relates to the given situation \cite{ye2012situation}. To give an example, a single temperature reading of $15\,^{\circ}{\rm C}$ can be combined with the information that the sensor is in the sleeping room, the time is $21:00$ and we know that the inhabitant of the environment is typically going to sleep at $22:00$. In this case we can infer the activity \emph{user will go to bed soon} and trigger the action \emph{heat up sleeping room}. There is a plethora of different concepts and methods on how to recognize the situations and activities for numerous domains. A good overview of the topic can be found in the survey of Ye et al. \cite{ye2012situation}. I will present four different works that have been presented in recent years that provide a different selection of technologies and methods that are commonly used.
 
 \begin{minipage}{\linewidth}
@@ -80,7 +121,7 @@ A common problem in situation classification is labeling of the acquired data to
 
 A final example in the domain of activity recognition is Hon4D, a system that infers situation from depth camera sequences \cite{oreifej2013hon4d}. They suggest the histogram of normal orientation in depth, time and spatial coordinates as a feature for activities from depth data. Examples of surface normals for different activities and body surfaces are shown in Figure \ref{fig:rel_app_activity} on the right. The advantage of this operator is that it takes into account the movement of the overall surface of recognized persons, as opposed to silhouettes or the reconstructed skeleton joints. This approach reaches classification precision between $89\%$ and $97\%$ when used on common activity depth data sets. 
 
-\subsection{Smart Appliances}
+\subsection{Smart appliances}
 Smart appliances are devices that are attentive to their environment \cite{schmidt2001build}. This is usually achieved by integrating different sensors and actuators to provide additional functions and services to a user. Some examples include intelligent furniture that can detect their occupation, internet-connected household items, or single-purpose devices, e.g. providing reminder services. An overview of different examples can be found by Park et al. \cite{park2003smart}. 
 
 \begin{minipage}{\linewidth}
@@ -97,44 +138,6 @@ StickEar by Yeo et al. is a wireless device that adds different capabilities to 
 There is a number of smart appliances in the medical domain. They try to provide different services related to health and well-being. A common example are smart medication dispensers, such as the one presented by Tsai et al. \cite{tsai2011smart}. Based on a medication schedule it will dispense the right medication and dose at the specified times. They include a few different algorithms for heuristic scheduling based on a collaborative approach between scheduler and the controller of the dispenser.
 
 When deploying smart appliances it is necessary to provide energy to the systems. If there is no socket nearby batteries or other methods have to be used. If the system is capable to independently harvest the energy from environment sources. One example are the bistable display tags by Dementyev et al. \cite{dementyev2013wirelessly}. They rely on e-paper displays that keep their screen content unless a refresh is triggered. Using an energy harvesting IC it is possible to transfer enough information and the new screen content via NFC. In an example application screenshots from a smartphone could be transferred to the display.
-
-\subsection{Gestural Interaction}
-Gesture recognition enables the detection of meaningful expressions of motion by a human body, including the hands, arms, face, head and body \cite{mitra2007gesture}	. If these expressions are translated into machine commands the result is gestural interaction. The most expressive and explicit form of gestures are performed by the hands, further distinguished into free-air gestures and touch gestures that typically involve one or more fingers interacting with a surface, the latter being called multi-touch.
-
-\begin{minipage}{\linewidth}
-\centering
-\includegraphics[width=0.8\textwidth]{images/rel_app_gesture}
-\captionof{figure}{\emph{Left:} FTIR multitouch table \cite{Han2005}. \emph{Middle:} DataGlove hand gesture system \cite{zimmerman1987hand}. \emph{Right:} XWand interaction device \cite{Wilson2003}}
-\label{fig:rel_app_gesture}
-\end{minipage}
-
-Jeff Han showed a low-cost system based on frustrated total internal reflection (FTIR) of infrared light. This system allows tracking ten or more objects in real-time on large surface areas \cite{Han2005}, as shown in Figure \ref{fig:rel_app_gesture} on the left. Acoustic systems are another popular technology in this domain. Surface acoustic wave (SAW) uses the signal decrease of ultrasonic waves as they pass through an object touching the surface to infer its location \cite{Armstrong1998}.
-  
-Throughout the years there have been various attempts to enable the tracking of gestures in free air. A common attempt in the late 1980s were data gloves, sensor-augmented gloves put on the hand that translated finger movements to gestural input, e.g. the system presented by Zimmerman\cite{zimmerman1987hand}. It uses optical sensors to measure the flex of the fingers and ultrasonic sensors to detect the absolute position and orientation of the hand. It is shown in Figure \ref{fig:rel_app_gesture} in the middle. Applications included the evaluation of hand impairments and object manipulations in three-dimensional scenes.
-
-A different approach is performing gestural interaction supported by interaction devices that can sense orientation and position in the room. A popular example is the Nintendo Wii Remote that is used in gaming applications. A predecessor was the XWand by Wilson et al. \cite{Wilson2003}. This interaction device is using accelerometers to sense orientation and has infrared diodes that are tracked by an external camera system to determine the absolute position in the room. It is shown in Figure \ref{fig:rel_app_gesture} on the right. Using knowledge about the location of different appliances within this room, it is possible to control them by pointing in this direction. They later extended the system with a pointing device based on a laser that indicated the position in the environment currently pointed at \cite{Wilson2003a}. We have used a similar method, based on skeleton tracking provided by a Kinect and different varieties of pointing gestures \\cite{majewski2013providing}.
-
-An extension of accelerometer-based gesture systems was presented by Lui et al. \cite{liu2009uwave}. Their uWave system is capable of building a personalized gesture set using dynamic time warping and HMM classification, enabling a high recognition rate of almost $99\%$ using just one training sample. Additional applications of this approach include using personal gestures for authentication, reaching an error rate of approximately $3\%$. However, this method can be bypassed if the movements are observed and mimicked and thus is not suitable for critical applications.
-
-Another interesting system for whole body gestures is WiSee presented by Pu et al. \cite{pu2013whole}. Using two sources of wireless signals, they are using the Doppler shift caused by the human body moving in the area and reflecting the signal to determine gestures. The system was able to detect nine different full-body gestures with a precision of $94\%$. The system uses the MIMO capabilities of modern WiFi systems to distinguish users and providing the option to support multiple users within an environment.
-
-\subsection{Emotion-aware computing}
-In the 1990s researchers began to distinguish different channels when interacting with machines. The explicit channel, whereas the user gives distinct commands to the user, and the implicit channel that comprises information about the user himself \cite{cowie2001emotion}. One interesting parameter to consider for this implicit interaction is emotion. Based on physiological cues it is possible to determine the current state of the user and translate it to an input machines. In this section I will present four different works of recent years that proposed important technologies and methods.
-
-\begin{minipage}{\linewidth}
-\centering
-\includegraphics[width=0.8\textwidth]{images/rel_app_emotion}
-\captionof{figure}{\emph{Left:} MACH conversation coach system \cite{hoque2013mach}. \emph{Right:} Study setup to collect emotion data \cite{koelstra2012deap}}
-\label{fig:rel_app_emotion}
-\end{minipage}
-
-Khosrowabadi et al. presented a machine learning approach to discriminate four different emotions from EEG readings \cite{khosrowabadi2010eeg}. The subjects were asked to fill out self-assessment questionnaires regarding their emotional state with the states being induced by a set of pictures. The signals were classified using a self-organizing map and nearest-neighbor classification. The system was able to correctly classify $84.5\%$ of four different emotional states.
-
-A multimodal emotion recognition system based on speech and facial expression was introduced by Wollmer et al.  \cite{wollmer2010context}. They apply a method based on Long Short-Term Memory Networks that allows to model long-range temporal dependencies between features. They combine 46 facial markers and a variety of waveform speech features that are combined using a correlation-based feature subset selection that leads to a selection between 66 and 224 features. They are able to improve the recognition performance compared to HMM-based classifiers by $4\%$ to $6\%$.
-
-An example application for emotion-aware systems has been presented by Hoque et al. \cite{hoque2013mach}. \emph{MACH: My Automated Conversation coacH} is a training system that tries to improve the social skills of its users. It collects facial expressions, speech data and analysis prosody from an attached camera to create a personalized feedback of the users behavior when talking to a virtual agent. This agent is shown in Figure \ref{fig:rel_app_emotion} on the left. A study with 90 participants showed a significant performance improvement as opposed to the control group. 
-
-In this domain it is also very important to build databases of labeled emotions and physiological signals that allows other researchers to try new methods. Koelstra et al. \cite{koelstra2012deap} created a database by collecting EEG information, playing different video clips and collecting the perceived emotions in a self-assessment. This database includes the physiological signals of 32 users and frontal face videos of 22 users that are reacting to 40 different videos. The setup of this study can be seen in Figure \ref{fig:rel_app_emotion} on the right.
 
 \subsection{Mobile devices}
 In his famous article, Mark Weiser coined three different forms of devices - tags, tabs and boards \cite{Weiser1991}. They are primary distinguished by their size and how they can be used for interaction with the system. The prevalet smart phones and tablets nowadays resemble closely the envisioned smart tab - handheld devices that provide sensing, interaction and communication facilities supported by sufficient processing power. Consequently, they are used very often in smart environment applications.

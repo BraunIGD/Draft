@@ -99,11 +99,30 @@
 \newblock {Activity Recognition from User-Annotated Acceleration Data}.
 \newblock \emph{Pervasive Computing 3001} (2004), 1--17.
 
+\bibitem[BJ98]{buczak1998self}
+\textsc{Buczak A., Jamalabad V.}:
+\newblock {Self-organization of a heterogeneous sensor network by genetic
+  algorithms}.
+\newblock \emph{Intelligent Engineering Systems Through Artificial Neural
+  Networks 8} (1998), 259--264.
+
 \bibitem[BKKF13]{beck2013immersive}
 \textsc{Beck S., Kunert A., Kulik A., Froehlich B.}:
 \newblock {Immersive Group-to-Group Telepresence}.
 \newblock \emph{Visualization and Computer Graphics, IEEE Transactions on 19},
   4 (2013), 616--625.
+
+\bibitem[BNLH11]{bragdon2011experimental}
+\textsc{Bragdon A., Nelson E., Li Y., Hinckley K.}:
+\newblock {Experimental analysis of touch-screen gesture designs in mobile
+  environments}.
+\newblock In \emph{Proceedings of the SIGCHI Conference on Human Factors in
+  Computing Systems} (2011), ACM, pp.~403--412.
+
+\bibitem[BNS{\etalchar{*}}14]{braun2013ActiveArmrest}
+\textsc{Braun A., Neumann S., Schmidt S., Wichert R., Kuijper A.}:
+\newblock {Towards interactive car interiors - the Active Armrest}.
+\newblock 2014.
 
 \bibitem[BO10a]{BarrettScreen}
 \textsc{Barrett G., Omote R.}:
@@ -168,6 +187,13 @@
 \textsc{Clarke A.~C.}:
 \newblock {Hazards of prophecy: The failure of imagination}.
 \newblock \emph{Profiles of the Future, Gollancz, London} (1962).
+
+\bibitem[CLC{\etalchar{*}}06]{chang2006diet}
+\textsc{Chang K.-h., Liu S.-y., Chu H.-h., Hsu J. Y.-j., Chen C., Lin T.-y.,
+  Chen C.-y., Huang P.}:
+\newblock {The diet-aware dining table: Observing dietary behaviors over a
+  tabletop surface}.
+\newblock In \emph{Pervasive computing}. Springer, 2006, pp.~366--382.
 
 \bibitem[Com06]{img_bayer_pattern}
 \textsc{Commons W.}:
@@ -328,10 +354,29 @@
 \newblock In \emph{Proceedings of the 2013 ACM international joint conference
   on Pervasive and ubiquitous computing} (2013), ACM, pp.~697--706.
 
+\bibitem[HDO{\etalchar{*}}98]{hearst1998support}
+\textsc{Hearst M.~A., Dumais S.~T., Osman E., Platt J., Scholkopf B.}:
+\newblock {Support vector machines}.
+\newblock \emph{Intelligent Systems and their Applications, IEEE 13}, 4 (1998),
+  18--28.
+
 \bibitem[Hen00]{henning2000spec}
 \textsc{Henning J.~L.}:
 \newblock {SPEC CPU2000: Measuring CPU performance in the new millennium}.
 \newblock \emph{Computer 33}, 7 (2000), 28--35.
+
+\bibitem[HH08]{harrison2008scratch}
+\textsc{Harrison C., Hudson S.~E.}:
+\newblock {Scratch input: creating large, inexpensive, unpowered and mobile
+  finger input surfaces}.
+\newblock In \emph{Proceedings of the 21st annual ACM symposium on User
+  interface software and technology} (2008), ACM, pp.~205--208.
+
+\bibitem[HPGK94]{hinckley1994survey}
+\textsc{Hinckley K., Pausch R., Goble J.~C., Kassell N.~F.}:
+\newblock {A survey of design issues in spatial input}.
+\newblock In \emph{Proceedings of the 7th annual ACM symposium on User
+  interface software and technology} (1994), ACM, pp.~213--222.
 
 \bibitem[HPR00]{han2000manufacturing}
 \textsc{Han J., Pratt M., Regli W.~C.}:
@@ -588,6 +633,11 @@
 \newblock In \emph{Proceedings of the 2013 ACM conference on Pervasive and
   ubiquitous computing adjunct publication} (2013), ACM, pp.~59--62.
 
+\bibitem[Pla99]{platt1999fast}
+\textsc{Platt J.~C.}:
+\newblock {Fast training of support vector machines using sequential minimal
+  optimization}.
+
 \bibitem[PLCH02]{Paradiso2002}
 \textsc{Paradiso J.~A., Leo C.~K., Checka N., Hsiao K.}:
 \newblock {Passive acoustic knock tracking for interactive windows}.
@@ -610,6 +660,18 @@
 \newblock {Botanicus Interacticus: interactive plants technology}.
 \newblock In \emph{ACM SIGGRAPH 2012 Emerging Technologies} (2012), ACM, p.~4.
 
+\bibitem[PWLK03]{park2003smart}
+\textsc{Park S.~H., Won S.~H., Lee J.~B., Kim S.~W.}:
+\newblock {Smart home--digitally engineered domestic life}.
+\newblock \emph{Personal and Ubiquitous Computing 7}, 3-4 (2003), 189--196.
+
+\bibitem[RAD{\etalchar{*}}09]{robertson2009effects}
+\textsc{Robertson M., {Amick III} B.~C., DeRango K., Rooney T., Bazzani L.,
+  Harrist R., Moore A.}:
+\newblock {The effects of an office ergonomics training and chair intervention
+  on worker knowledge, behavior and musculoskeletal risk}.
+\newblock \emph{Applied Ergonomics 40}, 1 (2009), 124--135.
+
 \bibitem[RAMB{\etalchar{*}}05]{ranganathan2005towards}
 \textsc{Ranganathan A., Al-Muhtadi J., Biehl J., Ziebart B., Campbell R.~H.,
   Bailey B.}:
@@ -625,6 +687,12 @@
 \newblock In \emph{Proceedings of the SIGCHI conference on Human factors in
   computing systems: Changing our world, changing ourselves} (2002), ACM,
   pp.~113--120.
+
+\bibitem[SAL06]{subramanian2006multi}
+\textsc{Subramanian S., Aliakseyeu D., Lucero A.}:
+\newblock {Multi-layer interaction for digital tables}.
+\newblock In \emph{Proceedings of the 19th annual ACM symposium on User
+  interface software and technology} (2006), ACM, pp.~269--272.
 
 \bibitem[SAW94]{schilit1994context}
 \textsc{Schilit B., Adams N., Want R.}:
@@ -673,6 +741,11 @@
 \newblock {Field mice: Extracting hand geometry from electric field
   measurements}.
 \newblock \emph{IBM Systems Journal 35}, 3.4 (1996), 587--608.
+
+\bibitem[Smi99]{smith1999thesis}
+\textsc{Smith J.~R.}:
+\newblock \emph{{Electric field imaging}}.
+\newblock PhD thesis, Massachusetts Institute of Technology, 1999.
 
 \bibitem[SN04]{shirehjini2004novel}
 \textsc{Shirehjini A., Nazari A.}:
@@ -747,12 +820,6 @@
 \newblock \emph{Journal of Ambient Intelligence and Smart Environments 3}, 4
   (2011), 305--332.
 
-\bibitem[VKV12]{valtonen2012capacitive}
-\textsc{Valtonen M., Kivim\"{a}ki T., Vanhala J.}:
-\newblock {Capacitive 3D user tracking with a mobile demonstration platform}.
-\newblock In \emph{Proceeding of the 16th International Academic MindTrek
-  Conference} (2012), ACM, pp.~61--63.
-
 \bibitem[VMV09]{Valtonen2009a}
 \textsc{Valtonen M., Maentausta J., Vanhala J.}:
 \newblock {TileTrack: Capacitive human tracking using floor tiles}.
@@ -764,6 +831,12 @@
 \newblock {Human body tracking with electric field ranging}.
 \newblock In \emph{Proceedings of the 14th International Academic MindTrek
   Conference: Envisioning Future Media Environments} (2010), ACM, pp.~183--186.
+
+\bibitem[VV12]{valtonen2012capacitive}
+\textsc{Valtonen M., Vuorela T.}:
+\newblock {Capacitive User Tracking Methods for Smart Environments}.
+\newblock \emph{InTech, New Approach in Indoor and Outdoor Localization
+  Systems} (2012), 113--138.
 
 \bibitem[WB95]{welch1995introduction}
 \textsc{Welch G., Bishop G.}:
@@ -822,6 +895,11 @@
   Recognition}.
 \newblock \emph{Fifth Annual IEEE International Conference on Pervasive
   Computing and Communications PerCom07} (2007), 171--180.
+
+\bibitem[WKSE11]{wachs2011vision}
+\textsc{Wachs J.~P., K\"{o}lsch M., Stern H., Edan Y.}:
+\newblock {Vision-based hand-gesture applications}.
+\newblock \emph{Communications of the ACM 54}, 2 (2011), 60--71.
 
 \bibitem[WME{\etalchar{*}}10]{wollmer2010context}
 \textsc{W\"{o}llmer M., Metallinou A., Eyben F., Schuller B., Narayanan S.~S.}:

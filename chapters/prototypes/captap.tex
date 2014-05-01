@@ -34,12 +34,12 @@ The setup is visualized in Figure \ref{fig:captap_schematics}. The system is com
 
 The final table prototype can be seen in Figure \ref{fig:table_final_view}. On the left side the table is seen without any additional markers - on the right side we see the table equipped for the evaluation using a set of markers for different touch and swipe events. The debug software was developed with C\# using the .NET 4.5 framework. We are using the Emgu CV library based on OpenCV for image processing and application of the Kalman filter to the determined palm locations. The sound processing is implemented in C++ and Java using a modified version of ChucK for audio sampling and the WEKA framework to apply the machine learning on top. We are using sockets to transfer data between the different modules. The debug application allows a fine control of the various processing steps in both image and audio signal processing.
 
-\begin{minipage}{\linewidth}
-\centering
-\includegraphics[width=1.0\textwidth]{images/alltouch}
-\captionof{figure}{64 sample FFTs and photo for a knock event (A), a finger tap (B), a finger swipe (C) and a hand swipe (D)}
-\label{fig:alltouch}
-\end{minipage}
+%\begin{minipage}{\linewidth}
+%\centering
+%\includegraphics[width=1.0\textwidth]{images/alltouch}
+%\captionof{figure}{64 sample FFTs and photo for a knock event (A), a finger tap (B), a finger swipe (C) and a hand swipe (D)}
+%\label{fig:alltouch}
+%\end{minipage}
 
 \subsubsection{Processing}
 CapTap is using the image-based algorithm for tracking palms and arms that was presented in the processing section. An addition is the touch recognition based on acoustic tracking. The method was inspired by the works of Harrison et al. \cite{harrison2011tapsense} with various modifications to allow identifying both impact and swipe events. At first the audio signal is acquired using a 96kHz sample rate and a feature extraction rate of 375Hz (using a  Hanning type sliding window of 4096 (and 256 samples overlapping) samples per extraction. In order to perform a classification over this signal we have to look at a variety of different features.

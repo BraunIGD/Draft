@@ -410,11 +410,6 @@
 \newblock {Visual pattern recognition by moment invariants}.
 \newblock \emph{Information Theory, IRE Transactions on 8}, 2 (1962), 179--187.
 
-\bibitem[HW08]{haklay2008openstreetmap}
-\textsc{Haklay M., Weber P.}:
-\newblock {Openstreetmap: User-generated street maps}.
-\newblock \emph{Pervasive Computing, IEEE 7}, 4 (2008), 12--18.
-
 \bibitem[iee07]{ieee1451}
 {IEEE Standard for a Smart Transducer Interface for Sensors and Actuators
   Wireless Communication Protocols and Transducer Electronic Data Sheet (TEDS)
@@ -445,12 +440,6 @@
 \textsc{Jain R.}:
 \newblock \emph{{The art of computer systems performance analysis}}, vol.~182.
 \newblock John Wiley \& Sons Chichester, 1991.
-
-\bibitem[KBBC05]{kaltenbrunner2005tuio}
-\textsc{Kaltenbrunner M., Bovermann T., Bencina R., Costanza E.}:
-\newblock {TUIO: A protocol for table-top tangible user interfaces}.
-\newblock In \emph{Proc. of the The 6th Int'l Workshop on Gesture in
-  Human-Computer Interaction and Simulation} (2005).
 
 \bibitem[KJJ11]{krejcar2011}
 \textsc{Krejcar O., Jirka J., Janckulik D.}:
@@ -512,6 +501,12 @@
 \newblock {Real-time crowd labeling for deployable activity recognition}.
 \newblock In \emph{Proceedings of the 2013 conference on Computer supported
   cooperative work} (2013), ACM, pp.~1203--1212.
+
+\bibitem[Ltd12]{plessey2012ecg}
+\textsc{Ltd. P.~S.}:
+\newblock \emph{{Application Note \# 291566 Non-contact ECG measurement using
+  EPIC}}.
+\newblock Tech. rep., 2012.
 
 \bibitem[LWG05]{landsiedel2005accurate}
 \textsc{Landsiedel O., Wehrle K., G\"{o}tz S.}:
@@ -680,6 +675,13 @@
   PerCom 2005 Workshops. Third IEEE International Conference on} (2005), IEEE,
   pp.~194--198.
 
+\bibitem[RB13]{rumelin2013make}
+\textsc{R\"{u}melin S., Butz A.}:
+\newblock {How to make large touch screens usable while driving}.
+\newblock In \emph{Proceedings of the 5th International Conference on
+  Automotive User Interfaces and Interactive Vehicular Applications} (2013),
+  ACM, pp.~48--55.
+
 \bibitem[Rek02]{rekimoto2002smartskin}
 \textsc{Rekimoto J.}:
 \newblock {SmartSkin: an infrastructure for freehand manipulation on
@@ -687,6 +689,11 @@
 \newblock In \emph{Proceedings of the SIGCHI conference on Human factors in
   computing systems: Changing our world, changing ourselves} (2002), ACM,
   pp.~113--120.
+
+\bibitem[Rub91]{Rubine1991}
+\textsc{Rubine D.}:
+\newblock {Specifying gestures by example}.
+\newblock \emph{ACM SIGGRAPH computer graphics 25}, 4 (1991), 329--337.
 
 \bibitem[SAL06]{subramanian2006multi}
 \textsc{Subramanian S., Aliakseyeu D., Lucero A.}:
@@ -699,6 +706,13 @@
 \newblock {Context-aware computing applications}.
 \newblock In \emph{Mobile Computing Systems and Applications, 1994. WMCSA 1994.
   First Workshop on} (1994), IEEE, pp.~85--90.
+
+\bibitem[Sch08]{schulz2008rethinking}
+\textsc{Schulz H.}:
+\newblock {Rethinking sleep analysis.}
+\newblock \emph{Journal of clinical sleep medicine : JCSM : official
+  publication of the American Academy of Sleep Medicine 4}, 2 (Apr. 2008),
+  99--103.
 
 \bibitem[Sea97]{seaver1997human}
 \textsc{Seaver A.~E.}:
@@ -877,6 +891,11 @@
 \bibitem[WF07]{wilson2007}
 \textsc{Wilson T.~V., Fenlon W.}:
 \newblock {How the iPhone Works - Multi-touch systems}, 2007.
+
+\bibitem[WFS83]{wilde1983movement}
+\textsc{Wilde-Frenz J., Schulz H.}:
+\newblock {Rate and distribution of body movements during sleep in humans}.
+\newblock \emph{Perceptual and motor skills} (1983).
 
 \bibitem[WHKS06]{Wimmer2006}
 \textsc{Wimmer R., Holleis P., Kranz M., Schmidt A.}:

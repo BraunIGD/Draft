@@ -1,20 +1,19 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: disstemplate.aux
 The style file: eg-alpha.bst
 Database file #1: ../../Sources/Dissertation.bib
-Repeated entry---line 1768 of file ../../Sources/Dissertation.bib
- : @inproceedings{valtonen2012capacitive
- :                                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1987 of file ../../Sources/Dissertation.bib
+Repeated entry---line 1228 of file ../../Sources/Dissertation.bib
  : @inproceedings{rumelin2013make
  :                               ,
 I'm skipping whatever remains of this entry
-Warning--I didn't find a database entry for "Smith1999a"
-Warning--I didn't find a database entry for "wade1954movements"
+Repeated entry---line 1469 of file ../../Sources/Dissertation.bib
+ : @article{valtonen2012capacitive
+ :                                ,
+I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in ieee1451
 Warning--empty journal in adib20133d
 Warning--empty note in Braun2013ChairAid
 Warning--empty note in braun2013ActiveArmrest
+Warning--empty note in braun2014capjaise
 Warning--empty note in Braun2013captap
 Warning--empty journal in camp1989benchmarking
 Warning--can't use both author and editor fields in chessa_eval

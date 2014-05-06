@@ -44,21 +44,21 @@ The first steps of data processing are filtering using an 8-sample median filter
 
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=0.9\textwidth]{images/smartchair_software}
-\captionof{figure}{Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}
+\includegraphics[width=0.9\textwidth]{images/smartchair_posture_software}
+\captionof{figure}{Screenshot of the Capacitive Chair application showing the fitted 3D model on the left and detected posture on the right}
 \label{fig:smartchair_posture_software}
 \end{minipage}
 
-The method to calculate poses has been described in detail in Section \ref{ch:proc_model}. The processed values of all sensors are compared to previously trained sitting positions of a user. The result of this process in the created demonstration software is shown in Figure \ref{fig:smartchair_software}. The fine skeleton model output is shown on the left, the static gesture classification probabilities on the top right and a visualization of the resulting posture on the bottom right.
+The method to calculate poses has been described in detail in Section \ref{ch:proc_model}. The processed values of all sensors are compared to previously trained sitting positions of a user. The result of this process in the created demonstration software is shown in Figure \ref{fig:smartchair_posture_software}. The fine skeleton model output is shown on the left, the static gesture classification probabilities on the top right and a visualization of the resulting posture on the bottom right.
 
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{images/placeholder}
-\captionof{figure}{Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}
+\includegraphics[width=0.7\textwidth]{images/smartchair_breathing_software}
+\captionof{figure}{Screenshot of the Capacitive Chair application showing the sensor values on the left and FFT analysis of various sensors on the right}
 \label{fig:smartchair_breathing_software}
 \end{minipage}
 
-Figure \ref{fig:smartchair_breathing_software} shows a screenshot of the demonstration software currently performing breathing rate detection. On the left side are the results of the FFT detection, showing the part of the signal relevant and the translation of the frequency to respirations per minute. ON the right there is the curve of sensor values showing the sinusoidal characteristics of the response to chest movement.
+Figure \ref{fig:smartchair_breathing_software} shows a screenshot of the demonstration software currently performing breathing rate detection. On the right side are the results of the FFT detection, showing the part of the signal relevant and the translation of the frequency to respirations per minute. On the left there is the curve of sensor values showing the sinusoidal characteristics of the response to chest movement.
 
 \subsubsection*{Distinguish work activity levels}
 \begin{minipage}{\linewidth}

@@ -67,6 +67,13 @@
 \newblock In \emph{Robotics and Automation, 2006. ICRA 2006. Proceedings 2006
   IEEE International Conference on} (2006), IEEE, pp.~212--218.
 
+\bibitem[BH09]{Braun2009HumanBodyField}
+\textsc{Braun A., Hamisu P.}:
+\newblock {Using the human body field as a medium for natural interaction}.
+\newblock In \emph{Proceedings of the 2nd International Conference on PErvsive
+  Technologies Related to Assistive Environments - PETRA '09} (New York, New
+  York, USA, June 2009), ACM Press, pp.~1--7.
+
 \bibitem[BH11]{Braun2011MultiInputDevice}
 \textsc{Braun A., Hamisu P.}:
 \newblock {Designing a multi-purpose capacitive proximity sensing input
@@ -140,6 +147,11 @@
   electrooculography}.
 \newblock \emph{Pattern Analysis and Machine Intelligence, IEEE Transactions on
   33}, 4 (2011), 741--753.
+
+\bibitem[BWKF14]{braun2014capjaise}
+\textsc{Braun A., Wichert R., Kuijper A., Fellner D.~W.}:
+\newblock {Capacitive proximity sensing in smart environments}.
+\newblock 2014.
 
 \bibitem[BZWK{\etalchar{*}}14]{Braun2013captap}
 \textsc{Braun A., Zander-Walz S., Krepp S., Rus S., Wichert R., Kuijper A.}:
@@ -297,6 +309,12 @@
   capacitive proximity sensing}.
 \newblock In \emph{Embedded World Conference 2012} (2012), Haar: WEKA
   Fachmedien, 2012 (Design \& Elektronik), p.~10pp.
+
+\bibitem[GPBB12]{grosse2012enhancing}
+\textsc{Grosse-Puppendahl T., Berlin E., Borazio M.}:
+\newblock {Enhancing accelerometer-based activity recognition with capacitive
+  proximity sensing}.
+\newblock In \emph{Ambient Intelligence}. Springer, 2012, pp.~17--32.
 
 \bibitem[GPBB{\etalchar{*}}13]{grosse2013opencapsense}
 \textsc{Grosse-Puppendahl T., Berghoefer Y., Braun A., Wimmer R., Kuijper A.}:
@@ -834,6 +852,12 @@
 \newblock \emph{Journal of Ambient Intelligence and Smart Environments 3}, 4
   (2011), 305--332.
 
+\bibitem[VKV12]{valtonen2012capacitive}
+\textsc{Valtonen M., Kivim\"{a}ki T., Vanhala J.}:
+\newblock {Capacitive 3D user tracking with a mobile demonstration platform}.
+\newblock In \emph{Proceeding of the 16th International Academic MindTrek
+  Conference} (2012), ACM, pp.~61--63.
+
 \bibitem[VMV09]{Valtonen2009a}
 \textsc{Valtonen M., Maentausta J., Vanhala J.}:
 \newblock {TileTrack: Capacitive human tracking using floor tiles}.
@@ -846,11 +870,10 @@
 \newblock In \emph{Proceedings of the 14th International Academic MindTrek
   Conference: Envisioning Future Media Environments} (2010), ACM, pp.~183--186.
 
-\bibitem[VV12]{valtonen2012capacitive}
-\textsc{Valtonen M., Vuorela T.}:
-\newblock {Capacitive User Tracking Methods for Smart Environments}.
-\newblock \emph{InTech, New Approach in Indoor and Outdoor Localization
-  Systems} (2012), 113--138.
+\bibitem[Wad54]{wade1954movements}
+\textsc{Wade O.~L.}:
+\newblock {Movements of the thoracic cage and diaphragm in respiration}.
+\newblock \emph{The Journal of physiology 124}, 2 (1954), 193--212.
 
 \bibitem[WB95]{welch1995introduction}
 \textsc{Welch G., Bishop G.}:

@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TexmakerSession quickmode="3">
-    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/related/electric.tex" bookmark1="0" bookmark2="0" line="2" bookmark3="0" hasfocus="false"/>
-    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/acknowledgment.tex" bookmark1="0" bookmark2="0" line="0" bookmark3="0" hasfocus="false"/>
-    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/benchmodel/benchmodel.tex" bookmark1="0" bookmark2="0" line="88" bookmark3="0" hasfocus="false"/>
-    <document master="true" file="C:\Users\andbraun\Dropbox\WorkPrivShare\Dissertation\Draft\disstemplate.tex" bookmark1="0" bookmark2="0" line="98" bookmark3="0" hasfocus="true"/>
-    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/evaluation/tech.tex" bookmark1="0" bookmark2="0" line="7" bookmark3="0" hasfocus="false"/>
-    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/evaluation/evaluation.tex" bookmark1="0" bookmark2="0" line="0" bookmark3="0" hasfocus="false"/>
-    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/related/sensor_tech.tex" bookmark1="0" bookmark2="0" line="52" bookmark3="0" hasfocus="false"/>
-    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/related/related.tex" bookmark1="0" bookmark2="0" line="5" bookmark3="0" hasfocus="false"/>
+    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/related/related.tex" line="0" hasfocus="false" bookmark1="0" bookmark2="0" bookmark3="0"/>
+    <document master="true" file="C:\Users\andbraun\Dropbox\WorkPrivShare\Dissertation\Draft\disstemplate.tex" line="18" hasfocus="false" bookmark1="0" bookmark2="0" bookmark3="0"/>
+    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/evaluation/eval_tech.tex" line="50" hasfocus="false" bookmark1="0" bookmark2="0" bookmark3="0"/>
+    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/proc_model.tex" line="95" hasfocus="false" bookmark1="0" bookmark2="0" bookmark3="0"/>
+    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/evaluation/evaluation.tex" line="6" hasfocus="false" bookmark1="0" bookmark2="0" bookmark3="0"/>
+    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/prototypes.tex" line="0" hasfocus="false" bookmark1="0" bookmark2="0" bookmark3="0"/>
+    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/prototypes/related_proto.tex" line="16" hasfocus="false" bookmark1="0" bookmark2="0" bookmark3="0"/>
+    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/benchmodel/benchmodel.tex" line="320" hasfocus="false" bookmark1="0" bookmark2="0" bookmark3="0"/>
+    <document master="false" file="C:/Users/andbraun/Dropbox/WorkPrivShare/Dissertation/Draft/chapters/evaluation/benefits.tex" line="30" hasfocus="true" bookmark1="0" bookmark2="0" bookmark3="0"/>
 </TexmakerSession>

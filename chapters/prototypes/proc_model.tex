@@ -65,12 +65,12 @@ In a project together with student Sebastian Frank, a concept for a smart chair 
 \subsubsection*{Direct manipulation of skeleton model}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{images/smartchair_software}
-\captionof{figure}{Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}
+\includegraphics[width=0.8\textwidth]{images/smartchair_skeleton_model}
+\captionof{figure}{Smartchair skeleton model and associated body parts}
 \label{fig:smartchair_skeleton_model}
 \end{minipage}
 
-In Figure \ref{fig:smartchair_skeleton_model} the skeleton model can be seen. The skeleton model is comprised of 36 bones that are in 15 different groups. As those are combined to each other the degrees of freedom are significantly reduced to just 10. Sensors close to the different body parts will modify the associated parts of the model. As an example, the distance of the left lower arm group is determined by the sensor in the left armrest. However, as the groups are connected, this will also modify the orientation of the left upper arm. Accordingly, if the sensor behind in the lower backrest detects a receding lower back, the position and orientation of the other back groups, head and arms are also modified. Thus, the fitting method attempts to place the different groups of the model according to current sensor readings. A collection of rules is used that follows the flowchart outlined in Figure \ref{fig:capchair_flow}.
+In Figure \ref{fig:smartchair_skeleton_model} the skeleton model can be seen. The skeleton model is comprised of 15 different groups. As those are combined to each other the degrees of freedom are significantly reduced to just 10. Sensors close to the different body parts will modify the associated parts of the model. As an example, the distance of the left lower arm group is determined by the sensor in the left armrest. However, as the groups are connected, this will also modify the orientation of the left upper arm. Accordingly, if the sensor behind in the lower backrest detects a receding lower back, the position and orientation of the other back groups, head and arms are also modified. Thus, the fitting method attempts to place the different groups of the model according to current sensor readings. A collection of rules is used that follows the flowchart outlined in Figure \ref{fig:capchair_flow}.
 
 \begin{minipage}{\linewidth}
 \centering
@@ -93,8 +93,8 @@ Using a fitting method that allows to detect fine movements enables a number of 
 
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{images/placeholder}
-\captionof{figure}{Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}
+\includegraphics[width=0.7\textwidth]{images/smartchair_skeleton_poses}
+\captionof{figure}{Screenshots of the Capacitive Chair application showing different poses of the skeleton model}
 \label{fig:smartchair_skeleton_poses}
 \end{minipage}
 
@@ -103,8 +103,8 @@ A limitation of the above method are the fixed threshold levels that are set bas
 \subsubsection*{SVM classification}
 \begin{minipage}{\linewidth}
 \centering
-\includegraphics[width=0.7\textwidth]{images/placeholder}
-\captionof{figure}{Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}
+\includegraphics[width=0.7\textwidth]{images/smartchair_gps_poses}
+\captionof{figure}{Selected set of postures from Global Posture study and own gestures. \emph{From top left to bottom right:} The strunch, the draw, the smart lean, the take it in, upright, no person (first four taken from \cite{globalPosture}}
 \label{fig:smartchair_gps_poses}
 \end{minipage}
 

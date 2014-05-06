@@ -42,70 +42,72 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Benchmarking process}}{51}{figure.3.1}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Piecewise linear hand distance estimation \cite {Braun2011MultiInputDevice}}}{65}{figure.4.1}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Principle components of a learning by example recognition framework \cite {braun2013capacitive}}}{66}{figure.4.2}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Wire electrode grid below floor cover attached to sensors on the border}}{67}{figure.4.3}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Two potential person locations resulting in same sensor readings (green indicates active electrodes}}{67}{figure.4.4}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Shapes of a standing and lying person on top of the CapFloor grid}}{68}{figure.4.5}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Object on mattress decreases distance and changes geometry of flexible electrode \cite {braun2012context}}}{69}{figure.4.6}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Cylindrical human body model and various poses on mattress \cite {braun2012context}}}{69}{figure.4.7}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Pressure distribution of a uniform cylinder \cite {braun2012context}}}{70}{figure.4.8}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Calculating centers of pressures and deviation \cite {braun2012context}}}{71}{figure.4.9}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}}{72}{figure.4.10}
-\contentsline {figure}{\numberline {4.11}{\ignorespaces Flowchart of the model fitting process of the grouped skeleton parts and performed calculations}}{72}{figure.4.11}
-\contentsline {figure}{\numberline {4.12}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}}{73}{figure.4.12}
-\contentsline {figure}{\numberline {4.13}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}}{74}{figure.4.13}
-\contentsline {figure}{\numberline {4.14}{\ignorespaces Heterogeneous sensor array for limb detection and finger tracking}}{75}{figure.4.14}
-\contentsline {figure}{\numberline {4.15}{\ignorespaces Arm model and detection of posture based on distances to two sensors and finger array for resting position (1), hand raised position (2) and arm raised position (3)}}{76}{figure.4.15}
-\contentsline {figure}{\numberline {4.16}{\ignorespaces Suspended peg knock detection system}}{77}{figure.4.16}
-\contentsline {figure}{\numberline {4.17}{\ignorespaces 64 sample FFTs and photo for a knock event (A), a finger tap (B), a finger swipe (C) and a hand swipe (D)}}{78}{figure.4.17}
-\contentsline {figure}{\numberline {4.18}{\ignorespaces Multiple interaction layers}}{78}{figure.4.18}
-\contentsline {figure}{\numberline {4.19}{\ignorespaces Pixel array mapped from sensor values}}{80}{figure.4.19}
-\contentsline {figure}{\numberline {4.20}{\ignorespaces Effect of different upscaling methods on shape, (A) nearest neighbor, (B) bicubic, (C) bilinear, (D) Lanczos4 - shown as thresholded binary images (pixel intensity > 30)}}{81}{figure.4.20}
-\contentsline {figure}{\numberline {4.21}{\ignorespaces Overhead camera picture of the scene overlaid with live arm and palm reconstruction for one arm (left) and two arms (right)}}{82}{figure.4.21}
-\contentsline {figure}{\numberline {4.22}{\ignorespaces Chest movement when breathing in and out}}{83}{figure.4.22}
-\contentsline {figure}{\numberline {4.23}{\ignorespaces Conductive thread electrode integrated into the backrest of a chair}}{83}{figure.4.23}
-\contentsline {figure}{\numberline {4.24}{\ignorespaces Example of human sleep phases throughout the night}}{84}{figure.4.24}
-\contentsline {figure}{\numberline {4.25}{\ignorespaces CapFloor sketch - grid layout of electrodes is placed below a floor layer with sensors attached on the sides}}{88}{figure.4.25}
-\contentsline {figure}{\numberline {4.26}{\ignorespaces Floor mats with integrated CapFloor system used at the EvAAL 2011 competition \cite {Braun2012CapFloor}}}{89}{figure.4.26}
-\contentsline {figure}{\numberline {4.27}{\ignorespaces Smart Bed sketch - flexible plate electrode are attached on spring board}}{90}{figure.4.27}
-\contentsline {figure}{\numberline {4.28}{\ignorespaces Data processing components \cite {braun2012context}}}{91}{figure.4.28}
-\contentsline {figure}{\numberline {4.29}{\ignorespaces Electrodes and sensors hidden below mattress of Smart Bed \cite {braun2012context}}}{91}{figure.4.29}
-\contentsline {figure}{\numberline {4.30}{\ignorespaces Sleep movement data over three hours in one night \cite {Djakow2013movibed}}}{92}{figure.4.30}
-\contentsline {figure}{\numberline {4.31}{\ignorespaces Smart office chair sketch - eight electrodes three in backrest, three on seat and two in armrests}}{93}{figure.4.31}
-\contentsline {figure}{\numberline {4.32}{\ignorespaces Capacitive Chair electrode positions}}{94}{figure.4.32}
-\contentsline {figure}{\numberline {4.33}{\ignorespaces Detail view of conductive thread electrode}}{95}{figure.4.33}
-\contentsline {figure}{\numberline {4.34}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}}{96}{figure.4.34}
-\contentsline {figure}{\numberline {4.35}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left, posture detection on the upper right and the recognized posture on the lower right}}{97}{figure.4.35}
-\contentsline {figure}{\numberline {4.36}{\ignorespaces Work Activity aggregation over a single work day (mock-up)}}{98}{figure.4.36}
-\contentsline {figure}{\numberline {4.37}{\ignorespaces Example chart of work activity data collected}}{99}{figure.4.37}
-\contentsline {figure}{\numberline {4.38}{\ignorespaces Active armrest sketch - six electrodes for finger gesture detection in front, two for arm detection in back}}{100}{figure.4.38}
-\contentsline {figure}{\numberline {4.39}{\ignorespaces Active Armrest prototype, left - outside view, right - detail view of electronics \cite {braun2013ActiveArmrest}.}}{100}{figure.4.39}
-\contentsline {figure}{\numberline {4.40}{\ignorespaces Postures of limbs on armrest - resting position (left), arm raised position (middle), hand raised position (right) \cite {braun2013ActiveArmrest}.}}{101}{figure.4.40}
-\contentsline {figure}{\numberline {4.41}{\ignorespaces Active Armrest demo software, left - finger tracker, right - OSM based navigation application \cite {braun2013ActiveArmrest}}}{101}{figure.4.41}
-\contentsline {figure}{\numberline {4.42}{\ignorespaces Confusion matrices of recognized gestures for touch interaction (left) and free-air interaction (right)}}{102}{figure.4.42}
-\contentsline {figure}{\numberline {4.43}{\ignorespaces MagicBox sketch - six electrodes uniformly distributed below surface}}{103}{figure.4.43}
-\contentsline {figure}{\numberline {4.44}{\ignorespaces MagicBox conceptual rendering (left) and detail view of electronics (right) \cite {Braun2011MultiInputDevice}}}{103}{figure.4.44}
-\contentsline {figure}{\numberline {4.45}{\ignorespaces MagicBox demonstration application - 3D object viewer (left) and image viewer (right) \cite {Braun2011MultiInputDevice}}}{104}{figure.4.45}
-\contentsline {figure}{\numberline {4.46}{\ignorespaces Gesture overview module (left) and gesture recorder (right) \cite {braun2013capacitive}}}{104}{figure.4.46}
-\contentsline {figure}{\numberline {4.47}{\ignorespaces CapTap sketch - 24 electrodes placed under table surface and a single detector for touch events}}{106}{figure.4.47}
-\contentsline {figure}{\numberline {4.48}{\ignorespaces Detail views of the prototype system: left - electrodes and sensors, right - audio interface and contact microphone}}{107}{figure.4.48}
-\contentsline {figure}{\numberline {4.49}{\ignorespaces Abstract view below the surface of the prototype including capacitive sensing electrodes and touch detection microphone}}{107}{figure.4.49}
-\contentsline {figure}{\numberline {4.50}{\ignorespaces Views of final prototype, complete view (left), top view with markers for touch evaluation (right)}}{108}{figure.4.50}
-\contentsline {figure}{\numberline {4.51}{\ignorespaces Finger tap (blue), knuckle knock (green), finger swipe (purple), hand swipe (orange) and stomping (red) spots relative to tabletop.}}{109}{figure.4.51}
-\contentsline {figure}{\numberline {4.52}{\ignorespaces Tracks generated by Kalman filtered palm position, a sine wave (A), a rectangle (B), a circle (C), and a diagonal swipe (D)}}{111}{figure.4.52}
-\contentsline {figure}{\numberline {4.53}{\ignorespaces Interaction speed evaluation. Different types of boxes for near layer (N), knock (K), far layer (F), and disturber (X).}}{112}{figure.4.53}
-\contentsline {figure}{\numberline {4.54}{\ignorespaces CapDisp sketch - TV on a stand equipped with capacitive sensors hidden below a plastic cover}}{114}{figure.4.54}
-\contentsline {figure}{\numberline {4.55}{\ignorespaces \emph {Top left}Person lying on the couch. \emph {Top right}Resulting sensor value visualization. \emph {Bottom left}Rendering of recongized posture. \emph {Bottom right}Position of electrodes within the couch.}}{115}{figure.4.55}
-\contentsline {figure}{\numberline {4.56}{\ignorespaces \emph {Top left} Rendering of Honeyfish device and hands. \emph {Top right} Image of developed GUI and pointer. \emph {Bottom left} Swiss cheese algorithm predicting objects in interaction space. \emph {Bottom right} Evaluation of Honeyfish at a student fair.}}{116}{figure.4.56}
-\contentsline {figure}{\numberline {4.57}{\ignorespaces \emph {Top left} Concept image of GestDisp in a car with outlined electrodes. \emph {Top right} GestDisp prototype installed in front of a monitor. \emph {Bottom left} Screenshot of demonstration application music player. \emph {Bottom right} Association of gestures to functions in the demonstration application.}}{117}{figure.4.57}
-\contentsline {figure}{\numberline {4.58}{\ignorespaces GestIC\IeC {\textregistered } Sabrewing prototyping board \cite {microchip2013}}}{120}{figure.4.58}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Piecewise linear hand distance estimation \cite {Braun2011MultiInputDevice}}}{67}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Principle components of a learning by example recognition framework \cite {braun2013capacitive}}}{68}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Wire electrode grid below floor cover attached to sensors on the border}}{69}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Two potential person locations resulting in same sensor readings (green indicates active electrodes}}{69}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Shapes of a standing and lying person on top of the CapFloor grid}}{70}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Object on mattress decreases distance and changes geometry of flexible electrode \cite {braun2012context}}}{71}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Cylindrical human body model and various poses on mattress \cite {braun2012context}}}{71}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Pressure distribution of a uniform cylinder \cite {braun2012context}}}{72}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Calculating centers of pressures and deviation \cite {braun2012context}}}{73}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Smartchair skeleton model and associated body parts}}{74}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Flowchart of the model fitting process of the grouped skeleton parts and performed calculations}}{75}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Screenshots of the Capacitive Chair application showing different poses of the skeleton model}}{76}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Selected set of postures from Global Posture study and own gestures. \emph {From top left to bottom right:} The strunch, the draw, the smart lean, the take it in, upright, no person (first four taken from \cite {globalPosture}}}{77}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Heterogeneous sensor array for limb detection and finger tracking}}{78}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Arm model and detection of posture based on distances to two sensors and finger array for resting position (1), hand raised position (2) and arm raised position (3)}}{79}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Suspended peg knock detection system}}{80}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces 64 sample FFTs and photo for a knock event (A), a finger tap (B), a finger swipe (C) and a hand swipe (D)}}{81}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Multiple interaction layers}}{81}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Pixel array mapped from sensor values}}{82}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Effect of different upscaling methods on shape, (A) nearest neighbor, (B) bicubic, (C) bilinear, (D) Lanczos4 - shown as thresholded binary images (pixel intensity > 30)}}{83}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Overhead camera picture of the scene overlaid with live arm and palm reconstruction for one arm (left) and two arms (right)}}{84}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Chest movement when breathing in and out}}{86}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Conductive thread electrode integrated into the backrest of a chair}}{86}{figure.4.23}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Example of human sleep phases throughout the night}}{87}{figure.4.24}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces CapFloor sketch - grid layout of electrodes is placed below a floor layer with sensors attached on the sides}}{91}{figure.4.25}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Floor mats with integrated CapFloor system used at the EvAAL 2011 competition \cite {Braun2012CapFloor}}}{92}{figure.4.26}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Smart Bed sketch - flexible plate electrode are attached on spring board}}{93}{figure.4.27}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Data processing components \cite {braun2012context}}}{94}{figure.4.28}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Electrodes and sensors hidden below mattress of Smart Bed \cite {braun2012context}}}{94}{figure.4.29}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces Sleep movement data over three hours in one night \cite {Djakow2013movibed}}}{95}{figure.4.30}
+\contentsline {figure}{\numberline {4.31}{\ignorespaces Smart office chair sketch - eight electrodes three in backrest, three on seat and two in armrests}}{96}{figure.4.31}
+\contentsline {figure}{\numberline {4.32}{\ignorespaces Capacitive Chair electrode positions}}{97}{figure.4.32}
+\contentsline {figure}{\numberline {4.33}{\ignorespaces Detail view of conductive thread electrode}}{98}{figure.4.33}
+\contentsline {figure}{\numberline {4.34}{\ignorespaces Screenshot of the Capacitive Chair application showing the fitted 3D model on the left and detected posture on the right}}{99}{figure.4.34}
+\contentsline {figure}{\numberline {4.35}{\ignorespaces Screenshot of the Capacitive Chair application showing the sensor values on the left and FFT analysis of various sensors on the right}}{99}{figure.4.35}
+\contentsline {figure}{\numberline {4.36}{\ignorespaces Work Activity aggregation over a single work day (mock-up)}}{100}{figure.4.36}
+\contentsline {figure}{\numberline {4.37}{\ignorespaces Example chart of work activity data collected}}{101}{figure.4.37}
+\contentsline {figure}{\numberline {4.38}{\ignorespaces Active armrest sketch - six electrodes for finger gesture detection in front, two for arm detection in back}}{102}{figure.4.38}
+\contentsline {figure}{\numberline {4.39}{\ignorespaces Active Armrest prototype, left - outside view, right - detail view of electronics \cite {braun2013ActiveArmrest}.}}{102}{figure.4.39}
+\contentsline {figure}{\numberline {4.40}{\ignorespaces Postures of limbs on armrest - resting position (left), arm raised position (middle), hand raised position (right) \cite {braun2013ActiveArmrest}.}}{103}{figure.4.40}
+\contentsline {figure}{\numberline {4.41}{\ignorespaces Active Armrest demo software, left - finger tracker, right - OSM based navigation application \cite {braun2013ActiveArmrest}}}{103}{figure.4.41}
+\contentsline {figure}{\numberline {4.42}{\ignorespaces Confusion matrices of recognized gestures for touch interaction (left) and free-air interaction (right)}}{104}{figure.4.42}
+\contentsline {figure}{\numberline {4.43}{\ignorespaces MagicBox sketch - six electrodes uniformly distributed below surface}}{105}{figure.4.43}
+\contentsline {figure}{\numberline {4.44}{\ignorespaces MagicBox conceptual rendering (left) and detail view of electronics (right) \cite {Braun2011MultiInputDevice}}}{105}{figure.4.44}
+\contentsline {figure}{\numberline {4.45}{\ignorespaces MagicBox demonstration application - 3D object viewer (left) and image viewer (right) \cite {Braun2011MultiInputDevice}}}{106}{figure.4.45}
+\contentsline {figure}{\numberline {4.46}{\ignorespaces Gesture overview module (left) and gesture recorder (right) \cite {braun2013capacitive}}}{106}{figure.4.46}
+\contentsline {figure}{\numberline {4.47}{\ignorespaces CapTap sketch - 24 electrodes placed under table surface and a single detector for touch events}}{108}{figure.4.47}
+\contentsline {figure}{\numberline {4.48}{\ignorespaces Detail views of the prototype system: left - electrodes and sensors, right - audio interface and contact microphone}}{109}{figure.4.48}
+\contentsline {figure}{\numberline {4.49}{\ignorespaces Abstract view below the surface of the prototype including capacitive sensing electrodes and touch detection microphone}}{109}{figure.4.49}
+\contentsline {figure}{\numberline {4.50}{\ignorespaces Views of final prototype, complete view (left), top view with markers for touch evaluation (right)}}{110}{figure.4.50}
+\contentsline {figure}{\numberline {4.51}{\ignorespaces Finger tap (blue), knuckle knock (green), finger swipe (purple), hand swipe (orange) and stomping (red) spots relative to tabletop.}}{111}{figure.4.51}
+\contentsline {figure}{\numberline {4.52}{\ignorespaces Tracks generated by Kalman filtered palm position, a sine wave (A), a rectangle (B), a circle (C), and a diagonal swipe (D)}}{113}{figure.4.52}
+\contentsline {figure}{\numberline {4.53}{\ignorespaces Interaction speed evaluation. Different types of boxes for near layer (N), knock (K), far layer (F), and disturber (X).}}{114}{figure.4.53}
+\contentsline {figure}{\numberline {4.54}{\ignorespaces CapDisp sketch - TV on a stand equipped with capacitive sensors hidden below a plastic cover}}{116}{figure.4.54}
+\contentsline {figure}{\numberline {4.55}{\ignorespaces \emph {Top left}Person lying on the couch. \emph {Top right}Resulting sensor value visualization. \emph {Bottom left}Rendering of recongized posture. \emph {Bottom right}Position of electrodes within the couch.}}{117}{figure.4.55}
+\contentsline {figure}{\numberline {4.56}{\ignorespaces \emph {Top left} Rendering of Honeyfish device and hands. \emph {Top right} Image of developed GUI and pointer. \emph {Bottom left} Swiss cheese algorithm predicting objects in interaction space. \emph {Bottom right} Evaluation of Honeyfish at a student fair.}}{118}{figure.4.56}
+\contentsline {figure}{\numberline {4.57}{\ignorespaces \emph {Top left} Concept image of GestDisp in a car with outlined electrodes. \emph {Top right} GestDisp prototype installed in front of a monitor. \emph {Bottom left} Screenshot of demonstration application music player. \emph {Bottom right} Association of gestures to functions in the demonstration application.}}{119}{figure.4.57}
+\contentsline {figure}{\numberline {4.58}{\ignorespaces GestIC\IeC {\textregistered } Sabrewing prototyping board \cite {microchip2013}}}{122}{figure.4.58}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Reduced angular resolution on smaller, distant objects}}{128}{figure.5.1}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Same response to differently sized objects (left), different response to varying materials (right)}}{128}{figure.5.2}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Sketch of CapTap prototype showing thickness of tabletop}}{128}{figure.5.1}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Reduced angular resolution on smaller, distant objects}}{131}{figure.5.2}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Same response to differently sized objects (left), different response to varying materials (right)}}{132}{figure.5.3}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Basic system design process for capacitive proximity sensing systems and associated aspects in the single steps}}{134}{figure.5.4}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {A.1}{\ignorespaces \emph {Top left} upright posture. \emph {Top right} hunched posture. \emph {Bottom left} slouched posture. \emph {Bottom right} disturber posture}}{138}{figure.A.1}
+\contentsline {figure}{\numberline {A.1}{\ignorespaces \emph {Top left} upright posture. \emph {Top right} hunched posture. \emph {Bottom left} slouched posture. \emph {Bottom right} disturber posture}}{142}{figure.A.1}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

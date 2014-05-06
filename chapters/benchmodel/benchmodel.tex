@@ -1,4 +1,5 @@
-\chapter{Benchmarking model for sensors in smart environments} \label{ch:benchmark}
+\chapter{Benchmarking model for sensors in smart environments} 
+\label{ch:benchmark}
 When designing a new application or system for a specific purpose, the parties involved have to make a number of decisions regarding the different components, processes and methods that are to be used. Benchmarking is a method mostly used in business practice to compare the performance of processes, products and market entities against one another. A single or a set of different indicators are used to act as metric or calculate an overarching metric of performance that can be compared to other entities \cite{camp1989benchmarking}. This tool is widely used for supporting decisions in different domains. Looking at smart environments, a common challenge is to select a specific sensor technology for any given application. While the majority of systems are following a structured approach in the design process, e.g. by ranking available systems or performing an iterative trial \& error routine, so far there has been no generic model that would allow to evaluate the expected performance of a system based on a specific sensor technology. Using a set of common features and an adaptive weighting model it is possible to cover a high number of different applications in a specific domain and thus support the decision process at an early stage of the application design. 
 
 In this chapter I will introduce a formal benchmarking model that allows estimating the performance of applications in smart environments based on a specific sensor technology. To build a base for this modeling it is necessary to look into previous works related to technology benchmarking and the  selection of specific metrics. Additionally, it is necessary to find a common set of features relevant for smart environments that can be applied to a number of different sensor technologies. The method is evaluated by benchmarking several example technologies and applications based on querying large scientific databases. Finally, the benchmarking method is used to determine different applications suitable for capacitive proximity sensors.
@@ -155,7 +156,7 @@ The chosen applications are hand gesture interaction, a marker-based identificat
     \toprule
           & res   & upd   & det   & unob  & proc  & robu  & disfr & calco & uniqd \\
     \midrule
-    Hand Gesture & ++    & ++    & -     & -     & -     & o     & +     & o     & o \\
+    Hand Gesture & ++    & ++    & -     & +     & o     & o     & +     & +     & - \\
     Identification & --    & -     & ++    & ++    & o     & ++    & +     & -     & + \\
     Obstacle Avoidance & -     & +     & -     & o     & +     & +     & ++    & ++    & + \\
     \bottomrule
@@ -187,8 +188,8 @@ The rating of the different technologies and the resulting score is shown in Tab
     \toprule
           &       & Camera & Radio & Depth Camera & Ultrasound \\
     \midrule
-    \multirow{2}[0]{*}{Hand Gesture} & $b_{s_l}$ & 0.58  & 0.53  & 0.49  & 0.55 \\
-          & $b_{s_l,norm}$ & 0.54  & 0.45  & 0.55  & 0.50 \\
+    \multirow{2}[0]{*}{Hand Gesture} & $b_{s_l}$ & 0.53  & 0.57  & 0.46  & 0.55 \\
+          & $b_{s_l,norm}$ & 0.50  & 0.48  & 0.51  & 0.50 \\
           \midrule
     \multirow{2}[0]{*}{Identification} & $b_{s_l}$ & 0.49  & 0.64  & 0.40  & 0.57 \\
           & $b_{s_l,norm}$ & 0.46  & 0.55  & 0.45  & 0.51 \\
@@ -244,8 +245,8 @@ The exponent $a$ should be a value higher $1$ and chosen according to the level 
           &       & \multicolumn{3}{c}{Camera} & \multicolumn{3}{c}{Ultrasound} \\
           &       & a=1   & a=5   & a=10  & a=1   & a=5   & a=10 \\
     \midrule
-    \multirow{2}[0]{*}{Hand Gesture} & $m_b$   & 1.08  & 1.47  & 2.16  & 1.04  & 1.28  & 1.63 \\
-          & $m_{b,norm}$ & 1.04  & 1.22  & 1.48  & 0.99  & 1.00  & 1.00 \\
+    \multirow{2}[0]{*}{Hand Gesture} & $m_b$   & 1.03  & 1.16  & 1.34  & 1.04  & 1.28  & 1.63 \\
+          & $m_{b,norm}$ & 1.00  & 1.00  & 1.00  & 0.99  & 1.00  & 1.00 \\
     \multirow{2}[0]{*}{Identification} & $m_b$   & 0.99  & 0.95  & 0.90  & 0.96  & 1.40  & 1.97 \\
           & $m_{b,norm}$ & 0.96  & 0.82  & 0.66  & 0.97  & 1.05  & 1.10 \\
     \multirow{2}[0]{*}{Obstacle Avoidance} & $m_b$  & 0.97  & 0.86  & 0.74  & 0.94  & 1.54  & 2.37 \\
@@ -320,7 +321,7 @@ In the previous sections I have presented a generic method to evaluate different
 
 As the next step in the benchmarking process the feature weights of capacitive proximity sensors have to be determined. Following the same process used for the different technologies discussed previously the result can be seen in Table \ref{tab:bench_cap_feat_weights}.
 
-Looking at the group of sensor performance characteristics the resolution has to be considered coarse. While it is possible to create highly sensitive and precise sensors, this is typically restrained to very close distances. The majority of capacitive proximity sensor applications are operating over a certain distance. However, the sensor layouts that allow detection in this area do not have the resolution to precisely distinguish precise object locations without extensive post-processing. There is no set limitation to the update rate of capacitive sensors, as also high-frequency electric circuits can be evaluated, e.g. we created an exemplary application that has an update rate of about $1kHz$ \cite{grosse2013opencapsense}. This will affect the achievable resolution and distance. Most setups operate in the range between real-time $20Hz$ up to $100Hz$ leading to a favorable update rate. The detection distance of the sensors is limited. While there are some systems that operate in distances of more than $1m$ \cite{MacLachlan2004}, they are restricted in their sensing abilities. Typically the systems are operating in a range somewhere between $10cm$ and $50cm$. 
+Looking at the group of sensor performance characteristics the resolution has to be considered coarse. While it is possible to create highly sensitive and precise sensors, this is typically restrained to very close distances. The majority of capacitive proximity sensor applications are operating over a certain distance. However, the sensor layouts that allow detection in this area do not have the resolution to precisely distinguish precise object locations without extensive post-processing. There is no set limitation to the update rate of capacitive sensors, as also high-frequency electric circuits can be evaluated, e.g. we created an exemplary application that has an update rate of about 1 kHz \cite{grosse2013opencapsense}. This will affect the achievable resolution and distance. Most setups operate in the range between real-time 20 Hz up to 100 Hz leading to a favorable update rate. The detection distance of the sensors is limited. While there are some systems that operate in distances of more than 1 m \cite{MacLachlan2004}, they are restricted in their sensing abilities. Typically the systems are operating in a range somewhere between 10 cm and 50 cm. 
 
 Discussing briefly the pervasive metrics, the major advantage of capacitive proximity sensors is their ability to be installed completely invisible. They also operate in a frequency spectrum that is not considered biologically active and at low voltages. The processing complexity varies, based on applications. They will require pre-processing and calibration, that is more complex compared to other sensors. However, as there are not many sensor value the post-processing is simpler, e.g. compared to cameras. Some data processing methods can use fairly complex statistical methods if multiple objects are to be tracked or there is additional gesture recognition \cite{grosse2013swiss}. Overall, the processing complexity is rated average. Similar to the other sensor systems presented robustness and quality of service depend on the particular application. It is possible to design systems that fail easily, or that are fully redundant. In consequence, they receive an average rating. 
 
@@ -339,25 +340,32 @@ Using the methods of the previous pages it is now possible to calculate the diff
     \toprule
           & $b_{s_l}$ & $b_{s_l,norm}$ & $m_b$ (a=10) & $m_{b,norm}$ (a=10) \\
     \midrule
-    Indoor localization & 0.56  & 0.53  & 1.79  & 1.34 \\
-    Gestural hand interaction & 0.51  & 0.49  & 1.10  & 0.90 \\
-    Physiological sensing & 0.57  & 0.54  & 1.97  & 1.48 \\
-    Wearable activity recognition & 0.55  & 0.52  & 1.63  & 1.22 \\
-    Person-sensing smart appliances & 0.57  & 0.54  & 1.97  & 1.48 \\
-    Mobile augmented reality & 0.50  & 0.47  & 1.00  & 0.74 \\
-    Obstacle detection & 0.55  & 0.53  & 1.63  & 1.34 \\
-
+    Indoor localization & 0.56  & 0.53  & 1.74  & 1.31 \\
+    Gestural hand interaction & 0.58  & 0.55  & 2.08  & 1.56 \\
+    Physiological sensing & 0.57  & 0.54  & 1.89  & 1.42 \\
+    Wearable activity recognition & 0.55  & 0.55  & 1.63  & 1.63 \\
+    Person-sensing smart appliances & 0.57  & 0.57  & 1.97  & 1.97 \\
+    Mobile augmented reality & 0.50  & 0.50  & 1.00  & 1.00 \\
+    Obstacle detection & 0.55  & 0.53  & 1.70  & 1.28 \\
     \bottomrule
     \end{tabular}%
   \label{tab:bench_capapps_scores}%
 \end{table}%
 
-As seven different applications without comparison of different sensing technologies, the normalized scores have the purpose of putting the calculated scores around the 0.5 average feature rating. Additionally, the correction term for central-tendency bias is included for both regular and normalized scores. 
+As seven different applications are analyzed without comparison of different sensing technologies, the normalized scores have the purpose of putting the calculated scores around the 0.5 average feature rating. Additionally, the correction term for central-tendency bias is included for both regular and normalized scores, with a weighting factor $a$ of 10.
 
-The lowest scores are associated to mobile augmented reality and gestural hand interaction
+The lowest score is associated to mobile augmented reality, with a normalized unbiased value of 1.00. This application requires localization over long distances and orientation detection of the device. Capacitive proximity sensors are not able to add anything to GPS and magnetometers here and thus have not been used in literature for this specific task. Another low score has been designed to obstacle detection, with unbiased score of 1.28. Capacitive proximity sensors are not able to detect ungrounded objects, which is critical in many instances of obstacle detection. Mobile robots will need to detect stone walls, which is not possible by capacitive sensors alone. However, they could augment other obstacle detection systems in detecting conductive objects. 
 
-are tested it can be assumed that the non-normalized benchmark scores will have a tendency towards the highest-rated application. In fact there is a spread between physiological sensing having an average feature rating of $0.53$ and person-sensing smart appliances with an average feature rating of $0.69$. The non-normalized score for both is $0.57$ and diverges to 
+Indoor localization has a score similar to obstacle detection, with an unbiased score of 1.31. This application is known for capacitive systems in literature. The scoring here is favoring systems that achieve a high detection distance, based on the majority of applications being based on sensors that are attached to the walls or based on wearable devices the user is carrying around. Capacitive localization systems are typically installed in the floor, e.g. TileTrack \cite{Valtonen2009a} and SensFloor \cite{lauterbach2009}. Therefore, they don't need a high detection distance as persons will be walking above the floor. In this case the presented model would have to be adapted, e.g. by distinguish floor-based localization systems and tag-based localization systems. The disadvantage would be a less generic application domain.
 
+There are three further applications that have a similar score. Gestural hand interaction has an unbiased score of 1.56 and is one of the most common applications of capacitive proximity sensors in literature, having been used in a variety of different systems. Physiological sensing has an unbiased score of 1.42. The limiting factor here is the high requirement on resolution. This can be overcome using large sensors, or sensors that are very close to the human body \cite{cheng2010active}. Wearable activity recognition has a high unbiased score of 1.63. This is an example of a topic that has not been researched extensively. The Active Capacitive Sensing concept by Chang et al. just presented for physiological sensing has also been applied to activity recognition \cite{cheng2010active}. Another example is a concept to augment accelerometer-based activity recognition with capacitive proximity sensors, presented by Grosse-Puppendahl et al. \cite{grosse2012enhancing}. Both of the publications are fairly new. Thus this is an application area that seems suitable for capacitive proximity sensors that could lead to further research.
 
+Finally, the highest unbiased score is achieved for person-sensing smart appliances with 1.97. This application area is particularly well-suited for capacitive proximity sensors. The feature weights and importance weights match well. There are also numerous examples in literature that realize this scenario, such as the NEC passenger seat \cite{smith1999thesis} or HandSense by Wimmer et al. \cite{wimmer2009handsense}.
 
-
+Based on this scoring and the note examples from literature I have investigated four different application domains for capacitive proximity sensing:
+\begin{itemize}
+\item Indoor localization
+\item (Person-sensing) smart appliances
+\item Physiological sensing
+\item Gesture Interaction
+\end{itemize}

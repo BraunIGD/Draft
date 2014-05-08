@@ -526,6 +526,13 @@
   EPIC}}.
 \newblock Tech. rep., 2012.
 
+\bibitem[LTI{\etalchar{*}}14]{le2014low}
+\textsc{{Le Goc} M., Taylor S., Izadi S., Keskin C., Others}:
+\newblock {A Low-cost Transparent Electric Field Sensor for 3D Interaction on
+  Mobile Devices}.
+\newblock In \emph{ACM CHI Conference on Human Factors in Computing Systems}
+  (2014).
+
 \bibitem[LWG05]{landsiedel2005accurate}
 \textsc{Landsiedel O., Wehrle K., G\"{o}tz S.}:
 \newblock {Accurate prediction of power consumption in sensor networks}.
@@ -852,12 +859,6 @@
 \newblock \emph{Journal of Ambient Intelligence and Smart Environments 3}, 4
   (2011), 305--332.
 
-\bibitem[VKV12]{valtonen2012capacitive}
-\textsc{Valtonen M., Kivim\"{a}ki T., Vanhala J.}:
-\newblock {Capacitive 3D user tracking with a mobile demonstration platform}.
-\newblock In \emph{Proceeding of the 16th International Academic MindTrek
-  Conference} (2012), ACM, pp.~61--63.
-
 \bibitem[VMV09]{Valtonen2009a}
 \textsc{Valtonen M., Maentausta J., Vanhala J.}:
 \newblock {TileTrack: Capacitive human tracking using floor tiles}.
@@ -869,6 +870,12 @@
 \newblock {Human body tracking with electric field ranging}.
 \newblock In \emph{Proceedings of the 14th International Academic MindTrek
   Conference: Envisioning Future Media Environments} (2010), ACM, pp.~183--186.
+
+\bibitem[VV12]{valtonen2012capacitive}
+\textsc{Valtonen M., Vuorela T.}:
+\newblock {Capacitive User Tracking Methods for Smart Environments}.
+\newblock \emph{InTech, New Approach in Indoor and Outdoor Localization
+  Systems} (2012), 113--138.
 
 \bibitem[Wad54]{wade1954movements}
 \textsc{Wade O.~L.}:

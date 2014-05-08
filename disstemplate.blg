@@ -1,13 +1,13 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: disstemplate.aux
 The style file: eg-alpha.bst
 Database file #1: ../../Sources/Dissertation.bib
-Repeated entry---line 1228 of file ../../Sources/Dissertation.bib
+Repeated entry---line 1729 of file ../../Sources/Dissertation.bib
+ : @inproceedings{valtonen2012capacitive
+ :                                      ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1851 of file ../../Sources/Dissertation.bib
  : @inproceedings{rumelin2013make
  :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1469 of file ../../Sources/Dissertation.bib
- : @article{valtonen2012capacitive
- :                                ,
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in ieee1451
 Warning--empty journal in adib20133d

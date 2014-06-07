@@ -1,13 +1,9 @@
 This is BibTeX, Version 0.99dThe top-level auxiliary file: disstemplate.aux
 The style file: eg-alpha.bst
 Database file #1: ../../Sources/Dissertation.bib
-Repeated entry---line 1729 of file ../../Sources/Dissertation.bib
+Repeated entry---line 2012 of file ../../Sources/Dissertation.bib
  : @inproceedings{valtonen2012capacitive
  :                                      ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1851 of file ../../Sources/Dissertation.bib
- : @inproceedings{rumelin2013make
- :                               ,
 I'm skipping whatever remains of this entry
 Warning--to sort, need author or key in ieee1451
 Warning--empty journal in adib20133d
@@ -26,4 +22,4 @@ Warning--empty institution in Nokia2012
 Warning--empty journal in platt1999fast
 Warning--can't use both volume and number fields in zimmerman1987hand
 Warning--there's a number but no series in Zimmerman1995
-(There were 2 error messages)
+(There was 1 error message)

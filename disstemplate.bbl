@@ -67,13 +67,6 @@
 \newblock In \emph{Robotics and Automation, 2006. ICRA 2006. Proceedings 2006
   IEEE International Conference on} (2006), IEEE, pp.~212--218.
 
-\bibitem[BH09]{Braun2009HumanBodyField}
-\textsc{Braun A., Hamisu P.}:
-\newblock {Using the human body field as a medium for natural interaction}.
-\newblock In \emph{Proceedings of the 2nd International Conference on PErvsive
-  Technologies Related to Assistive Environments - PETRA '09} (New York, New
-  York, USA, June 2009), ACM Press, pp.~1--7.
-
 \bibitem[BH11]{Braun2011MultiInputDevice}
 \textsc{Braun A., Hamisu P.}:
 \newblock {Designing a multi-purpose capacitive proximity sensing input
@@ -459,6 +452,18 @@
 \newblock \emph{{The art of computer systems performance analysis}}, vol.~182.
 \newblock John Wiley \& Sons Chichester, 1991.
 
+\bibitem[Jon70]{jones1870life}
+\textsc{Jones B.}:
+\newblock \emph{{The Life and Letters of Faraday}}, vol.~1.
+\newblock Longmans, Green and Company, 1870.
+
+\bibitem[KHC{\etalchar{*}}13]{kawahara2013instant}
+\textsc{Kawahara Y., Hodges S., Cook B.~S., Zhang C., Abowd G.~D.}:
+\newblock {Instant inkjet circuits: lab-based inkjet printing to support rapid
+  prototyping of UbiComp devices}.
+\newblock In \emph{Proceedings of the 2013 ACM international joint conference
+  on Pervasive and ubiquitous computing} (2013), ACM, pp.~363--372.
+
 \bibitem[KJJ11]{krejcar2011}
 \textsc{Krejcar O., Jirka J., Janckulik D.}:
 \newblock {Use of mobile phones as intelligent sensors for sound input analysis
@@ -787,10 +792,10 @@
 \newblock PhD thesis, Massachusetts Institute of Technology, 1999.
 
 \bibitem[SN04]{shirehjini2004novel}
-\textsc{Shirehjini A., Nazari A.}:
+\textsc{Shirehjini A.~N., Nazari A.}:
 \newblock {A novel interaction metaphor for personal environment control:
-  Direct manipulation of physical environment based on 3d visualization}.
-\newblock \emph{Computers \& Graphics 28}, 5 (2004), 667--675.
+  direct manipulation of physical environment based on 3D visualization}.
+\newblock \emph{Computers \& Graphics 28}, 5 (Oct. 2004), 667--675.
 
 \bibitem[SPH12]{Sato2012}
 \textsc{Sato M., Poupyrev I., Harrison C.}:
@@ -1028,10 +1033,10 @@
 \newblock {Microsoft kinect sensor and its effect}.
 \newblock \emph{Multimedia, IEEE 19}, 2 (2012), 4--10.
 
-\bibitem[ZLB{\etalchar{*}}87]{zimmerman1987hand}
+\bibitem[ZLB{\etalchar{*}}86]{zimmerman1987hand}
 \textsc{Zimmerman T.~G., Lanier J., Blanchard C., Bryson S., Harvill Y.}:
 \newblock {A hand gesture interface device}.
-\newblock In \emph{ACM SIGCHI Bulletin} (May 1987), vol.~18, ACM, pp.~189--192.
+\newblock In \emph{ACM SIGCHI Bulletin} (May 1986), vol.~17, ACM, pp.~189--192.
 
 \bibitem[ZSP{\etalchar{*}}95]{Zimmerman1995}
 \textsc{Zimmerman T.~G., Smith J.~R., Paradiso J.~A., Allport D., Gershenfeld

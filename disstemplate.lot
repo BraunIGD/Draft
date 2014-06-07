@@ -7,36 +7,36 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Baseline calibrations terms and methods}}{14}{table.2.1}
 \contentsline {table}{\numberline {2.2}{\ignorespaces Overview of high-level processing methods for capacitive proximity sensors}}{15}{table.2.2}
 \contentsline {table}{\numberline {2.3}{\ignorespaces Feature recognition methods}}{17}{table.2.3}
-\contentsline {table}{\numberline {2.4}{\ignorespaces Sensors for smart environments \cite {cook2007smart}}}{27}{table.2.4}
-\contentsline {table}{\numberline {2.5}{\ignorespaces Sensing technologies and measured properties}}{28}{table.2.5}
-\contentsline {table}{\numberline {2.6}{\ignorespaces Application domains and relevant works}}{39}{table.2.6}
+\contentsline {table}{\numberline {2.4}{\ignorespaces Sensors for smart environments \cite {cook2007smart}}}{28}{table.2.4}
+\contentsline {table}{\numberline {2.5}{\ignorespaces Sensing technologies and measured properties}}{29}{table.2.5}
+\contentsline {table}{\numberline {2.6}{\ignorespaces Application domains and relevant works}}{40}{table.2.6}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Feature matrix denoting capabilities required for a certain rating}}{50}{table.3.1}
-\contentsline {table}{\numberline {3.2}{\ignorespaces The importance weighting of different applications, based on the features.}}{54}{table.3.2}
-\contentsline {table}{\numberline {3.3}{\ignorespaces Feature rating of the different sensor technologies}}{54}{table.3.3}
-\contentsline {table}{\numberline {3.4}{\ignorespaces Regular and normalized benchmark score matrix of different applications and technologies}}{55}{table.3.4}
-\contentsline {table}{\numberline {3.5}{\ignorespaces Search result frequency given specific applications, sensor technologies and synonyms for ACM Digital Library (DL) and Google Scholar (GS)}}{55}{table.3.5}
-\contentsline {table}{\numberline {3.6}{\ignorespaces Central tendency bias correction for different exponents a}}{57}{table.3.6}
-\contentsline {table}{\numberline {3.7}{\ignorespaces Importance weights of applications for capacitive proximity sensors}}{57}{table.3.7}
-\contentsline {table}{\numberline {3.8}{\ignorespaces Feature weights for capacitive proximity sensors}}{59}{table.3.8}
-\contentsline {table}{\numberline {3.9}{\ignorespaces Benchmarking scores for capacitive proximity sensors in different applications}}{60}{table.3.9}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Feature matrix denoting capabilities required for a certain rating}}{52}{table.3.1}
+\contentsline {table}{\numberline {3.2}{\ignorespaces The importance weighting of different applications, based on the features.}}{56}{table.3.2}
+\contentsline {table}{\numberline {3.3}{\ignorespaces Feature rating of the different sensor technologies}}{56}{table.3.3}
+\contentsline {table}{\numberline {3.4}{\ignorespaces Regular and normalized benchmark score matrix of different applications and technologies}}{57}{table.3.4}
+\contentsline {table}{\numberline {3.5}{\ignorespaces Search result frequency given specific applications, sensor technologies and synonyms for ACM Digital Library (DL) and Google Scholar (GS)}}{57}{table.3.5}
+\contentsline {table}{\numberline {3.6}{\ignorespaces Central tendency bias correction for different exponents a}}{59}{table.3.6}
+\contentsline {table}{\numberline {3.7}{\ignorespaces Importance weights of applications for capacitive proximity sensors}}{59}{table.3.7}
+\contentsline {table}{\numberline {3.8}{\ignorespaces Feature weights for capacitive proximity sensors}}{61}{table.3.8}
+\contentsline {table}{\numberline {3.9}{\ignorespaces Benchmarking scores for capacitive proximity sensors in different applications}}{62}{table.3.9}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Application domains and derived implemented use cases for capacitive proximity sensing}}{63}{table.4.1}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Challenges associated to the different use cases for capacitive proximity sensors}}{66}{table.4.2}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Overview of developed capacitive proximity sensing prototypes}}{90}{table.4.3}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Results of touch detection for single and double taps (SFT, DFT), knocks (SKK, DKK), finger swipe (FS), hand swipe (HS) and stomp (STO). Noted are the overall samples, errors, no event errors, wrong classification errors and the percentage of correct classification.}}{112}{table.4.4}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Results for interaction time in the different runs of the interaction speed test}}{114}{table.4.5}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Measuring layout and data processing of different prototypes from related works}}{120}{table.4.6}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Application domains and derived implemented use cases for capacitive proximity sensing}}{65}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Challenges associated to the different use cases for capacitive proximity sensors}}{68}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Overview of developed capacitive proximity sensing prototypes}}{92}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Results of touch detection for single and double taps (SFT, DFT), knocks (SKK, DKK), finger swipe (FS), hand swipe (HS) and stomp (STO). Noted are the overall samples, errors, no event errors, wrong classification errors and the percentage of correct classification.}}{114}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Results for interaction time in the different runs of the interaction speed test}}{116}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Measuring layout and data processing of different prototypes from related works}}{122}{table.4.6}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Qualitative comparison between capacitive proximity sensors and other senor technologies}}{124}{table.5.1}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Overview of capacitive proximity sensing benefits}}{127}{table.5.2}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Overview of capacitive proximity sensing limitations}}{130}{table.5.3}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Qualitative comparison between capacitive proximity sensors and other senor technologies}}{126}{table.5.1}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Overview of capacitive proximity sensing benefits}}{129}{table.5.2}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Overview of capacitive proximity sensing limitations}}{132}{table.5.3}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Percentage of correctly classified postures using manually set classifier}}{141}{table.A.1}
-\contentsline {table}{\numberline {A.2}{\ignorespaces CapTap evaluation raw results}}{146}{table.A.2}
-\contentsline {table}{\numberline {A.3}{\ignorespaces CapTap questionnaire results}}{147}{table.A.3}
-\contentsline {table}{\numberline {A.4}{\ignorespaces Best case scores of CapFloor @ EvAAL 2011}}{149}{table.A.4}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Percentage of correctly classified postures using manually set classifier}}{145}{table.A.1}
+\contentsline {table}{\numberline {A.2}{\ignorespaces CapTap evaluation raw results}}{150}{table.A.2}
+\contentsline {table}{\numberline {A.3}{\ignorespaces CapTap questionnaire results}}{151}{table.A.3}
+\contentsline {table}{\numberline {A.4}{\ignorespaces Best case scores of CapFloor @ EvAAL 2011}}{153}{table.A.4}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

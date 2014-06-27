@@ -18,7 +18,7 @@
 \bibitem[Bax96]{Baxter1996}
 \textsc{Baxter L.~K.}:
 \newblock {Capacitive Sensors}.
-\newblock \emph{Sensors Peterborough NH}, 1 (1996), 1--17.
+\newblock \emph{Sensors}, 1 (1996), 1--17.
 
 \bibitem[BB98]{bertozzi1998gold}
 \textsc{Bertozzi M., Broggi A.}:
@@ -47,14 +47,13 @@
 \textsc{Braun A., Dutz T., Alekseew M., Schillinger P., Marinc A.}:
 \newblock {Marker-Free Indoor Localization and Tracking of Multiple Users in
   Smart Environments Using a Camera-Based Approach}.
-\newblock In \emph{Distributed, Ambient and Pervasive Interactions} (2013).
+\newblock In \emph{DAPI} (2013).
 
 \bibitem[BDK13]{braun2013capacitive}
 \textsc{Braun A., Dutz T., Kamieth F.}:
 \newblock {Capacitive sensor-based hand gesture recognition in ambient
   intelligence scenarios}.
-\newblock In \emph{Proceedings of the 6th International Conference on PErvasive
-  Technologies Related to Assistive Environments} (2013), ACM, p.~5.
+\newblock In \emph{PETRA} (2013), ACM, p.~Article 5.
 
 \bibitem[BF14]{Braun2013ChairAid}
 \textsc{Braun A., Frank S.}:
@@ -71,14 +70,12 @@
 \textsc{Braun A., Hamisu P.}:
 \newblock {Designing a multi-purpose capacitive proximity sensing input
   device}.
-\newblock In \emph{Proceedings of the 4th International Conference on PErvasive
-  Technologies Related to Assistive Environments PETRA 11} (2011), ACM Press.
+\newblock In \emph{PETRA} (2011), p.~Article 15.
 
 \bibitem[BH12]{braun2012context}
 \textsc{Braun A., Heggen H.}:
 \newblock {Context recognition using capacitive sensor arrays in beds}.
-\newblock In \emph{Technik f\"{u}r ein selbstbestimmtes Leben - 5. Deutscher
-  AAL-Kongress} (Berlin, 2012), VDE VERLAG GmbH.
+\newblock In \emph{AAL-Kongress} (Berlin, 2012), VDE VERLAG GmbH.
 
 \bibitem[BHK97]{belhumeur1997eigenfaces}
 \textsc{Belhumeur P.~N., Hespanha J.~a.~P., Kriegman D.~J.}:
@@ -116,8 +113,7 @@
 \textsc{Bragdon A., Nelson E., Li Y., Hinckley K.}:
 \newblock {Experimental analysis of touch-screen gesture designs in mobile
   environments}.
-\newblock In \emph{Proceedings of the SIGCHI Conference on Human Factors in
-  Computing Systems} (2011), ACM, pp.~403--412.
+\newblock In \emph{CHI} (2011), ACM, pp.~403--412.
 
 \bibitem[BNS{\etalchar{*}}14]{braun2013ActiveArmrest}
 \textsc{Braun A., Neumann S., Schmidt S., Wichert R., Kuijper A.}:
@@ -127,7 +123,7 @@
 \bibitem[BO10a]{BarrettScreen}
 \textsc{Barrett G., Omote R.}:
 \newblock {Projected capacitive touch screens}.
-\newblock \emph{Inf. Disp. Mag} (2010).
+\newblock \emph{Information Display} (2010).
 
 \bibitem[BO10b]{Barrett2010}
 \textsc{Barrett G., Omote R.}:
@@ -162,6 +158,11 @@
 \textsc{Camp R.~C., {Camp Robert} C.}:
 \newblock {Benchmarking: the search for industry best practices that lead to
   superior performance}.
+
+\bibitem[CC13]{cypressfirst}
+\textsc{{Cypress Semiconductor Corporation}, Corporation C.~S.}:
+\newblock {CY3271 PSoC® FirstTouch™ Starter Kit with CYFi™ Low-Power RF},
+  2013.
 
 \bibitem[CD07]{cook2007smart}
 \textsc{Cook D.~J., Das S.~K.}:
@@ -205,16 +206,10 @@
 \newblock {A bayer pattern on a sensor in isometric perspective/projection},
   2006.
 
-\bibitem[Cor13]{cypressfirst}
-\textsc{Corporation C.~S.}:
-\newblock {CY3271 PSoC® FirstTouchTM Starter Kit with CYFiTM Low-Power RF},
-  2013.
-
 \bibitem[CPP10]{chintalapudi2010indoor}
 \textsc{Chintalapudi K., {Padmanabha Iyer} A., Padmanabhan V.~N.}:
 \newblock {Indoor localization without the pain}.
-\newblock In \emph{Proceedings of the sixteenth annual international conference
-  on Mobile computing and networking} (2010), ACM, pp.~173--184.
+\newblock In \emph{MobiCom} (2010), ACM, pp.~173--184.
 
 \bibitem[Cro09]{crolotte2009issues}
 \textsc{Crolotte A.}:
@@ -241,24 +236,17 @@
   Communications}}.
 \newblock Tech. rep., 2012.
 
-\bibitem[DBM14]{Djakow2013movibed}
-\textsc{Djakow M., Braun A., Marinc A.}:
-\newblock {MoviBed - sleep analysis using capacitive sensors}.
-\newblock In \emph{Distributed, Ambient, and Pervasive Interactions}. 2014.
-
 \bibitem[DGT{\etalchar{*}}13]{dementyev2013wirelessly}
 \textsc{Dementyev A., Gummeson J., Thrasher D., Parks A., Ganesan D., Smith
   J.~R., Sample A.~P.}:
 \newblock {Wirelessly powered bistable display tags}.
-\newblock In \emph{Proceedings of the 2013 ACM international joint conference
-  on Pervasive and ubiquitous computing} (2013), ACM, pp.~383--386.
+\newblock In \emph{UbiComp} (2013), ACM, pp.~383--386.
 
 \bibitem[DL01]{Dietz2001a}
 \textsc{Dietz P., Leigh D.}:
 \newblock {DiamondTouch}.
-\newblock In \emph{Proceedings of the 14th annual ACM symposium on User
-  interface software and technology - UIST '01} (New York, New York, USA, Nov.
-  2001), ACM Press, p.~219.
+\newblock In \emph{UIST} (New York, New York, USA, Nov. 2001), ACM Press,
+  p.~219.
 
 \bibitem[DLP03]{dongarra2003linpack}
 \textsc{Dongarra J.~J., Luszczek P., Petitet A.}:
@@ -270,8 +258,7 @@
 \textsc{Dearman D., Truong K.~N.}:
 \newblock {BlueTone: a framework for interacting with public displays using
   dual-tone multi-frequency through bluetooth}.
-\newblock In \emph{Proceedings of the 11th international conference on
-  Ubiquitous computing} (2009), ACM, pp.~97--100.
+\newblock In \emph{UbiComp} (2009), ACM, pp.~97--100.
 
 \bibitem[Fra13]{frank2013understanding}
 \textsc{Frank R.}:
@@ -300,8 +287,8 @@
 \textsc{Grosse-Puppendahl T., Braun A.}:
 \newblock {Honeyfish - a high resolution gesture recognition system based on
   capacitive proximity sensing}.
-\newblock In \emph{Embedded World Conference 2012} (2012), Haar: WEKA
-  Fachmedien, 2012 (Design \& Elektronik), p.~10pp.
+\newblock In \emph{Embedded World Conference} (2012), Haar: WEKA Fachmedien,
+  2012 (Design \& Elektronik), pp.~10--14.
 
 \bibitem[GPBB12]{grosse2012enhancing}
 \textsc{Grosse-Puppendahl T., Berlin E., Borazio M.}:
@@ -313,15 +300,13 @@
 \textsc{Grosse-Puppendahl T., Berghoefer Y., Braun A., Wimmer R., Kuijper A.}:
 \newblock {OpenCapSense: A Rapid Prototyping Toolkit for Pervasive Interaction
   Using Capacitive Sensing}.
-\newblock \emph{IEEE International Conference on Pervasive Computing and
-  Communications (PerCom) 18} (2013), 22.
+\newblock \emph{PerCom 18} (2013), 22.
 
 \bibitem[GPBKK13]{grosse2013swiss}
 \textsc{Grosse-Puppendahl T., Braun A., Kamieth F., Kuijper A.}:
 \newblock {Swiss-cheese extended: an object recognition method for ubiquitous
   interfaces based on capacitive proximity sensing}.
-\newblock In \emph{Proceedings of the 2013 ACM annual conference on Human
-  factors in computing systems} (2013), ACM, pp.~1401--1410.
+\newblock In \emph{CHI} (2013), ACM, pp.~1401--1410.
 
 \bibitem[GPMB11]{Couch2011}
 \textsc{Grosse-Puppendahl T., Marinc A., Braun A.}:
@@ -342,16 +327,14 @@
 \textsc{Han J.~Y.}:
 \newblock {Low-cost multi-touch sensing through frustrated total internal
   reflection}.
-\newblock In \emph{Proceedings of the 18th annual ACM symposium on User
-  interface software and technology - UIST '05} (New York, New York, USA, Oct.
-  2005), ACM Press, p.~115.
+\newblock In \emph{UIST} (New York, New York, USA, Oct. 2005), ACM Press,
+  p.~115.
 
 \bibitem[HB10]{Hamisu2010}
 \textsc{Hamisu P., Braun A.}:
 \newblock {Analyse des Schlafverhaltens durch kapazitive Sensorarrays zur
   Ermittlung der Wirbels\"{a}ulenbelastung}.
-\newblock In \emph{3. Deutscher AAL Kongress} (2010), VDE VERLAG GmbH,
-  pp.~3--6.
+\newblock In \emph{AAL-Kongress} (2010), VDE VERLAG GmbH, pp.~3--6.
 
 \bibitem[HBvdH{\etalchar{*}}11]{huijnen2011maybe}
 \textsc{Huijnen C., Badii A., van~den Heuvel H., Caleb-Solly P., Thiemert D.}:
@@ -362,8 +345,7 @@
 \bibitem[HCM{\etalchar{*}}13]{hoque2013mach}
 \textsc{Hoque M.~E., Courgeon M., Martin J.-C., Mutlu B., Picard R.~W.}:
 \newblock {Mach: My automated conversation coach}.
-\newblock In \emph{Proceedings of the 2013 ACM international joint conference
-  on Pervasive and ubiquitous computing} (2013), ACM, pp.~697--706.
+\newblock In \emph{UbiComp} (2013), ACM, pp.~697--706.
 
 \bibitem[HDO{\etalchar{*}}98]{hearst1998support}
 \textsc{Hearst M.~A., Dumais S.~T., Osman E., Platt J., Scholkopf B.}:
@@ -380,14 +362,12 @@
 \textsc{Harrison C., Hudson S.~E.}:
 \newblock {Scratch input: creating large, inexpensive, unpowered and mobile
   finger input surfaces}.
-\newblock In \emph{Proceedings of the 21st annual ACM symposium on User
-  interface software and technology} (2008), ACM, pp.~205--208.
+\newblock In \emph{UIST} (2008), ACM, pp.~205--208.
 
 \bibitem[HPGK94]{hinckley1994survey}
 \textsc{Hinckley K., Pausch R., Goble J.~C., Kassell N.~F.}:
 \newblock {A survey of design issues in spatial input}.
-\newblock In \emph{Proceedings of the 7th annual ACM symposium on User
-  interface software and technology} (1994), ACM, pp.~213--222.
+\newblock In \emph{UIST} (1994), ACM, pp.~213--222.
 
 \bibitem[HPR00]{han2000manufacturing}
 \textsc{Han J., Pratt M., Regli W.~C.}:
@@ -399,8 +379,7 @@
 \bibitem[HSH11]{harrison2011tapsense}
 \textsc{Harrison C., Schwarz J., Hudson S.~E.}:
 \newblock {TapSense: enhancing finger interaction on touch surfaces}.
-\newblock In \emph{Proceedings of the 24th annual ACM symposium on User
-  interface software and technology} (2011), ACM, pp.~627--636.
+\newblock In \emph{UIST} (2011), ACM, pp.~627--636.
 
 \bibitem[HSM00]{harada2000human}
 \textsc{Harada T., Sato T., Mori T.}:
@@ -413,8 +392,7 @@
 \textsc{Harrison C., Sato M., Poupyrev I.}:
 \newblock {Capacitive fingerprinting: exploring user differentiation by sensing
   electrical properties of the human body}.
-\newblock In \emph{Proceedings of the 25th annual ACM symposium on User
-  interface software and technology} (2012), ACM, pp.~537--544.
+\newblock In \emph{UIST} (2012), ACM, pp.~537--544.
 
 \bibitem[Hu62]{hu1962visual}
 \textsc{Hu M.-K.}:
@@ -426,18 +404,11 @@
   Wireless Communication Protocols and Transducer Electronic Data Sheet (TEDS)
   Formats}, 2007.
 
-\bibitem[IHQ04]{ingram2004ultrawideband}
-\textsc{Ingram S.~J., Harmer D., Quinlan M.}:
-\newblock {Ultrawideband indoor positioning systems and their use in
-  emergencies}.
-\newblock In \emph{Position Location and Navigation Symposium, 2004. PLANS
-  2004} (2004), IEEE, pp.~706--715.
-
 \bibitem[IKH11]{Izadi2011}
 \textsc{Izadi S., Kim D., Hilliges O.}:
 \newblock {KinectFusion: real-time 3D reconstruction and interaction using a
   moving depth camera}.
-\newblock \emph{Proceedings of the 24th \ldots} (2011), 559 -- 568.
+\newblock In \emph{UIST} (2011), pp.~559 -- 568.
 
 \bibitem[Inc13]{globalPosture}
 \textsc{Inc. S.}:
@@ -461,8 +432,7 @@
 \textsc{Kawahara Y., Hodges S., Cook B.~S., Zhang C., Abowd G.~D.}:
 \newblock {Instant inkjet circuits: lab-based inkjet printing to support rapid
   prototyping of UbiComp devices}.
-\newblock In \emph{Proceedings of the 2013 ACM international joint conference
-  on Pervasive and ubiquitous computing} (2013), ACM, pp.~363--372.
+\newblock In \emph{UbiComp} (2013), ACM, pp.~363--372.
 
 \bibitem[KJJ11]{krejcar2011}
 \textsc{Krejcar O., Jirka J., Janckulik D.}:
@@ -480,26 +450,19 @@
 \textsc{Krum D.~M., Omoteso O., Ribarsky W., Starner T., Hodges L.~F.}:
 \newblock {Speech and gesture multimodal control of a whole Earth 3D
   visualization environment}.
-\newblock 195--200.
+\newblock In \emph{VISSYM} (May 2002), pp.~195--200.
 
 \bibitem[KQWA10]{khosrowabadi2010eeg}
 \textsc{Khosrowabadi R., Quek H.~C., Wahab A., Ang K.~K.}:
 \newblock {EEG-based emotion recognition using self-organizing map for boundary
   detection}.
-\newblock In \emph{Pattern Recognition (ICPR), 2010 20th International
-  Conference on} (2010), IEEE, pp.~4242--4245.
-
-\bibitem[LBO11]{leser2011local}
-\textsc{Leser R., Baca A., Ogris G.}:
-\newblock {Local positioning systems in (game) sports}.
-\newblock \emph{Sensors 11}, 10 (2011), 9778--9797.
+\newblock In \emph{ICPR} (2010), IEEE, pp.~4242--4245.
 
 \bibitem[LBT02]{lenman2002}
 \textsc{Lenman S., Bretzner L., Thuresson B.}:
 \newblock {Using marking menus to develop command sets for computer vision
   based hand gesture interfaces}.
-\newblock \emph{Proceedings of the second Nordic conference on Human-computer
-  interaction} (2002), 239--242.
+\newblock In \emph{NordiCHI} (2002), pp.~239--242.
 
 \bibitem[LC85]{lewis1985evolution}
 \textsc{Lewis B.~C., Crews A.~E.}:
@@ -517,13 +480,12 @@
 \textsc{Lauterbach C., Steinhage A.}:
 \newblock {SensFloor ® - A Large-area Sensor System Based on Printed Textiles
   Printed Electronics}.
-\newblock In \emph{Ambient Assisted Living Congress} (2009), VDE Verlag.
+\newblock In \emph{AAL-Kongress} (2009), VDE Verlag.
 
 \bibitem[LSKB13]{lasecki2013real}
 \textsc{Lasecki W.~S., Song Y.~C., Kautz H., Bigham J.~P.}:
 \newblock {Real-time crowd labeling for deployable activity recognition}.
-\newblock In \emph{Proceedings of the 2013 conference on Computer supported
-  cooperative work} (2013), ACM, pp.~1203--1212.
+\newblock In \emph{CSCW} (2013), ACM, pp.~1203--1212.
 
 \bibitem[Ltd12]{plessey2012ecg}
 \textsc{Ltd. P.~S.}:
@@ -535,14 +497,12 @@
 \textsc{{Le Goc} M., Taylor S., Izadi S., Keskin C., Others}:
 \newblock {A Low-cost Transparent Electric Field Sensor for 3D Interaction on
   Mobile Devices}.
-\newblock In \emph{ACM CHI Conference on Human Factors in Computing Systems}
-  (2014).
+\newblock In \emph{CHI} (2014), pp.~3167--3170.
 
 \bibitem[LWG05]{landsiedel2005accurate}
 \textsc{Landsiedel O., Wehrle K., G\"{o}tz S.}:
 \newblock {Accurate prediction of power consumption in sensor networks}.
-\newblock In \emph{Proc. of the Second Workshop on Embedded Networked Sensors}
-  (2005), Citeseer.
+\newblock In \emph{Workshop on Embedded Networked Sensors} (2005), Citeseer.
 
 \bibitem[LZWV09]{liu2009uwave}
 \textsc{Liu J., Zhong L., Wickramasuriya J., Vasudevan V.}:
@@ -564,8 +524,8 @@
 \textsc{Majewski M., Braun A., Marinc A., Kuijper A.}:
 \newblock {Providing Visual Support for Selecting Reactive Elements in
   Intelligent Environments}.
-\newblock In \emph{Transactions on Computational Science XVIII}. Springer,
-  2013, pp.~248--263.
+\newblock In \emph{Transactions on Computational Science XVIII}, vol.~7848.
+  Springer, 2013, pp.~248--263.
 
 \bibitem[Mic]{microsoftWEI}
 \textsc{Microsoft}:
@@ -618,15 +578,13 @@
 \textsc{Oreifej O., Liu Z.}:
 \newblock {Hon4d: Histogram of oriented 4d normals for activity recognition
   from depth sequences}.
-\newblock In \emph{Computer Vision and Pattern Recognition (CVPR), 2013 IEEE
-  Conference on} (2013), IEEE, pp.~716--723.
+\newblock In \emph{CVPR} (2013), IEEE, pp.~716--723.
 
 \bibitem[Pan12]{panger2012kinect}
 \textsc{Panger G.}:
 \newblock {Kinect in the kitchen: testing depth camera interactions in
   practical home environments}.
-\newblock In \emph{CHI'12 Extended Abstracts on Human Factors in Computing
-  Systems} (2012), ACM, pp.~1985--1990.
+\newblock In \emph{CHI Extended Abstracts} (2012), ACM, pp.~1985--1990.
 
 \bibitem[PC00]{pentland2000face}
 \textsc{Pentland A., Choudhury T.}:
@@ -636,38 +594,23 @@
 \bibitem[PCB00]{priyantha2000cricket}
 \textsc{Priyantha N.~B., Chakraborty A., Balakrishnan H.}:
 \newblock {The cricket location-support system}.
-\newblock In \emph{Proceedings of the 6th annual international conference on
-  Mobile computing and networking} (2000), ACM, pp.~32--43.
+\newblock In \emph{MobiCom} (2000), ACM, pp.~32--43.
 
 \bibitem[PGGP13]{pu2013whole}
 \textsc{Pu Q., Gupta S., Gollakota S., Patel S.}:
 \newblock {Whole-home gesture recognition using wireless signals}.
-\newblock In \emph{Proceedings of the 19th annual international conference on
-  Mobile computing \& networking} (2013), ACM, pp.~27--38.
+\newblock In \emph{MobiCom} (2013), ACM, pp.~27--38.
 
 \bibitem[PJS{\etalchar{*}}13]{pham2013foodboard}
 \textsc{Pham C., Jackson D., Sch\"{o}ning J., Bartindale T., Pl\"{o}tz T.,
   Olivier P.}:
 \newblock {FoodBoard: surface contact imaging for food recognition}.
-\newblock In \emph{Proceedings of the 2013 ACM international joint conference
-  on Pervasive and ubiquitous computing} (2013), ACM, pp.~749--752.
-
-\bibitem[PL13]{pirkl2013resonant}
-\textsc{Pirkl G., Lukowicz P.}:
-\newblock {Resonant magnetic coupling indoor localization system}.
-\newblock In \emph{Proceedings of the 2013 ACM conference on Pervasive and
-  ubiquitous computing adjunct publication} (2013), ACM, pp.~59--62.
+\newblock In \emph{UbiComp} (2013), ACM, pp.~749--752.
 
 \bibitem[Pla99]{platt1999fast}
 \textsc{Platt J.~C.}:
 \newblock {Fast training of support vector machines using sequential minimal
   optimization}.
-
-\bibitem[PLCH02]{Paradiso2002}
-\textsc{Paradiso J.~A., Leo C.~K., Checka N., Hsiao K.}:
-\newblock {Passive acoustic knock tracking for interactive windows}.
-\newblock In \emph{CHI '02 extended abstracts on Human factors in computing
-  systems - CHI '02} (New York, New York, USA, Apr. 2002), ACM Press, p.~732.
 
 \bibitem[Pos11]{poslad2011ubiquitous}
 \textsc{Poslad S.}:
@@ -683,7 +626,8 @@
 \bibitem[PSLS12]{poupyrev2012botanicus}
 \textsc{Poupyrev I., Schoessler P., Loh J., Sato M.}:
 \newblock {Botanicus Interacticus: interactive plants technology}.
-\newblock In \emph{ACM SIGGRAPH 2012 Emerging Technologies} (2012), ACM, p.~4.
+\newblock In \emph{SIGGRAPH Emerging Technologies} (New York, New York, USA,
+  Aug. 2012), ACM, ACM Press, p.~4.
 
 \bibitem[PWLK03]{park2003smart}
 \textsc{Park S.~H., Won S.~H., Lee J.~B., Kim S.~W.}:
@@ -701,41 +645,34 @@
 \textsc{Ranganathan A., Al-Muhtadi J., Biehl J., Ziebart B., Campbell R.~H.,
   Bailey B.}:
 \newblock {Towards a pervasive computing benchmark}.
-\newblock In \emph{Pervasive Computing and Communications Workshops, 2005.
-  PerCom 2005 Workshops. Third IEEE International Conference on} (2005), IEEE,
-  pp.~194--198.
+\newblock In \emph{PerCom} (2005), IEEE, pp.~194--198.
 
 \bibitem[RB13]{rumelin2013make}
 \textsc{R\"{u}melin S., Butz A.}:
 \newblock {How to make large touch screens usable while driving}.
-\newblock In \emph{Proceedings of the 5th International Conference on
-  Automotive User Interfaces and Interactive Vehicular Applications} (2013),
-  ACM, pp.~48--55.
+\newblock In \emph{AutomotiveUI} (2013), ACM, pp.~48--55.
 
 \bibitem[Rek02]{rekimoto2002smartskin}
 \textsc{Rekimoto J.}:
 \newblock {SmartSkin: an infrastructure for freehand manipulation on
   interactive surfaces}.
-\newblock In \emph{Proceedings of the SIGCHI conference on Human factors in
-  computing systems: Changing our world, changing ourselves} (2002), ACM,
-  pp.~113--120.
+\newblock In \emph{CHI} (2002), ACM, pp.~113--120.
 
 \bibitem[Rub91]{Rubine1991}
 \textsc{Rubine D.}:
 \newblock {Specifying gestures by example}.
-\newblock \emph{ACM SIGGRAPH computer graphics 25}, 4 (1991), 329--337.
+\newblock \emph{SIGGRAPH 25}, 4 (1991), 329--337.
 
 \bibitem[SAL06]{subramanian2006multi}
 \textsc{Subramanian S., Aliakseyeu D., Lucero A.}:
 \newblock {Multi-layer interaction for digital tables}.
-\newblock In \emph{Proceedings of the 19th annual ACM symposium on User
-  interface software and technology} (2006), ACM, pp.~269--272.
+\newblock In \emph{UIST} (2006), ACM, pp.~269--272.
 
 \bibitem[SAW94]{schilit1994context}
 \textsc{Schilit B., Adams N., Want R.}:
 \newblock {Context-aware computing applications}.
-\newblock In \emph{Mobile Computing Systems and Applications, 1994. WMCSA 1994.
-  First Workshop on} (1994), IEEE, pp.~85--90.
+\newblock In \emph{Workshop on Mobile Computing Systems and Applications}
+  (1994), IEEE, pp.~85--90.
 
 \bibitem[Sch08]{schulz2008rethinking}
 \textsc{Schulz H.}:
@@ -801,8 +738,7 @@
 \textsc{Sato M., Poupyrev I., Harrison C.}:
 \newblock {Touch\'{e}: enhancing touch interaction on humans, screens, liquids,
   and everyday objects}.
-\newblock In \emph{Proceedings of the 2012 ACM annual conference on Human
-  Factors in Computing Systems} (May 2012), pp.~483--492.
+\newblock In \emph{CHI} (May 2012), pp.~483--492.
 
 \bibitem[SPSS11]{sung2011human}
 \textsc{Sung J., Ponce C., Selman B., Saxena A.}:
@@ -818,14 +754,6 @@
 \textsc{Smith J., White T., Dodge C., Paradiso J., Gershenfeld N., Allport D.}:
 \newblock {Electric field sensing for graphical interfaces}.
 \newblock \emph{Computer Graphics and Applications, IEEE 18}, 3 (1998), 54--60.
-
-\bibitem[TCD{\etalchar{*}}00]{thomas2000arquake}
-\textsc{Thomas B., Close B., Donoghue J., Squires J., {De Bondi} P., Morris M.,
-  Piekarski W.}:
-\newblock {ARQuake: An outdoor/indoor augmented reality first person
-  application}.
-\newblock In \emph{Wearable Computers, The Fourth International Symposium on}
-  (2000), IEEE, pp.~139--146.
 
 \bibitem[TCY{\etalchar{*}}11]{tsai2011smart}
 \textsc{Tsai P.-H., Chen T.-Y., Yu C.-R., Shih C.-S., Liu J. W.~S.}:
@@ -867,14 +795,12 @@
 \bibitem[VMV09]{Valtonen2009a}
 \textsc{Valtonen M., Maentausta J., Vanhala J.}:
 \newblock {TileTrack: Capacitive human tracking using floor tiles}.
-\newblock In \emph{IEEE International Conference on Pervasive Computing and
-  Communications} (Mar. 2009), IEEE, pp.~1--10.
+\newblock In \emph{PerCom} (Mar. 2009), pp.~1--10.
 
 \bibitem[VRV10]{valtonen2010human}
 \textsc{Valtonen M., Raula H., Vanhala J.}:
 \newblock {Human body tracking with electric field ranging}.
-\newblock In \emph{Proceedings of the 14th International Academic MindTrek
-  Conference: Envisioning Future Media Environments} (2010), ACM, pp.~183--186.
+\newblock In \emph{MindTrek} (2010), ACM, pp.~183--186.
 
 \bibitem[VV12]{valtonen2012capacitive}
 \textsc{Valtonen M., Vuorela T.}:
@@ -895,23 +821,20 @@
 \textsc{Wu M., Balakrishnan R.}:
 \newblock {Multi-finger and whole hand gestural interaction techniques for
   multi-user tabletop displays}.
-\newblock In \emph{Proceedings of the 16th annual ACM symposium on User
-  interface software and technology - UIST '03} (New York, New York, USA, Nov.
-  2003), ACM Press, pp.~193--202.
+\newblock In \emph{UIST} (New York, New York, USA, Nov. 2003), ACM Press,
+  pp.~193--202.
 
 \bibitem[WB09]{wimmer2009handsense}
 \textsc{Wimmer R., Boring S.}:
 \newblock {HandSense: discriminating different ways of grasping and holding a
   tangible user interface}.
-\newblock In \emph{Proceedings of the 3rd International Conference on Tangible
-  and Embedded Interaction} (2009), ACM, pp.~359--362.
+\newblock In \emph{TEI} (2009), ACM, pp.~359--362.
 
 \bibitem[WB11]{wimmer2011modular}
 \textsc{Wimmer R., Baudisch P.}:
 \newblock {Modular and deformable touch-sensitive surfaces based on time domain
   reflectometry}.
-\newblock In \emph{Proceedings of the 24th annual ACM symposium on User
-  interface software and technology} (2011), ACM, pp.~517--526.
+\newblock In \emph{UIST} (2011), ACM, pp.~517--526.
 
 \bibitem[Wei84]{weicker1984dhrystone}
 \textsc{Weicker R.~P.}:
@@ -935,8 +858,7 @@
 \bibitem[WHKS06]{Wimmer2006}
 \textsc{Wimmer R., Holleis P., Kranz M., Schmidt A.}:
 \newblock {Thracker - Using Capacitive Sensing for Gesture Recognition}.
-\newblock In \emph{26th IEEE International Conference on Distributed Computing
-  Systems Workshops (ICDCSW'06)} (2006), IEEE, pp.~64--64.
+\newblock In \emph{ICDCSW} (2006), IEEE, pp.~64--64.
 
 \bibitem[Wil04]{wilson2004sensor}
 \textsc{Wilson J.~S.}:
@@ -947,8 +869,7 @@
 \textsc{Wimmer R., Kranz M., Boring S., Schmidt A.}:
 \newblock {A Capacitive Sensing Toolkit for Pervasive Activity Detection and
   Recognition}.
-\newblock \emph{Fifth Annual IEEE International Conference on Pervasive
-  Computing and Communications PerCom07} (2007), 171--180.
+\newblock In \emph{PerCom} (2007), pp.~171--180.
 
 \bibitem[WKSE11]{wachs2011vision}
 \textsc{Wachs J.~P., K\"{o}lsch M., Stern H., Edan Y.}:
@@ -970,7 +891,7 @@
 \bibitem[WP10]{wilson2010radio}
 \textsc{Wilson J., Patwari N.}:
 \newblock {Radio tomographic imaging with wireless networks}.
-\newblock \emph{Mobile Computing, IEEE Transactions on 9}, 5 (2010), 621--632.
+\newblock \emph{IEEE Mobile Computing 9}, 5 (2010), 621--632.
 
 \bibitem[WRS{\etalchar{*}}12]{Wu2012}
 \textsc{Wu H.-Y., Rubinstein M., Shih E., Guttag J., Durand F., Freeman W.}:
@@ -981,16 +902,14 @@
 \bibitem[WS03]{Wilson2003}
 \textsc{Wilson A., Shafer S.}:
 \newblock {XWand: UI for intelligent spaces}.
-\newblock In \emph{Proceedings of the ACM Conference on Human Factors in
-  Computing Systems} (2003), no.~5 in CHI '03, Microsoft Research, ACM,
+\newblock In \emph{CHI} (2003), no.~5 in CHI '03, Microsoft Research,
   pp.~545--552.
 
 \bibitem[WTT13]{watanabe2013ultrasound}
 \textsc{Watanabe H., Terada T., Tsukamoto M.}:
 \newblock {Ultrasound-based movement sensing, gesture-, and
   context-recognition}.
-\newblock In \emph{Proceedings of the 17th annual international symposium on
-  International symposium on wearable computers} (2013), ACM, pp.~57--64.
+\newblock In \emph{ISWC} (2013), ACM, pp.~57--64.
 
 \bibitem[WYG{\etalchar{*}}09]{wright2009robust}
 \textsc{Wright J., Yang A.~Y., Ganesh A., Sastry S.~S., Ma Y.}:
@@ -1002,8 +921,7 @@
 \textsc{Xu C., Li S., Liu G., Zhang Y., Miluzzo E., Chen Y.-F., Li J., Firner
   B.}:
 \newblock {Crowd++: unsupervised speaker count with smartphones}.
-\newblock In \emph{Proceedings of the 2013 ACM international joint conference
-  on Pervasive and ubiquitous computing} (2013), ACM, pp.~43--52.
+\newblock In \emph{UbiComp} (2013), ACM, pp.~43--52.
 
 \bibitem[YDM12]{ye2012situation}
 \textsc{Ye J., Dobson S., McKeever S.}:
@@ -1019,19 +937,18 @@
 \bibitem[YNR13]{yeo2013stickear}
 \textsc{Yeo K.~P., Nanayakkara S., Ransiri S.}:
 \newblock {StickEar: making everyday objects respond to sound}.
-\newblock In \emph{Proceedings of the 26th annual ACM symposium on User
-  interface software and technology} (2013), ACM, pp.~221--226.
+\newblock In \emph{UIST} (2013), ACM, pp.~221--226.
 
 \bibitem[ZFBZ08]{zhang2008maximum}
 \textsc{Zhang C., Flor\^{e}ncio D., Ba D.~E., Zhang Z.}:
 \newblock {Maximum likelihood sound source localization and beamforming for
   directional microphone arrays in distributed meetings}.
-\newblock \emph{Multimedia, IEEE Transactions on 10}, 3 (2008), 538--548.
+\newblock \emph{IEEE Multimedia 10}, 3 (2008), 538--548.
 
 \bibitem[Zha12]{zhang2012microsoft}
 \textsc{Zhang Z.}:
 \newblock {Microsoft kinect sensor and its effect}.
-\newblock \emph{Multimedia, IEEE 19}, 2 (2012), 4--10.
+\newblock \emph{IEEE Multimedia 19}, 2 (2012), 4--10.
 
 \bibitem[ZLB{\etalchar{*}}86]{zimmerman1987hand}
 \textsc{Zimmerman T.~G., Lanier J., Blanchard C., Bryson S., Harvill Y.}:
@@ -1042,8 +959,6 @@
 \textsc{Zimmerman T.~G., Smith J.~R., Paradiso J.~A., Allport D., Gershenfeld
   N.}:
 \newblock {Applying electric field sensing to human-computer interfaces}.
-\newblock In \emph{Proceedings of the SIGCHI conference on Human factors in
-  computing systems - CHI '95} (New York, New York, USA, 1995), no.~May, ACM
-  Press, pp.~280--287.
+\newblock In \emph{CHI} (New York, New York, USA, 1995), no.~May, pp.~280--287.
 
 \end{thebibliography}

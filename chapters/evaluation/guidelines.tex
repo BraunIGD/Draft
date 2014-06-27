@@ -1,12 +1,12 @@
 \section{Guidelines}
-\begin{minipage}{\linewidth}
+\begin{figure}[ht]
 \centering
 \includegraphics[width=0.8\textwidth]{images/guide_process}
-\captionof{figure}{Basic system design process for capacitive proximity sensing systems and associated aspects in the single steps}
+\caption{Basic system design process for capacitive proximity sensing systems and associated aspects in the single steps}
 \label{fig:guide_process}
-\end{minipage}
+\end{figure}
 
-After discussing the limitations and benefits of capacitive proximity sensors, I am able to use the collected experiences and knowledge to give some general guidelines that can help parties interested in this sensing technology. These guidelines will support the design process from sensor choice, to choice of algorithms. The process is shown in Figure \ref{fig:guide_process}. This section is structured following the three design steps sensor choice, hardware design and algorithms and poses a set of questions in each subsection that are associated to the specific challenges. These questions will be answered with references to the design processes that have driven the creation of the different prototypes created in the scope of this work.
+After discussing the limitations and benefits of capacitive proximity sensors, I am able to use the collected experiences and knowledge to give some general guidelines that can help parties interested in using this sensing technology. These guidelines will support the design process from sensor choice, to choice of algorithms. The process is shown in Figure \ref{fig:guide_process}. This section is structured following the three design steps sensor choice, hardware design, and algorithms. In each subsection a set of questions are posed that are associated to the specific challenges. These questions will be answered with references to the different prototypes created in the scope of this work, and how it influenced the design process.
  
 \subsection{Sensor choice}
 The first step of this process is the choice of sensor technology for the given application. There is a variety of different options, as presented in Section \ref{ch:sens_compare}. All have their different strengths and weaknesses. In order to decide if capacitive proximity sensing is suitable, three different questions should be posed.
@@ -22,7 +22,7 @@ It may be the case that multiple technologies support the measurements required 
 
 \textit{Are capacitive proximity sensors beneficial for my scenario?}
 
-An evaluation of the different candidates is the final step and should lead to a decision about the most suitable sensing technologies. If the distance is too high for capacitive proximity sensors or enough processing power is available and lighting conditions are static, cameras might be more suitable. This should be driven by the different benefits and limitations of the technologies. The benchmarking model presented in Section \ref{ch:benchmark} can support this decision process. The designer will have to find the respective feature weights for his applications and calculate the scores for the different sensing systems.
+An evaluation of the different candidates is the final step and should lead to a decision about the most suitable sensing technologies. If the distance is too high for capacitive proximity sensors or enough processing power is available and lighting conditions are static, cameras might be more suitable. This should be driven by the different benefits and limitations of the technologies. The benchmarking model presented in Chapter \ref{ch:benchmark} can support this decision process. The designer will have to find the respective feature weights for his applications and calculate the scores for the different sensing systems.
 
 \subsection{Hardware design}
 If there has been a decision in favor of capacitive proximity sensors the next step is the design of the hardware.  Similar to technology selection we can use a few basic questions to get an idea of what layout to use.
@@ -62,6 +62,6 @@ In most of the presented prototypes an adaptive baseline calibration is used, to
 
 Regarding high-level data processing there are numerous variations of methods presented in this work. Data-driven machine learning algorithms are a good method, if there is a small set of potential outcomes, e.g. the different postures that could be recognized on a chair or couch. We partially use these methods in the Smart Bed (\ref{ch:prot_smartbed}), on the posture classification of the Capacitive Chair (\ref{ch:prot_capchair}) and for the gesture recognition of the Active Armrest (\ref{ch:prot_armrest}). Of the related prototypes most notably Touché uses these classification methods \cite{Sato2012}. 
 
-If the application has many different potential outcomes, e.g. the thousands of potential locations in a hand tracking system, it is typically beneficial to use a model-driven approach, used in all other prototypes (\ref{ch:prot_capfloor}, localization of Active Armrest\ref{ch:prot_armrest}, \ref{ch:prot_magicbox}, \ref{ch:prot_captap}). However, these models may be supported by data-driven algorithms, such as particle filters. One example is the Swiss-Cheese object tracker by Grosse-Puppendahl et al. \cite{grosse2013swiss}. The data processing examples shown in Section \ref{ch:prot_proc} give an idea of the decision rationale in various application domains. 
+If the application has many different potential outcomes, e.g. the thousands of potential locations in a hand tracking system, it is typically beneficial to use a model-driven approach, used in all other prototypes (\ref{ch:prot_capfloor}, localization of Active Armrest\ref{ch:prot_armrest}, \ref{ch:prot_magicbox}, \ref{ch:prot_captap}). However, these models may be supported by data-driven algorithms, such as particle filters. One example is the Swiss-Cheese object tracker by Grosse-Puppendahl et al. \cite{grosse2013swiss}. The data processing examples, shown in Section \ref{ch:prot_proc}, give an idea of the decision rationale in various application domains. 
 
 
